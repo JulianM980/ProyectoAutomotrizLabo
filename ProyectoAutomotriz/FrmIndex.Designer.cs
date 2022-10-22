@@ -62,7 +62,7 @@
             this.MenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuLateral.Location = new System.Drawing.Point(0, 0);
             this.MenuLateral.Name = "MenuLateral";
-            this.MenuLateral.Size = new System.Drawing.Size(200, 528);
+            this.MenuLateral.Size = new System.Drawing.Size(200, 567);
             this.MenuLateral.TabIndex = 0;
             // 
             // Consulta8
@@ -209,7 +209,7 @@
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(200, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(724, 528);
+            this.panelContenedor.Size = new System.Drawing.Size(740, 567);
             this.panelContenedor.TabIndex = 1;
             // 
             // btnSalir
@@ -219,7 +219,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSalir.Location = new System.Drawing.Point(562, 471);
+            this.btnSalir.Location = new System.Drawing.Point(578, 510);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(150, 45);
             this.btnSalir.TabIndex = 1;
@@ -233,7 +233,7 @@
             this.pictureBox1.Image = global::ProyectoAutomotriz.Properties.Resources.Logo;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(724, 528);
+            this.pictureBox1.Size = new System.Drawing.Size(740, 567);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -245,6 +245,7 @@
             this.ClientSize = new System.Drawing.Size(924, 528);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.MenuLateral);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(940, 567);
             this.Name = "FrmIndex";
             this.Text = "Menu Principal";
@@ -269,8 +270,8 @@
         private System.Windows.Forms.Button Consulta1;
         private System.Windows.Forms.Panel PanelLogo;
         private System.Windows.Forms.Panel panelContenedor;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
