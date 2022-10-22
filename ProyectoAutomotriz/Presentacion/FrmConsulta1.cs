@@ -26,6 +26,7 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void FrmConsulta1_Load(object sender, EventArgs e)
         {
+            this.rvOrdenesCompra.RefreshReport();
         }
 
         private void btnObtener_Click(object sender, EventArgs e)
@@ -34,7 +35,12 @@ namespace ProyectoAutomotriz.Presentacion
             lst.Add(new Parametro("@anioAntiguedad",nupAntiguedad.Value));
             lst.Add(new Parametro("@anioOrdenes",txtAnio.Text));
             DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("SP_ORDENES_COMPRA",lst);
-            nupAntiguedad.Value = 0;
+
+            this.rvOrdenesCompra.LocalReport.DataSources.Clear();
+            this.rvOrdenesCompra.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1",dt));
+            this.rvOrdenesCompra.RefreshReport();
+
+
         }
     }
 }
