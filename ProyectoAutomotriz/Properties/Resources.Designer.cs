@@ -61,6 +61,15 @@ namespace ProyectoAutomotriz.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Data Source=DESKTOP-0A8E6DU\SQLEXPRESS;Initial Catalog=GRUPO_10;Integrated Security=True.
+        /// </summary>
+        internal static string CadenaAxel {
+            get {
+                return ResourceManager.GetString("CadenaAxel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Logo {
