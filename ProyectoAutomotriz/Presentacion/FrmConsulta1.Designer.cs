@@ -46,7 +46,7 @@
             // btnSalir
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalir.Location = new System.Drawing.Point(612, 454);
+            this.btnSalir.Location = new System.Drawing.Point(622, 519);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 6;
@@ -99,10 +99,10 @@
             // rvOrdenesCompra
             // 
             this.rvOrdenesCompra.LocalReport.ReportEmbeddedResource = "ProyectoAutomotriz.Reportes.RepOrdenesCompra.rdlc";
-            this.rvOrdenesCompra.Location = new System.Drawing.Point(46, 57);
+            this.rvOrdenesCompra.Location = new System.Drawing.Point(46, 61);
             this.rvOrdenesCompra.Name = "rvOrdenesCompra";
             this.rvOrdenesCompra.ServerReport.BearerToken = null;
-            this.rvOrdenesCompra.Size = new System.Drawing.Size(624, 361);
+            this.rvOrdenesCompra.Size = new System.Drawing.Size(651, 435);
             this.rvOrdenesCompra.TabIndex = 5;
             // 
             // dSOrdenesCompra
@@ -119,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 489);
+            this.ClientSize = new System.Drawing.Size(740, 567);
             this.Controls.Add(this.rvOrdenesCompra);
             this.Controls.Add(this.nupAntiguedad);
             this.Controls.Add(this.label2);
@@ -127,6 +127,7 @@
             this.Controls.Add(this.btnObtener);
             this.Controls.Add(this.txtAnio);
             this.Controls.Add(this.btnSalir);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(724, 528);
             this.Name = "FrmConsulta1";
             this.Text = "Consulta 1";

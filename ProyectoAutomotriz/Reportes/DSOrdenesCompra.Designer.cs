@@ -285,7 +285,7 @@ namespace ProyectoAutomotriz.Reportes {
             
             private global::System.Data.DataColumn columnvendedor;
             
-            private global::System.Data.DataColumn columncantProd;
+            private global::System.Data.DataColumn columncantidades;
             
             private global::System.Data.DataColumn columntotal;
             
@@ -350,9 +350,9 @@ namespace ProyectoAutomotriz.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn cantProdColumn {
+            public global::System.Data.DataColumn cantidadesColumn {
                 get {
-                    return this.columncantProd;
+                    return this.columncantidades;
                 }
             }
             
@@ -409,13 +409,13 @@ namespace ProyectoAutomotriz.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DTOrdenesRow AddDTOrdenesRow(int codigo, string descripcion, string vendedor, int cantProd, double total, string entrega) {
+            public DTOrdenesRow AddDTOrdenesRow(int codigo, string descripcion, string vendedor, int cantidades, double total, string entrega) {
                 DTOrdenesRow rowDTOrdenesRow = ((DTOrdenesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         codigo,
                         descripcion,
                         vendedor,
-                        cantProd,
+                        cantidades,
                         total,
                         entrega};
                 rowDTOrdenesRow.ItemArray = columnValuesArray;
@@ -443,7 +443,7 @@ namespace ProyectoAutomotriz.Reportes {
                 this.columncodigo = base.Columns["codigo"];
                 this.columndescripcion = base.Columns["descripcion"];
                 this.columnvendedor = base.Columns["vendedor"];
-                this.columncantProd = base.Columns["cantProd"];
+                this.columncantidades = base.Columns["cantidades"];
                 this.columntotal = base.Columns["total"];
                 this.columnentrega = base.Columns["entrega"];
             }
@@ -457,8 +457,8 @@ namespace ProyectoAutomotriz.Reportes {
                 base.Columns.Add(this.columndescripcion);
                 this.columnvendedor = new global::System.Data.DataColumn("vendedor", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnvendedor);
-                this.columncantProd = new global::System.Data.DataColumn("cantProd", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncantProd);
+                this.columncantidades = new global::System.Data.DataColumn("cantidades", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncantidades);
                 this.columntotal = new global::System.Data.DataColumn("total", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntotal);
                 this.columnentrega = new global::System.Data.DataColumn("entrega", typeof(string), null, global::System.Data.MappingType.Element);
@@ -653,17 +653,17 @@ namespace ProyectoAutomotriz.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int cantProd {
+            public int cantidades {
                 get {
                     try {
-                        return ((int)(this[this.tableDTOrdenes.cantProdColumn]));
+                        return ((int)(this[this.tableDTOrdenes.cantidadesColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'cantProd\' in table \'DTOrdenes\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'cantidades\' in table \'DTOrdenes\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTOrdenes.cantProdColumn] = value;
+                    this[this.tableDTOrdenes.cantidadesColumn] = value;
                 }
             }
             
@@ -737,14 +737,14 @@ namespace ProyectoAutomotriz.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IscantProdNull() {
-                return this.IsNull(this.tableDTOrdenes.cantProdColumn);
+            public bool IscantidadesNull() {
+                return this.IsNull(this.tableDTOrdenes.cantidadesColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetcantProdNull() {
-                this[this.tableDTOrdenes.cantProdColumn] = global::System.Convert.DBNull;
+            public void SetcantidadesNull() {
+                this[this.tableDTOrdenes.cantidadesColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

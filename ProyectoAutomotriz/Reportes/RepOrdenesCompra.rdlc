@@ -37,7 +37,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>codigo</Value>
+                              <Value>Codigo</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -67,7 +67,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Descripción</Value>
+                              <Value>Descripcion</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -127,7 +127,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Cantidad productos vendidos</Value>
+                              <Value>Cantidades</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -305,21 +305,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="cantProd">
+                    <Textbox Name="cantidades">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!cantProd.Value</Value>
+                              <Value>=Fields!cantidades.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>cantProd</rd:DefaultName>
+                      <rd:DefaultName>cantidades</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -432,7 +432,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>7.16976in</Width>
+  <Width>6.53434in</Width>
   <Page>
     <PageHeader>
       <Height>3.53412cm</Height>
@@ -547,8 +547,8 @@
           <DataField>vendedor</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="cantProd">
-          <DataField>cantProd</DataField>
+        <Field Name="cantidades">
+          <DataField>cantidades</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="total">
