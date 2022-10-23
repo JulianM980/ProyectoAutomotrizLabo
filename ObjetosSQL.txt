@@ -1,0 +1,59 @@
+--Consulta 7
+create proc SP_VENDEDORES_DEBAJO_PROMEDIO
+@Anio INT
+as
+Select f.idFactura 'FACTURA NRO',
+v.idVendedor 'LEGAJO',
+CONCAT(dp.nombre,' ',dp.apellido) 'NOMBRE',
+CONVERT(varchar,F.fecha,103) as 'FECHA',
+SUM(df.cantidad*df.preUnitario) 'IMPORTE TOTAL',
+(SELECT AVG(df2.cantidad*DF2.preUnitario)
+FROM DETALLES_FACTURAS DF2
+jOIN FACTURAS F1 ON F1.idFactura=DF2.idFactura
+WHere YEAR(fecha)=@Anio) 'PROMEDIO ANUAL GENERAL'
+From DETALLES_FACTURAS df
+join FACTURAS f on f.idFactura=df.idDetalleFactura
+join VENDEDORES v on v.idVendedor=f.idVendedor 
+join DATOS_PERSONALES dp on dp.idDatos=v.idDatosPersonales
+Where YEAR(f.fecha)=@Anio
+GROUP BY v.idVendedor,dp.nombre,dp.apellido,f.idFactura,f.fecha
+HAVING SUM(df.cantidad*df.preUnitario)<(SELECT AVG(df1.cantidad*df1.preUnitario)
+FROM
+DETALLES_FACTURAS DF1
+jOIN FACTURAS 
+F1 ON F1.idFactura=DF1.idFactura
+WHere
+YEAR(fecha)=@Anio)
+
+-- CONSULTA 8
+CREATE PROCEDURE [dbo].[SP_AUMENTO_VEHICULOS]
+	@aumento decimal(10,2),
+	@marca varchar(50)
+AS
+	select v.idVehiculo,p.nombre'Nombre',m.nombre'Marca',p.preUnitario
+	'Precio',dbo.F_AUMENTO_PRECIO(p.preUnitario,@aumento)'Precio con aumento'
+	from PRODUCTOS p
+	join VEHICULOS v on p.idProducto = v.idProducto
+	join MARCAS m on p.idMarca = m.idMarca
+	where @marca = ANY (select m2.nombre
+	from VEHICULOS_AUTOPARTES va
+	join AUTOPARTES a on va.idAutoparte = a.idAutoparte
+	join PRODUCTOS p2 on a.idProducto = p2.idProducto
+	join MARCAS m2 on p2.idMarca =m2.idMarca
+	where va.idVehiculo = v.idVehiculo)
+
+CREATE PROCEDURE [dbo].[SP_MARCAS]
+AS
+SELECT * from marcas
+
+--FUNCION CONSULTA 8
+CREATE FUNCTION [dbo].[F_AUMENTO_PRECIO]
+(@precio decimal(18,2),
+@porcenataje decimal(5,2))
+RETURNS DECIMAL(18,2)
+AS
+BEGIN
+	DECLARE @resultado decimal(18,2)
+	SET @resultado = @precio * (1+(@porcenataje /100))
+	return @resultado
+END
