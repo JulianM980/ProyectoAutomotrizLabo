@@ -70,3 +70,4 @@ C:\Users\Usuario\Desktop\TUP\TP_LABO\ProyectoAutomotrizLabo\ProyectoAutomotriz\o
 C:\Users\Usuario\Desktop\TUP\TP_LABO\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.Presentacion.FrmConsulta5.resources
 C:\Users\Usuario\Desktop\TUP\TP_LABO\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.Presentacion.FrmConsulta6.resources
 C:\Users\Usuario\Desktop\TUP\TP_LABO\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.Presentacion.FrmConsulta7.resources
+C:\Users\Usuario\Desktop\TUP\TP_LABO\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.Presentacion.FrmConsulta8_Auxiliar.FrmAutopartesVehiculo.resources

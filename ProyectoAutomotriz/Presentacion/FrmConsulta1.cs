@@ -26,11 +26,24 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void FrmConsulta1_Load(object sender, EventArgs e)
         {
-            this.rvOrdenesCompra.RefreshReport();
+            //this.rvOrdenesCompra.RefreshReport();
+            nupAntiguedad.Value = 1;
         }
 
         private void btnObtener_Click(object sender, EventArgs e)
         {
+            if (nupAntiguedad.Value < 1) {
+                MessageBox.Show("Debe ingresar un numero de antiguedad mayor o igual a 1");
+                return;
+            }
+            if (!int.TryParse(txtAnio.Text, out _)) {
+                MessageBox.Show("No puede ingresar letras como año. Intente de nuevo");
+                return;
+            }
+            if (txtAnio.Text.Length != 4) {
+                MessageBox.Show("Debe ingresar un año de 4 digitos");
+                return;
+            }
             List<Parametro> lst = new List<Parametro>();
             lst.Add(new Parametro("@anioAntiguedad",nupAntiguedad.Value));
             lst.Add(new Parametro("@anioOrdenes",txtAnio.Text));

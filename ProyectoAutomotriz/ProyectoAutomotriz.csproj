@@ -140,6 +140,12 @@
     <Compile Include="Presentacion\FrmConsulta7.Designer.cs">
       <DependentUpon>FrmConsulta7.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\FrmConsulta8_Auxiliar\FrmAutopartesVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmConsulta8_Auxiliar\FrmAutopartesVehiculo.Designer.cs">
+      <DependentUpon>FrmAutopartesVehiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reportes\DSOrdenesCompra.cs">
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmConsulta7.resx">
       <DependentUpon>FrmConsulta7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmConsulta8_Auxiliar\FrmAutopartesVehiculo.resx">
+      <DependentUpon>FrmAutopartesVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
