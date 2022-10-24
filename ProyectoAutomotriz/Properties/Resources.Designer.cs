@@ -70,6 +70,15 @@ namespace ProyectoAutomotriz.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Data Source=I5_9400F\SQLEXPRESS02;Initial Catalog=GRUPO_10;Integrated Security=True.
+        /// </summary>
+        internal static string CadenaGabriel {
+            get {
+                return ResourceManager.GetString("CadenaGabriel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Data Source=PC-JULIAN-MARTI\SQLEXPRESS;Initial Catalog=GRUPO_10;Integrated Security=True.
         /// </summary>
         internal static string CadenaJulian {
