@@ -24,3 +24,36 @@ jOIN FACTURAS
 F1 ON F1.idFactura=DF1.idFactura
 WHere
 YEAR(fecha)=@Anio)
+
+-- CONSULTA 8
+CREATE PROCEDURE [dbo].[SP_AUMENTO_VEHICULOS]
+	@aumento decimal(10,2),
+	@marca varchar(50)
+AS
+	select v.idVehiculo,p.nombre'Nombre',m.nombre'Marca',p.preUnitario
+	'Precio',dbo.F_AUMENTO_PRECIO(p.preUnitario,@aumento)'Precio con aumento'
+	from PRODUCTOS p
+	join VEHICULOS v on p.idProducto = v.idProducto
+	join MARCAS m on p.idMarca = m.idMarca
+	where @marca = ANY (select m2.nombre
+	from VEHICULOS_AUTOPARTES va
+	join AUTOPARTES a on va.idAutoparte = a.idAutoparte
+	join PRODUCTOS p2 on a.idProducto = p2.idProducto
+	join MARCAS m2 on p2.idMarca =m2.idMarca
+	where va.idVehiculo = v.idVehiculo)
+
+CREATE PROCEDURE [dbo].[SP_MARCAS]
+AS
+SELECT * from marcas
+
+--FUNCION CONSULTA 8
+CREATE FUNCTION [dbo].[F_AUMENTO_PRECIO]
+(@precio decimal(18,2),
+@porcenataje decimal(5,2))
+RETURNS DECIMAL(18,2)
+AS
+BEGIN
+	DECLARE @resultado decimal(18,2)
+	SET @resultado = @precio * (1+(@porcenataje /100))
+	return @resultado
+END
