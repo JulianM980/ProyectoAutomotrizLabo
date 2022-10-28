@@ -90,5 +90,10 @@ namespace ProyectoAutomotriz
             if (msg == DialogResult.Yes) this.Dispose();
         }
         #endregion
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

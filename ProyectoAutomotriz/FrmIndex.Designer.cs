@@ -70,7 +70,7 @@
             this.Consulta8.Dock = System.Windows.Forms.DockStyle.Top;
             this.Consulta8.FlatAppearance.BorderSize = 0;
             this.Consulta8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Consulta8.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Consulta8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Consulta8.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Consulta8.Location = new System.Drawing.Point(0, 415);
             this.Consulta8.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
@@ -86,7 +86,7 @@
             this.Consulta7.Dock = System.Windows.Forms.DockStyle.Top;
             this.Consulta7.FlatAppearance.BorderSize = 0;
             this.Consulta7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Consulta7.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Consulta7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Consulta7.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Consulta7.Location = new System.Drawing.Point(0, 370);
             this.Consulta7.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
@@ -102,7 +102,7 @@
             this.Consulta6.Dock = System.Windows.Forms.DockStyle.Top;
             this.Consulta6.FlatAppearance.BorderSize = 0;
             this.Consulta6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Consulta6.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Consulta6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Consulta6.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Consulta6.Location = new System.Drawing.Point(0, 325);
             this.Consulta6.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
@@ -118,7 +118,7 @@
             this.Consulta5.Dock = System.Windows.Forms.DockStyle.Top;
             this.Consulta5.FlatAppearance.BorderSize = 0;
             this.Consulta5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Consulta5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Consulta5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Consulta5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Consulta5.Location = new System.Drawing.Point(0, 280);
             this.Consulta5.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
@@ -134,7 +134,7 @@
             this.Consulta4.Dock = System.Windows.Forms.DockStyle.Top;
             this.Consulta4.FlatAppearance.BorderSize = 0;
             this.Consulta4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Consulta4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Consulta4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Consulta4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Consulta4.Location = new System.Drawing.Point(0, 235);
             this.Consulta4.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
@@ -150,7 +150,7 @@
             this.Consulta3.Dock = System.Windows.Forms.DockStyle.Top;
             this.Consulta3.FlatAppearance.BorderSize = 0;
             this.Consulta3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Consulta3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Consulta3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Consulta3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Consulta3.Location = new System.Drawing.Point(0, 190);
             this.Consulta3.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
@@ -166,7 +166,7 @@
             this.Consulta2.Dock = System.Windows.Forms.DockStyle.Top;
             this.Consulta2.FlatAppearance.BorderSize = 0;
             this.Consulta2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Consulta2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Consulta2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Consulta2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Consulta2.Location = new System.Drawing.Point(0, 145);
             this.Consulta2.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
@@ -182,7 +182,7 @@
             this.Consulta1.Dock = System.Windows.Forms.DockStyle.Top;
             this.Consulta1.FlatAppearance.BorderSize = 0;
             this.Consulta1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Consulta1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Consulta1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Consulta1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Consulta1.Location = new System.Drawing.Point(0, 100);
             this.Consulta1.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
@@ -217,7 +217,7 @@
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalir.FlatAppearance.BorderSize = 2;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnSalir.Location = new System.Drawing.Point(578, 510);
             this.btnSalir.Name = "btnSalir";
@@ -237,12 +237,13 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FrmIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(924, 528);
+            this.ClientSize = new System.Drawing.Size(940, 567);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.MenuLateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

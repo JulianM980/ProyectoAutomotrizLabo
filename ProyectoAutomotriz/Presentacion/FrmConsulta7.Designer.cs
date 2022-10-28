@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSalir = new System.Windows.Forms.Button();
             this.dgvConsulta7 = new System.Windows.Forms.DataGridView();
+            this.btnConsulta = new System.Windows.Forms.Button();
+            this.lblAnio = new System.Windows.Forms.Label();
+            this.txtAnio = new System.Windows.Forms.TextBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.colFacturaNro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLegajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colImporteTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPromGralAnual = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnConsulta = new System.Windows.Forms.Button();
-            this.lblAnio = new System.Windows.Forms.Label();
-            this.txtAnio = new System.Windows.Forms.TextBox();
-            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -58,6 +61,13 @@
             // 
             this.dgvConsulta7.AllowUserToAddRows = false;
             this.dgvConsulta7.AllowUserToDeleteRows = false;
+            this.dgvConsulta7.BackgroundColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgvConsulta7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvConsulta7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colFacturaNro,
@@ -72,67 +82,39 @@
             this.dgvConsulta7.Size = new System.Drawing.Size(674, 325);
             this.dgvConsulta7.TabIndex = 2;
             // 
-            // colFacturaNro
-            // 
-            this.colFacturaNro.HeaderText = "Factura Nro";
-            this.colFacturaNro.Name = "colFacturaNro";
-            this.colFacturaNro.ReadOnly = true;
-            // 
-            // colLegajo
-            // 
-            this.colLegajo.HeaderText = "Legajo";
-            this.colLegajo.Name = "colLegajo";
-            this.colLegajo.ReadOnly = true;
-            // 
-            // colNombre
-            // 
-            this.colNombre.HeaderText = "Nombre";
-            this.colNombre.Name = "colNombre";
-            this.colNombre.ReadOnly = true;
-            // 
-            // colFecha
-            // 
-            this.colFecha.HeaderText = "Fecha";
-            this.colFecha.Name = "colFecha";
-            this.colFecha.ReadOnly = true;
-            // 
-            // colImporteTotal
-            // 
-            this.colImporteTotal.HeaderText = "Importe total";
-            this.colImporteTotal.Name = "colImporteTotal";
-            this.colImporteTotal.ReadOnly = true;
-            // 
-            // colPromGralAnual
-            // 
-            this.colPromGralAnual.HeaderText = "Promedio general anual";
-            this.colPromGralAnual.Name = "colPromGralAnual";
-            this.colPromGralAnual.ReadOnly = true;
-            // 
             // btnConsulta
             // 
+            this.btnConsulta.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsulta.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnConsulta.Location = new System.Drawing.Point(564, 44);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(118, 27);
             this.btnConsulta.TabIndex = 4;
             this.btnConsulta.Text = "Consultar";
-            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.UseVisualStyleBackColor = false;
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // lblAnio
             // 
             this.lblAnio.AutoSize = true;
+            this.lblAnio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.lblAnio.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lblAnio.Font = new System.Drawing.Font("Nirmala UI Semilight", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnio.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblAnio.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lblAnio.Location = new System.Drawing.Point(24, 51);
+            this.lblAnio.Location = new System.Drawing.Point(18, 45);
             this.lblAnio.Name = "lblAnio";
-            this.lblAnio.Size = new System.Drawing.Size(96, 13);
+            this.lblAnio.Size = new System.Drawing.Size(119, 19);
             this.lblAnio.TabIndex = 5;
             this.lblAnio.Text = "Año a consultar";
+            this.lblAnio.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtAnio
             // 
-            this.txtAnio.Location = new System.Drawing.Point(126, 48);
+            this.txtAnio.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtAnio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAnio.Location = new System.Drawing.Point(143, 44);
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(169, 20);
             this.txtAnio.TabIndex = 6;
@@ -148,10 +130,71 @@
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::ProyectoAutomotriz.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(708, 489);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.UseWaitCursor = true;
+            // 
+            // colFacturaNro
+            // 
+            this.colFacturaNro.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colFacturaNro.HeaderText = "Factura Nro";
+            this.colFacturaNro.Name = "colFacturaNro";
+            this.colFacturaNro.ReadOnly = true;
+            this.colFacturaNro.Width = 102;
+            // 
+            // colLegajo
+            // 
+            this.colLegajo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colLegajo.HeaderText = "Legajo";
+            this.colLegajo.Name = "colLegajo";
+            this.colLegajo.ReadOnly = true;
+            this.colLegajo.Width = 74;
+            // 
+            // colNombre
+            // 
+            this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colNombre.HeaderText = "Nombre";
+            this.colNombre.Name = "colNombre";
+            this.colNombre.ReadOnly = true;
+            this.colNombre.Width = 81;
+            // 
+            // colFecha
+            // 
+            this.colFecha.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colFecha.HeaderText = "Fecha";
+            this.colFecha.Name = "colFecha";
+            this.colFecha.ReadOnly = true;
+            this.colFecha.Width = 70;
+            // 
+            // colImporteTotal
+            // 
+            this.colImporteTotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colImporteTotal.HeaderText = "Importe total";
+            this.colImporteTotal.Name = "colImporteTotal";
+            this.colImporteTotal.ReadOnly = true;
+            this.colImporteTotal.Width = 105;
+            // 
+            // colPromGralAnual
+            // 
+            this.colPromGralAnual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colPromGralAnual.HeaderText = "Promedio general";
+            this.colPromGralAnual.Name = "colPromGralAnual";
+            this.colPromGralAnual.ReadOnly = true;
+            this.colPromGralAnual.Width = 140;
+            // 
             // FrmConsulta7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(708, 489);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtAnio);
@@ -159,11 +202,13 @@
             this.Controls.Add(this.btnConsulta);
             this.Controls.Add(this.dgvConsulta7);
             this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.pictureBox1);
             this.MinimumSize = new System.Drawing.Size(724, 528);
             this.Name = "FrmConsulta7";
             this.Text = "Consulta 7";
             this.Load += new System.EventHandler(this.FrmConsulta7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,15 +218,16 @@
 
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.DataGridView dgvConsulta7;
+        private System.Windows.Forms.Button btnConsulta;
+        private System.Windows.Forms.Label lblAnio;
+        private System.Windows.Forms.TextBox txtAnio;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colFacturaNro;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLegajo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colFecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn colImporteTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPromGralAnual;
-        private System.Windows.Forms.Button btnConsulta;
-        private System.Windows.Forms.Label lblAnio;
-        private System.Windows.Forms.TextBox txtAnio;
-        private System.Windows.Forms.Button btnLimpiar;
     }
 }
