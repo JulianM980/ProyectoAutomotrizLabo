@@ -55,5 +55,10 @@ namespace ProyectoAutomotriz.Presentacion
                 fila["Cantidad Fabricar"].ToString()});
             }
         }
+
+        private void FrmConsulta3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

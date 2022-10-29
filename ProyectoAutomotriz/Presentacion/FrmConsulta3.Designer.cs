@@ -147,6 +147,7 @@
             this.MinimumSize = new System.Drawing.Size(724, 528);
             this.Name = "FrmConsulta3";
             this.Text = "Consulta3";
+            this.Load += new System.EventHandler(this.FrmConsulta3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

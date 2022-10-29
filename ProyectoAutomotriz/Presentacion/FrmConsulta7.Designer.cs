@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSalir = new System.Windows.Forms.Button();
             this.dgvConsulta7 = new System.Windows.Forms.DataGridView();
-            this.btnConsulta = new System.Windows.Forms.Button();
-            this.lblAnio = new System.Windows.Forms.Label();
-            this.txtAnio = new System.Windows.Forms.TextBox();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.colFacturaNro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLegajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colImporteTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPromGralAnual = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnConsulta = new System.Windows.Forms.Button();
+            this.lblAnio = new System.Windows.Forms.Label();
+            this.txtAnio = new System.Windows.Forms.TextBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,12 +62,12 @@
             this.dgvConsulta7.AllowUserToAddRows = false;
             this.dgvConsulta7.AllowUserToDeleteRows = false;
             this.dgvConsulta7.BackgroundColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dgvConsulta7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgvConsulta7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvConsulta7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colFacturaNro,
@@ -81,6 +81,54 @@
             this.dgvConsulta7.ReadOnly = true;
             this.dgvConsulta7.Size = new System.Drawing.Size(674, 325);
             this.dgvConsulta7.TabIndex = 2;
+            // 
+            // colFacturaNro
+            // 
+            this.colFacturaNro.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colFacturaNro.HeaderText = "Factura Nro";
+            this.colFacturaNro.Name = "colFacturaNro";
+            this.colFacturaNro.ReadOnly = true;
+            this.colFacturaNro.Width = 102;
+            // 
+            // colLegajo
+            // 
+            this.colLegajo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colLegajo.HeaderText = "Legajo";
+            this.colLegajo.Name = "colLegajo";
+            this.colLegajo.ReadOnly = true;
+            this.colLegajo.Width = 74;
+            // 
+            // colNombre
+            // 
+            this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colNombre.HeaderText = "Nombre";
+            this.colNombre.Name = "colNombre";
+            this.colNombre.ReadOnly = true;
+            this.colNombre.Width = 81;
+            // 
+            // colFecha
+            // 
+            this.colFecha.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colFecha.HeaderText = "Fecha";
+            this.colFecha.Name = "colFecha";
+            this.colFecha.ReadOnly = true;
+            this.colFecha.Width = 70;
+            // 
+            // colImporteTotal
+            // 
+            this.colImporteTotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colImporteTotal.HeaderText = "Importe total";
+            this.colImporteTotal.Name = "colImporteTotal";
+            this.colImporteTotal.ReadOnly = true;
+            this.colImporteTotal.Width = 105;
+            // 
+            // colPromGralAnual
+            // 
+            this.colPromGralAnual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.colPromGralAnual.HeaderText = "Promedio general";
+            this.colPromGralAnual.Name = "colPromGralAnual";
+            this.colPromGralAnual.ReadOnly = true;
+            this.colPromGralAnual.Width = 140;
             // 
             // btnConsulta
             // 
@@ -141,54 +189,6 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.UseWaitCursor = true;
-            // 
-            // colFacturaNro
-            // 
-            this.colFacturaNro.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.colFacturaNro.HeaderText = "Factura Nro";
-            this.colFacturaNro.Name = "colFacturaNro";
-            this.colFacturaNro.ReadOnly = true;
-            this.colFacturaNro.Width = 102;
-            // 
-            // colLegajo
-            // 
-            this.colLegajo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.colLegajo.HeaderText = "Legajo";
-            this.colLegajo.Name = "colLegajo";
-            this.colLegajo.ReadOnly = true;
-            this.colLegajo.Width = 74;
-            // 
-            // colNombre
-            // 
-            this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.colNombre.HeaderText = "Nombre";
-            this.colNombre.Name = "colNombre";
-            this.colNombre.ReadOnly = true;
-            this.colNombre.Width = 81;
-            // 
-            // colFecha
-            // 
-            this.colFecha.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.colFecha.HeaderText = "Fecha";
-            this.colFecha.Name = "colFecha";
-            this.colFecha.ReadOnly = true;
-            this.colFecha.Width = 70;
-            // 
-            // colImporteTotal
-            // 
-            this.colImporteTotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.colImporteTotal.HeaderText = "Importe total";
-            this.colImporteTotal.Name = "colImporteTotal";
-            this.colImporteTotal.ReadOnly = true;
-            this.colImporteTotal.Width = 105;
-            // 
-            // colPromGralAnual
-            // 
-            this.colPromGralAnual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.colPromGralAnual.HeaderText = "Promedio general";
-            this.colPromGralAnual.Name = "colPromGralAnual";
-            this.colPromGralAnual.ReadOnly = true;
-            this.colPromGralAnual.Width = 140;
             // 
             // FrmConsulta7
             // 
