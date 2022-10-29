@@ -120,6 +120,9 @@
   <data name="CadenaAxel" xml:space="preserve">
     <value>Data Source=DESKTOP-0A8E6DU\SQLEXPRESS;Initial Catalog=GRUPO_10;Integrated Security=True</value>
   </data>
+  <data name="CadenaEzequiel" xml:space="preserve">
+    <value>Data Source=DESKTOP-W10;Initial Catalog=GRUPO_10;Integrated Security=True</value>
+  </data>
   <data name="CadenaGabriel" xml:space="preserve">
     <value>Data Source=I5_9400F\SQLEXPRESS02;Initial Catalog=GRUPO_10;Integrated Security=True</value>
   </data>

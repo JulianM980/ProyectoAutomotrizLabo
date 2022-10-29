@@ -81,5 +81,23 @@ namespace ProyectoAutomotriz.Presentacion
                 new FrmAutopartesVehiculo(dt, dgvVehiculos.CurrentRow.Cells["colNombre"].Value.ToString()).ShowDialog();
             }
         }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (frm.GetType() == typeof(FrmIndex))
+                {
+                    frm.WindowState = FormWindowState.Minimized;
+                    break;
+                }
+            }
+        }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg == DialogResult.Yes) Application.OpenForms[0].Dispose();
+        }
     }
 }

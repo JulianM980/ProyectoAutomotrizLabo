@@ -14,7 +14,7 @@ namespace ProyectoAutomotriz.Datos
         private SqlConnection cnn;
         private  HelperDB()
         {
-            cnn = new SqlConnection(Properties.Resources.CadenaGabriel);
+            cnn = new SqlConnection(Properties.Resources.CadenaAxel);
         }
         public static HelperDB ObtenerInstancia() { 
             if(instancia == null) instancia = new HelperDB();
@@ -40,6 +40,18 @@ namespace ProyectoAutomotriz.Datos
             tabla.Load(cmd.ExecuteReader());
             cnn.Close();
             return tabla;
+        }
+        public DataTable ConsultarSelect(string consulta)
+        {
+            DataTable table = new DataTable();
+            cnn.Open();
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = cnn;
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = consulta;
+            table.Load(comando.ExecuteReader());
+            cnn.Close();
+            return table;
         }
     }
 }

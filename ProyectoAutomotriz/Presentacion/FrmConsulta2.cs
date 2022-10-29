@@ -56,9 +56,28 @@ namespace ProyectoAutomotriz.Presentacion
         }
         private void CargarCombo()
         {
-            cboMarca.DataSource = HelperDB.ObtenerInstancia().ConsultarSp("Cargar_Marca");
+            cboMarca.DataSource = HelperDB.ObtenerInstancia().ConsultarSp("SP_MARCAS");
             cboMarca.DisplayMember = "nombre";
             cboMarca.ValueMember = "idMarca";
-        }   
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (frm.GetType() == typeof(FrmIndex))
+                {
+                    frm.WindowState = FormWindowState.Minimized;
+                    break;
+                }
+            }
+        }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg == DialogResult.Yes) Application.OpenForms[0].Dispose();
+
+        }
     }
 }

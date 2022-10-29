@@ -38,9 +38,13 @@
             this.rvOrdenesCompra = new Microsoft.Reporting.WinForms.ReportViewer();
             this.dSOrdenesCompra = new ProyectoAutomotriz.Reportes.DSOrdenesCompra();
             this.dTOrdenesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nupAntiguedad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSOrdenesCompra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dTOrdenesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -91,6 +95,7 @@
             // 
             // nupAntiguedad
             // 
+            this.nupAntiguedad.BackColor = System.Drawing.Color.WhiteSmoke;
             this.nupAntiguedad.Location = new System.Drawing.Point(134, 20);
             this.nupAntiguedad.Name = "nupAntiguedad";
             this.nupAntiguedad.Size = new System.Drawing.Size(120, 20);
@@ -115,11 +120,46 @@
             this.dTOrdenesBindingSource.DataMember = "DTOrdenes";
             this.dTOrdenesBindingSource.DataSource = this.dSOrdenesCompra;
             // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 48;
+            this.iconPictureBox1.Location = new System.Drawing.Point(621, 7);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.iconPictureBox1.TabIndex = 8;
+            this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconPictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.AngleDown;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 48;
+            this.iconPictureBox2.Location = new System.Drawing.Point(680, 7);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(48, 48);
+            this.iconPictureBox2.TabIndex = 7;
+            this.iconPictureBox2.TabStop = false;
+            this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
+            // 
             // FrmConsulta1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(740, 567);
+            this.Controls.Add(this.iconPictureBox1);
+            this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.rvOrdenesCompra);
             this.Controls.Add(this.nupAntiguedad);
             this.Controls.Add(this.label2);
@@ -135,6 +175,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.nupAntiguedad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSOrdenesCompra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dTOrdenesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +192,7 @@
         private Microsoft.Reporting.WinForms.ReportViewer rvOrdenesCompra;
         private System.Windows.Forms.BindingSource dTOrdenesBindingSource;
         private Reportes.DSOrdenesCompra dSOrdenesCompra;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
     }
 }

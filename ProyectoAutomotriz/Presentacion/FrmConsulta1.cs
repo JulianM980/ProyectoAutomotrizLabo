@@ -1,4 +1,5 @@
-﻿using ProyectoAutomotriz.Datos;
+﻿using FontAwesome.Sharp;
+using ProyectoAutomotriz.Datos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,7 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
+           
             this.Close();
         }
 
@@ -54,6 +56,24 @@ namespace ProyectoAutomotriz.Presentacion
             this.rvOrdenesCompra.RefreshReport();
 
 
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (frm.GetType() == typeof(FrmIndex))
+                {
+                    frm.WindowState = FormWindowState.Minimized;
+                    break;
+                }
+            }
+        }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg == DialogResult.Yes) Application.OpenForms[0].Dispose();
         }
     }
 }
