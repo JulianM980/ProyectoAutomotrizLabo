@@ -7,7 +7,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
+using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace ProyectoAutomotriz
 {
@@ -19,9 +21,7 @@ namespace ProyectoAutomotriz
             InitializeComponent();
         }
         #region METODOS PRIVADOS
-        private void FormatoBotones(Button btn) { 
-            
-        }
+        
         private void AbrirFormulario(Form nuevoFormulario) {
             if (formularioActivo != null) formularioActivo.Close();
             formularioActivo = nuevoFormulario;
@@ -33,12 +33,14 @@ namespace ProyectoAutomotriz
             nuevoFormulario.BringToFront();
             nuevoFormulario.Show();
         }
-
+       
         #endregion
         #region EVENTOS
         private void FrmIndex_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            
         }
         private void Consulta1_Click(object sender, EventArgs e)
         {
@@ -84,15 +86,24 @@ namespace ProyectoAutomotriz
             AbrirFormulario(new FrmConsulta8());
 
         }
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (msg == DialogResult.Yes) this.Dispose();
-        }
+       
         #endregion
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg == DialogResult.Yes) this.Dispose();
+        }
+
+        
+        private void iconPictureBox1_Click_1(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized) this.WindowState = FormWindowState.Minimized;
 
         }
     }

@@ -79,22 +79,6 @@ namespace ProyectoAutomotriz.Presentacion
 
         }
 
-        private void filtros_Click(object sender, EventArgs e)
-        {
-            if (filtros.Text == "Aplicar Filtros")
-            {
-                AutoPartes1.Enabled = true;
-                AutoPartes2.Enabled = true;
-                Fecha1.Enabled = true;
-                Fecha2.Enabled = true;
-                filtros.Text = "Desactivar Filtros";
-            }
-            else if (filtros.Text == "Desactivar Filtros") {
-                filtros.Text = "Aplicar Filtros";
-                DataGridInitial();
-            }
-        }
-
         private void Consultar_Click(object sender, EventArgs e)
         {
             string where = "";
@@ -140,6 +124,39 @@ namespace ProyectoAutomotriz.Presentacion
            this.Close();
         }
 
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (frm.GetType() == typeof(FrmIndex))
+                {
+                    frm.WindowState = FormWindowState.Minimized;
+                    break;
+                }
+            }
+        }
 
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg == DialogResult.Yes) Application.OpenForms[0].Dispose();
+        }
+
+        private void filtros_Click(object sender, EventArgs e)
+        {
+            if (filtros.Text == "Aplicar Filtros")
+            {
+                AutoPartes1.Enabled = true;
+                AutoPartes2.Enabled = true;
+                Fecha1.Enabled = true;
+                Fecha2.Enabled = true;
+                filtros.Text = "Desactivar Filtros";
+            }
+            else if (filtros.Text == "Desactivar Filtros")
+            {
+                filtros.Text = "Aplicar Filtros";
+                DataGridInitial();
+            }
+        }
     }
 }
