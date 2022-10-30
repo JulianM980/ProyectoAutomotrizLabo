@@ -86,7 +86,7 @@ namespace ProyectoAutomotriz.Presentacion
                 lst.Add(new Parametro("@año1", Año1));
                 lst.Add(new Parametro("@año2", Año2));
             }
-            if (TxtAño1.Text.Length < 0 && TxtAño1.Text.Length > 5 || TxtAño2.Text.Length < 0 && TxtAño2.Text.Length > 5)
+            if (TxtAño1.Text.Length > 1 && TxtAño1.Text.Length < 4 || TxtAño2.Text.Length > 0 && TxtAño2.Text.Length < 4)
             {
                 MessageBox.Show("Debe ingresar un año de 4 digitos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
