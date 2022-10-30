@@ -68,12 +68,12 @@ namespace ProyectoAutomotriz.Presentacion
             string Año2 = TxtAño2.Text;
             if (Año1 == string.Empty && Año2 != string.Empty)
             {
-                MessageBox.Show("Debe ingresar un año en la segunda casilla para hacer una busqueda correcta", "Aviso");
+                MessageBox.Show("Debe ingresar un año en la segunda casilla para hacer una busqueda correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             if (Año1 != string.Empty && Año2 == string.Empty)
             {
-                MessageBox.Show("Debe ingresar un año en la primera casilla para hacer una busqueda correcta", "Aviso");
+                MessageBox.Show("Debe ingresar un año en la primera casilla para hacer una busqueda correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             if (Año1 == string.Empty && Año2 == string.Empty)
@@ -86,7 +86,11 @@ namespace ProyectoAutomotriz.Presentacion
                 lst.Add(new Parametro("@año1", Año1));
                 lst.Add(new Parametro("@año2", Año2));
             }
-
+            if (TxtAño1.Text.Length < 0 && TxtAño1.Text.Length > 5 || TxtAño2.Text.Length < 0 && TxtAño2.Text.Length > 5)
+            {
+                MessageBox.Show("Debe ingresar un año de 4 digitos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
             DgvTipoCliente.Rows.Clear();
             DataTable DT = HelperDB.ObtenerInstancia().ConsultarSp(sp, lst);
 
