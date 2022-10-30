@@ -14,7 +14,7 @@ namespace ProyectoAutomotriz.Datos
         private SqlConnection cnn;
         private  HelperDB()
         {
-            cnn = new SqlConnection(Properties.Resources.CadenaAxel);
+            cnn = new SqlConnection(@"Data Source=DESKTOP-IQKQL02\SQLEXPRESS;Initial Catalog=Grupo_10;Integrated Security=True");
         }
         public static HelperDB ObtenerInstancia() { 
             if(instancia == null) instancia = new HelperDB();
