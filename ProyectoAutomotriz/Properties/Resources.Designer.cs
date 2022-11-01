@@ -70,7 +70,7 @@ namespace ProyectoAutomotriz.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=DESKTOP-W10;Initial Catalog=GRUPO_10;Integrated Security=True.
+        ///   Looks up a localized string similar to Data Source=DESKTOP-W10;Initial Catalog=GRUPO_10;Integrated Security=True.
         /// </summary>
         internal static string CadenaEzequiel {
             get {
@@ -79,7 +79,7 @@ namespace ProyectoAutomotriz.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=I5_9400F\SQLEXPRESS02;Initial Catalog=GRUPO_10;Integrated Security=True.
+        ///   Looks up a localized string similar to Data Source=I5_9400F\SQLEXPRESS02;Initial Catalog=GRUPO_10;Integrated Security=True.
         /// </summary>
         internal static string CadenaGabriel {
             get {
@@ -88,7 +88,7 @@ namespace ProyectoAutomotriz.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=PC-JULIAN-MARTI\SQLEXPRESS;Initial Catalog=GRUPO_10;Integrated Security=True.
+        ///   Looks up a localized string similar to Data Source=PC-JULIAN-MARTI\SQLEXPRESS;Initial Catalog=GRUPO_10;Integrated Security=True.
         /// </summary>
         internal static string CadenaJulian {
             get {
@@ -97,7 +97,16 @@ namespace ProyectoAutomotriz.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Data Source=DESKTOP-IQKQL02\SQLEXPRESS;Initial Catalog=Grupo_10;Integrated Security=True.
+        /// </summary>
+        internal static string CadenaJulio {
+            get {
+                return ResourceManager.GetString("CadenaJulio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Logo {
             get {

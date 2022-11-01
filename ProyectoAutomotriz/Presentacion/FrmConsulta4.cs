@@ -104,5 +104,21 @@ namespace ProyectoAutomotriz.Presentacion
                 fila["Cantidad"].ToString()});
             }
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            string msg = "";
+            MessageBox.Show(msg, "Uso de herramienta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void iconButton1_MouseHover(object sender, EventArgs e)
+        {
+            iconButton1.IconColor = Color.FromArgb(150, 28, 28, 28);
+        }
+
+        private void iconButton1_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton1.IconColor = Color.FromArgb(255, 28, 28, 28);
+        }
     }
 }

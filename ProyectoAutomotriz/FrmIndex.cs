@@ -40,7 +40,10 @@ namespace ProyectoAutomotriz
         {
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
-            
+            this.lblTituloPrincipal.Parent = pictureBox1;
+            this.iconPictureBox1.Parent = pictureBox1;
+            this.iconPictureBox2.Parent = pictureBox1;
+            this.lblDescripcion.Parent = pictureBox1;
         }
         private void Consulta1_Click(object sender, EventArgs e)
         {

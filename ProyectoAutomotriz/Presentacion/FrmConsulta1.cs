@@ -29,15 +29,11 @@ namespace ProyectoAutomotriz.Presentacion
         private void FrmConsulta1_Load(object sender, EventArgs e)
         {
             //this.rvOrdenesCompra.RefreshReport();
-            nupAntiguedad.Value = 1;
         }
 
         private void btnObtener_Click(object sender, EventArgs e)
         {
-            if (nupAntiguedad.Value < 1) {
-                MessageBox.Show("Debe ingresar un numero de antiguedad mayor o igual a 1");
-                return;
-            }
+            
             if (!int.TryParse(txtAnio.Text, out _)) {
                 MessageBox.Show("No puede ingresar letras como año. Intente de nuevo");
                 return;
@@ -47,7 +43,6 @@ namespace ProyectoAutomotriz.Presentacion
                 return;
             }
             List<Parametro> lst = new List<Parametro>();
-            lst.Add(new Parametro("@anioAntiguedad",nupAntiguedad.Value));
             lst.Add(new Parametro("@anioOrdenes",txtAnio.Text));
             DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("SP_ORDENES_COMPRA",lst);
 
@@ -74,6 +69,25 @@ namespace ProyectoAutomotriz.Presentacion
         {
             DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (msg == DialogResult.Yes) Application.OpenForms[0].Dispose();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            string msg = "Con esta herramienta podra recuperar todas las ordenes de compra filtradas" +
+                "por año, e indicando si ya fueron entregadas o en caso contrario, los dias que falta para ello";
+            MessageBox.Show(msg,"Uso de herramienta",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void iconButton1_MouseHover(object sender, EventArgs e)
+        {
+            iconButton1.IconColor = Color.FromArgb(150, 28, 28, 28);
+
+        }
+
+        private void iconButton1_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton1.IconColor = Color.FromArgb(255, 28, 28, 28);
+
         }
     }
 }

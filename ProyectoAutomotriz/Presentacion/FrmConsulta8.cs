@@ -99,5 +99,25 @@ namespace ProyectoAutomotriz.Presentacion
             DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (msg == DialogResult.Yes) Application.OpenForms[0].Dispose();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            string msg = "Debido a la inflacion sufrimos constantes cambios en los precios de los " +
+                "materiales utilizados para la construccion de autopartes.Por lo tanto con esta herramienta" +
+                "podra visualizar  todos los vehiculos que contengan autopartes de una marca determinada" +
+                " y visualizar cuanto seria el nuevo precio final del automovil";
+            MessageBox.Show(msg,"Uso de herramienta",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+        }
+
+        private void iconButton1_MouseHover(object sender, EventArgs e)
+        {
+            iconButton1.IconColor = Color.FromArgb(150, 28, 28, 28);
+        }
+
+        private void iconButton1_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton1.IconColor = Color.FromArgb(255, 28, 28, 28);
+        }
     }
 }

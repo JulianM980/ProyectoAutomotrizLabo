@@ -111,7 +111,7 @@ namespace ProyectoAutomotriz.Presentacion
             label += "entre el" + fechaComparar1 + " y " + fechaComparar2;
             where += " f.fecha  between Parse(' " + fechaComparar1 + "' as Datetime   USING 'es-es') and Parse('" + fechaComparar1 + "' as Datetime  USING 'es-es')";
 
-            titlePrincipal.Text = label;
+            //titlePrincipal.Text = label;
             string consulta = consultaSelectAutoParte + where + groupByAutoParte;
             DataTable table = HelperDB.ObtenerInstancia().ConsultarSelect(consulta);
             FormatearDatagrid(table);
@@ -157,6 +157,23 @@ namespace ProyectoAutomotriz.Presentacion
                 filtros.Text = "Aplicar Filtros";
                 DataGridInitial();
             }
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            string msg = "Lista de Autopartes más vendidas mostrando su cantidad, descripción," +
+                " total vendido, precio unitario y stock actual";
+            MessageBox.Show(msg, "Uso de herramienta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void iconButton1_MouseHover(object sender, EventArgs e)
+        {
+            iconButton1.IconColor = Color.FromArgb(150, 28, 28, 28);
+        }
+
+        private void iconButton1_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton1.IconColor = Color.FromArgb(255, 28, 28, 28);
         }
     }
 }

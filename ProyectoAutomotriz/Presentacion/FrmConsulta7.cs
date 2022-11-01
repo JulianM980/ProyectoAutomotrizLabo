@@ -83,5 +83,24 @@ namespace ProyectoAutomotriz.Presentacion
             DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (msg == DialogResult.Yes) Application.OpenForms[0].Dispose();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            string msg = " Con esta consulta podra visualizar las ventas realizadas en el" +
+                " año  seleccionado, mostrando vendedor responsable y sus datos, número de factura," +
+                " fecha de dicha venta, importe total de la venta e importe promedio anual," +
+                " siempre y cuando  el importe de venta sea menor al promedio anual";
+            MessageBox.Show(msg, "Uso de herramienta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void iconButton1_MouseHover(object sender, EventArgs e)
+        {
+            iconButton1.IconColor = Color.FromArgb(150, 28, 28, 28);
+        }
+
+        private void iconButton1_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton1.IconColor = Color.FromArgb(255, 28, 28, 28);
+        }
     }
 }

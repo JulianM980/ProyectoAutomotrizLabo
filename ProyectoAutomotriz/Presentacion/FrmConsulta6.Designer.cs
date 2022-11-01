@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsulta6));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvConsulta6 = new System.Windows.Forms.DataGridView();
@@ -38,7 +38,6 @@
             this.Total_Vendido_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Precio_unitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Stock_actual = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.titlePrincipal = new System.Windows.Forms.TextBox();
             this.Volver = new System.Windows.Forms.Button();
             this.filtros = new System.Windows.Forms.Button();
             this.AutoPartes1 = new System.Windows.Forms.ComboBox();
@@ -52,6 +51,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -82,12 +82,12 @@
             this.dgvConsulta6.AllowUserToAddRows = false;
             this.dgvConsulta6.AllowUserToDeleteRows = false;
             this.dgvConsulta6.BackgroundColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dgvConsulta6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgvConsulta6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvConsulta6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cantidad,
@@ -140,19 +140,6 @@
             this.Stock_actual.Name = "Stock_actual";
             this.Stock_actual.ReadOnly = true;
             this.Stock_actual.Width = 106;
-            // 
-            // titlePrincipal
-            // 
-            this.titlePrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.titlePrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titlePrincipal.ForeColor = System.Drawing.SystemColors.Menu;
-            this.titlePrincipal.Location = new System.Drawing.Point(12, 12);
-            this.titlePrincipal.Multiline = true;
-            this.titlePrincipal.Name = "titlePrincipal";
-            this.titlePrincipal.Size = new System.Drawing.Size(655, 57);
-            this.titlePrincipal.TabIndex = 4;
-            this.titlePrincipal.Text = "lista de Autopartes más vendidas muestra su cantidad, la descripción, total vendi" +
-    "do, el precio unitario y su stock actual";
             // 
             // Volver
             // 
@@ -289,11 +276,30 @@
             this.iconPictureBox2.TabStop = false;
             this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
             // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(12, 12);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(48, 48);
+            this.iconButton1.TabIndex = 17;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
+            this.iconButton1.MouseHover += new System.EventHandler(this.iconButton1_MouseHover);
+            // 
             // FrmConsulta6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 528);
+            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.label4);
@@ -307,7 +313,6 @@
             this.Controls.Add(this.AutoPartes1);
             this.Controls.Add(this.filtros);
             this.Controls.Add(this.Volver);
-            this.Controls.Add(this.titlePrincipal);
             this.Controls.Add(this.dgvConsulta6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSalir);
@@ -330,7 +335,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dgvConsulta6;
-        private System.Windows.Forms.TextBox titlePrincipal;
         private System.Windows.Forms.Button Volver;
         private System.Windows.Forms.Button filtros;
         private System.Windows.Forms.ComboBox AutoPartes1;
@@ -349,5 +353,6 @@
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

@@ -43,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVehiculos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -61,14 +62,14 @@
             // cbMarcas
             // 
             this.cbMarcas.FormattingEnabled = true;
-            this.cbMarcas.Location = new System.Drawing.Point(61, 62);
+            this.cbMarcas.Location = new System.Drawing.Point(61, 79);
             this.cbMarcas.Name = "cbMarcas";
             this.cbMarcas.Size = new System.Drawing.Size(184, 21);
             this.cbMarcas.TabIndex = 1;
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(469, 60);
+            this.btnCalcular.Location = new System.Drawing.Point(469, 77);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(75, 23);
             this.btnCalcular.TabIndex = 2;
@@ -78,7 +79,7 @@
             // 
             // txtPorcentaje
             // 
-            this.txtPorcentaje.Location = new System.Drawing.Point(264, 63);
+            this.txtPorcentaje.Location = new System.Drawing.Point(264, 80);
             this.txtPorcentaje.Name = "txtPorcentaje";
             this.txtPorcentaje.Size = new System.Drawing.Size(179, 20);
             this.txtPorcentaje.TabIndex = 3;
@@ -147,7 +148,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 42);
+            this.label1.Location = new System.Drawing.Point(58, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 5;
@@ -156,7 +157,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(261, 37);
+            this.label2.Location = new System.Drawing.Point(261, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 5;
@@ -194,11 +195,30 @@
             this.iconPictureBox2.TabStop = false;
             this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
             // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(12, 12);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(48, 48);
+            this.iconButton1.TabIndex = 11;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
+            this.iconButton1.MouseHover += new System.EventHandler(this.iconButton1_MouseHover);
+            // 
             // FrmConsulta8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 567);
+            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.label2);
@@ -238,5 +258,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn colAutopartes;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

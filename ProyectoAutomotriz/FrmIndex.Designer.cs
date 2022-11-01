@@ -41,14 +41,18 @@
             this.PanelLogo = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.lblTituloPrincipal = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblDescripcion = new System.Windows.Forms.Label();
             this.MenuLateral.SuspendLayout();
             this.PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuLateral
@@ -81,7 +85,7 @@
             this.Consulta8.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
             this.Consulta8.Name = "Consulta8";
             this.Consulta8.Size = new System.Drawing.Size(200, 50);
-            this.Consulta8.TabIndex = 9;
+            this.Consulta8.TabIndex = 8;
             this.Consulta8.Text = "Consulta8";
             this.Consulta8.UseVisualStyleBackColor = true;
             this.Consulta8.Click += new System.EventHandler(this.Consulta8_Click);
@@ -97,7 +101,7 @@
             this.Consulta7.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
             this.Consulta7.Name = "Consulta7";
             this.Consulta7.Size = new System.Drawing.Size(200, 50);
-            this.Consulta7.TabIndex = 8;
+            this.Consulta7.TabIndex = 7;
             this.Consulta7.Text = "Consulta7";
             this.Consulta7.UseVisualStyleBackColor = true;
             this.Consulta7.Click += new System.EventHandler(this.Consulta7_Click);
@@ -113,7 +117,7 @@
             this.Consulta6.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
             this.Consulta6.Name = "Consulta6";
             this.Consulta6.Size = new System.Drawing.Size(200, 50);
-            this.Consulta6.TabIndex = 7;
+            this.Consulta6.TabIndex = 6;
             this.Consulta6.Text = "Consulta6";
             this.Consulta6.UseVisualStyleBackColor = true;
             this.Consulta6.Click += new System.EventHandler(this.Consulta6_Click);
@@ -129,7 +133,7 @@
             this.Consulta5.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
             this.Consulta5.Name = "Consulta5";
             this.Consulta5.Size = new System.Drawing.Size(200, 50);
-            this.Consulta5.TabIndex = 6;
+            this.Consulta5.TabIndex = 5;
             this.Consulta5.Text = "Consulta5";
             this.Consulta5.UseVisualStyleBackColor = true;
             this.Consulta5.Click += new System.EventHandler(this.Consulta5_Click);
@@ -145,7 +149,7 @@
             this.Consulta4.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
             this.Consulta4.Name = "Consulta4";
             this.Consulta4.Size = new System.Drawing.Size(200, 50);
-            this.Consulta4.TabIndex = 5;
+            this.Consulta4.TabIndex = 4;
             this.Consulta4.Text = "Consulta4";
             this.Consulta4.UseVisualStyleBackColor = true;
             this.Consulta4.Click += new System.EventHandler(this.Consulta4_Click);
@@ -161,7 +165,7 @@
             this.Consulta3.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
             this.Consulta3.Name = "Consulta3";
             this.Consulta3.Size = new System.Drawing.Size(200, 50);
-            this.Consulta3.TabIndex = 4;
+            this.Consulta3.TabIndex = 3;
             this.Consulta3.Text = "Consulta3";
             this.Consulta3.UseVisualStyleBackColor = true;
             this.Consulta3.Click += new System.EventHandler(this.Consulta3_Click);
@@ -177,7 +181,7 @@
             this.Consulta2.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
             this.Consulta2.Name = "Consulta2";
             this.Consulta2.Size = new System.Drawing.Size(200, 50);
-            this.Consulta2.TabIndex = 3;
+            this.Consulta2.TabIndex = 2;
             this.Consulta2.Text = "Consulta2";
             this.Consulta2.UseVisualStyleBackColor = true;
             this.Consulta2.Click += new System.EventHandler(this.Consulta2_Click);
@@ -193,8 +197,8 @@
             this.Consulta1.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
             this.Consulta1.Name = "Consulta1";
             this.Consulta1.Size = new System.Drawing.Size(200, 50);
-            this.Consulta1.TabIndex = 2;
-            this.Consulta1.Text = "Consulta1";
+            this.Consulta1.TabIndex = 1;
+            this.Consulta1.Text = "Ordenes  de Compra";
             this.Consulta1.UseVisualStyleBackColor = true;
             this.Consulta1.Click += new System.EventHandler(this.Consulta1_Click);
             // 
@@ -205,7 +209,7 @@
             this.PanelLogo.Location = new System.Drawing.Point(0, 0);
             this.PanelLogo.Name = "PanelLogo";
             this.PanelLogo.Size = new System.Drawing.Size(200, 129);
-            this.PanelLogo.TabIndex = 1;
+            this.PanelLogo.TabIndex = 0;
             // 
             // pictureBox2
             // 
@@ -221,21 +225,37 @@
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.panelContenedor.Controls.Add(this.iconPictureBox1);
+            this.panelContenedor.Controls.Add(this.lblDescripcion);
+            this.panelContenedor.Controls.Add(this.lblTituloPrincipal);
             this.panelContenedor.Controls.Add(this.iconPictureBox2);
+            this.panelContenedor.Controls.Add(this.iconPictureBox1);
+            this.panelContenedor.Controls.Add(this.pictureBox1);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(200, 0);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(740, 567);
             this.panelContenedor.TabIndex = 1;
             // 
+            // lblTituloPrincipal
+            // 
+            this.lblTituloPrincipal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTituloPrincipal.AutoSize = true;
+            this.lblTituloPrincipal.BackColor = System.Drawing.Color.Transparent;
+            this.lblTituloPrincipal.Font = new System.Drawing.Font("Roboto", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.lblTituloPrincipal.Location = new System.Drawing.Point(248, 152);
+            this.lblTituloPrincipal.Name = "lblTituloPrincipal";
+            this.lblTituloPrincipal.Size = new System.Drawing.Size(443, 77);
+            this.lblTituloPrincipal.TabIndex = 7;
+            this.lblTituloPrincipal.Text = "¡Bienvenid@s!";
+            // 
             // iconPictureBox2
             // 
             this.iconPictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconPictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.AngleDown;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 48;
             this.iconPictureBox2.Location = new System.Drawing.Point(688, 5);
@@ -249,9 +269,9 @@
             // 
             this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 48;
             this.iconPictureBox1.Location = new System.Drawing.Point(629, 5);
@@ -260,6 +280,29 @@
             this.iconPictureBox1.TabIndex = 4;
             this.iconPictureBox1.TabStop = false;
             this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(740, 567);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescripcion.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(243, 269);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(448, 23);
+            this.lblDescripcion.TabIndex = 8;
+            this.lblDescripcion.Text = "Al que se le ocurra ponga un descripcion aca jjajajaj";
             // 
             // FrmIndex
             // 
@@ -277,8 +320,10 @@
             this.PanelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelContenedor.ResumeLayout(false);
+            this.panelContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -299,6 +344,9 @@
         private System.Windows.Forms.Panel PanelLogo;
         private System.Windows.Forms.PictureBox pictureBox2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblTituloPrincipal;
+        private System.Windows.Forms.Label lblDescripcion;
     }
 }
 
