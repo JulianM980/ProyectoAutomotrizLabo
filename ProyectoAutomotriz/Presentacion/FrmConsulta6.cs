@@ -111,7 +111,7 @@ namespace ProyectoAutomotriz.Presentacion
             label += "entre el" + fechaComparar1 + " y " + fechaComparar2;
             where += " f.fecha  between Parse(' " + fechaComparar1 + "' as Datetime   USING 'es-es') and Parse('" + fechaComparar1 + "' as Datetime  USING 'es-es')";
 
-            //titlePrincipal.Text = label;
+            titlePrincipal.Text = label;
             string consulta = consultaSelectAutoParte + where + groupByAutoParte;
             DataTable table = HelperDB.ObtenerInstancia().ConsultarSelect(consulta);
             FormatearDatagrid(table);

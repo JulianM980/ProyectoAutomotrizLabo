@@ -52,6 +52,7 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.titlePrincipal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -294,11 +295,22 @@
             this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
             this.iconButton1.MouseHover += new System.EventHandler(this.iconButton1_MouseHover);
             // 
+            // titlePrincipal
+            // 
+            this.titlePrincipal.AutoSize = true;
+            this.titlePrincipal.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titlePrincipal.Location = new System.Drawing.Point(39, 414);
+            this.titlePrincipal.Name = "titlePrincipal";
+            this.titlePrincipal.Size = new System.Drawing.Size(38, 18);
+            this.titlePrincipal.TabIndex = 18;
+            this.titlePrincipal.Text = "Info:";
+            // 
             // FrmConsulta6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 528);
+            this.Controls.Add(this.titlePrincipal);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.iconPictureBox2);
@@ -354,5 +366,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Label titlePrincipal;
     }
 }
