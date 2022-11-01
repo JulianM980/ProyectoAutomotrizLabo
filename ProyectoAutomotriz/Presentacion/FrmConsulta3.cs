@@ -56,13 +56,6 @@ namespace ProyectoAutomotriz.Presentacion
             }
         }
 
-        private void FrmConsulta3_Load(object sender, EventArgs e)
-        {
-
-        
-    
-        }
-
         private void iconPictureBox1_Click(object sender, EventArgs e)
         {
             foreach (Form frm in Application.OpenForms)
@@ -81,14 +74,10 @@ namespace ProyectoAutomotriz.Presentacion
             if (msg == DialogResult.Yes) Application.OpenForms[0].Dispose();
         }
 
-        private void FrmConsulta3_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            string msg = "";
+            string msg = "Muestra aquellas autopartes que tienen que completar stock y la cantidad de autopartes a fabricar, " +
+                "teniendo en cuenta que se debe fabricar 5 unidades extra sobre el mínimo establecido. Con la posibilidad de filtrar por marca.";
             MessageBox.Show(msg, "Uso de herramienta", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

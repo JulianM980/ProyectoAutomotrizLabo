@@ -1,3 +1,66 @@
+--Consulta 2
+CREATE PROCEDURE SP_Empresas_Fiat
+@fecha datetime,
+@marca varchar(100)
+AS 
+SELECT c.idCliente CodCliente, dp.apellido+', '+dp.nombre Cliente, 
+TC.nombre 'Tipo Cliente', m.nombre Marca, email, nroTel, 
+df.preUnitario*cantidad 'Importe pagado'
+FROM TIPO_CLIENTES TC JOIN CLIENTES C ON TC.idTipoCliente = C.idTipoCliente
+JOIN DATOS_PERSONALES DP ON DP.idDatos = C.idDatosPersonales 
+JOIN FACTURAS F ON F.idCliente = C.idCliente
+JOIN DETALLES_FACTURAS DF ON DF.idFactura = F.idFactura
+JOIN PRODUCTOS P ON P.idProducto = DF.idProducto
+JOIN MARCAS M ON P.idMarca = M.idMarca
+WHERE TC.nombre = 'Empresa'  
+AND ( email IS NOT NULL OR nroTel IS NOT NULL) 
+AND m.nombre like @marca+'%'
+AND fecha BETWEEN @fecha and getdate()
+GROUP BY c.idCliente, dp.apellido+', '+dp.nombre , TC.nombre , 
+m.nombre , email, nroTel, df.preUnitario*cantidad
+HAVING df.preUnitario*cantidad > 
+(SELECT avg(preUnitario*cantidad) FROM DETALLES_FACTURAS )
+
+
+--Consulta 3
+CREATE PROCEDURE SP_AUTOPARTES_FALTANTES
+@Marca varchar(100)
+AS
+IF (@Marca LIKE 'TODOS') 	
+	SELECT i.idAutoParte 'Codigo autoparte', 
+	A.nombreComercial Autoparte, m.nombre Marca, 
+	stockActual Stock, stockMinimo 'Stock Minimo',
+	dbo.F_Cantidad_Fabricar(stockMinimo, stockActual)'Cantidad Fabricar'
+	FROM INVENTARIOS I JOIN AUTOPARTES A ON I.idAutoParte = A.idAutoparte
+	JOIN PRODUCTOS P ON P.idProducto = A.idProducto
+	JOIN MARCAS M ON M.idMarca = P.idMarca
+	WHERE dbo.F_Cantidad_Fabricar(stockMinimo, stockActual) > 0
+ELSE
+	SELECT i.idAutoParte 'Codigo autoparte', 
+	A.nombreComercial Autoparte, m.nombre Marca, 
+	stockActual Stock, stockMinimo 'Stock Minimo',
+	dbo.F_Cantidad_Fabricar(stockMinimo, stockActual)'Cantidad Fabricar'
+	FROM INVENTARIOS I JOIN AUTOPARTES A ON I.idAutoParte = A.idAutoparte
+	JOIN PRODUCTOS P ON P.idProducto = A.idProducto
+	JOIN MARCAS M ON M.idMarca = P.idMarca
+	WHERE M.nombre like @Marca + '%'
+	AND dbo.F_Cantidad_Fabricar(stockMinimo, stockActual) > 0
+
+CREATE FUNCTION F_Cantidad_Fabricar
+(@min_cant INT, 
+@stock INT)
+RETURNS INT
+AS 
+BEGIN
+DECLARE @resultado INT
+IF(@min_cant > @stock) 
+	SET @resultado = @min_cant - @stock + 5 
+ELSE 
+	SET @resultado = 0
+RETURN @resultado
+END
+
+
 --Consulta 7
 create proc SP_VENDEDORES_DEBAJO_PROMEDIO
 @Anio INT
