@@ -48,25 +48,34 @@
             // btnSalir
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalir.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Location = new System.Drawing.Point(748, 519);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(278, 22);
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(267, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 13);
+            this.label2.Size = new System.Drawing.Size(37, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Año";
             // 
             // txtAnio
             // 
+            this.txtAnio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.txtAnio.Location = new System.Drawing.Point(310, 22);
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(100, 20);
@@ -74,21 +83,31 @@
             // 
             // btnObtener
             // 
-            this.btnObtener.Location = new System.Drawing.Point(491, 17);
+            this.btnObtener.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnObtener.AutoSize = true;
+            this.btnObtener.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnObtener.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnObtener.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnObtener.Location = new System.Drawing.Point(416, 20);
             this.btnObtener.Name = "btnObtener";
-            this.btnObtener.Size = new System.Drawing.Size(75, 23);
+            this.btnObtener.Size = new System.Drawing.Size(98, 25);
             this.btnObtener.TabIndex = 4;
             this.btnObtener.Text = "Obtener Reporte";
-            this.btnObtener.UseVisualStyleBackColor = true;
+            this.btnObtener.UseVisualStyleBackColor = false;
             this.btnObtener.Click += new System.EventHandler(this.btnObtener_Click);
             // 
             // rvOrdenesCompra
             // 
+            this.rvOrdenesCompra.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.rvOrdenesCompra.LocalReport.ReportEmbeddedResource = "ProyectoAutomotriz.Reportes.RepOrdenesCompra.rdlc";
             this.rvOrdenesCompra.Location = new System.Drawing.Point(46, 61);
             this.rvOrdenesCompra.Name = "rvOrdenesCompra";
             this.rvOrdenesCompra.ServerReport.BearerToken = null;
-            this.rvOrdenesCompra.Size = new System.Drawing.Size(651, 435);
+            this.rvOrdenesCompra.Size = new System.Drawing.Size(777, 435);
             this.rvOrdenesCompra.TabIndex = 5;
             // 
             // dSOrdenesCompra
