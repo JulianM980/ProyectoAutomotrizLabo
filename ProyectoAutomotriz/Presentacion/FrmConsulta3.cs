@@ -90,5 +90,28 @@ namespace ProyectoAutomotriz.Presentacion
         {
             iconButton1.IconColor = Color.FromArgb(255, 28, 28, 28);
         }
+
+        private void panelSuperior_Paint(object sender, PaintEventArgs e)
+        {
+            panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
+        }
+
+        private void iconPictureBox1_Click_1(object sender, EventArgs e)
+        {
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (frm.GetType() == typeof(FrmIndex))
+                {
+                    frm.WindowState = FormWindowState.Minimized;
+                    break;
+                }
+            }
+        }
+
+        private void iconPictureBox2_Click_1(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg == DialogResult.Yes) this.Dispose();
+        }
     }
 }
