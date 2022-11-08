@@ -39,10 +39,12 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panelSuperior = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dSOrdenesCompra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dTOrdenesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -50,11 +52,11 @@
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalir.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Location = new System.Drawing.Point(748, 519);
+            this.btnSalir.Location = new System.Drawing.Point(703, 519);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(120, 23);
             this.btnSalir.TabIndex = 6;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = "Volver";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
@@ -66,7 +68,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(267, 23);
+            this.label2.Location = new System.Drawing.Point(255, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 19);
             this.label2.TabIndex = 2;
@@ -76,9 +78,9 @@
             // 
             this.txtAnio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtAnio.Location = new System.Drawing.Point(310, 22);
+            this.txtAnio.Location = new System.Drawing.Point(298, 64);
             this.txtAnio.Name = "txtAnio";
-            this.txtAnio.Size = new System.Drawing.Size(100, 20);
+            this.txtAnio.Size = new System.Drawing.Size(122, 20);
             this.txtAnio.TabIndex = 3;
             // 
             // btnObtener
@@ -90,7 +92,7 @@
             this.btnObtener.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnObtener.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnObtener.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnObtener.Location = new System.Drawing.Point(416, 20);
+            this.btnObtener.Location = new System.Drawing.Point(426, 61);
             this.btnObtener.Name = "btnObtener";
             this.btnObtener.Size = new System.Drawing.Size(98, 25);
             this.btnObtener.TabIndex = 4;
@@ -104,10 +106,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rvOrdenesCompra.LocalReport.ReportEmbeddedResource = "ProyectoAutomotriz.Reportes.RepOrdenesCompra.rdlc";
-            this.rvOrdenesCompra.Location = new System.Drawing.Point(46, 61);
+            this.rvOrdenesCompra.Location = new System.Drawing.Point(46, 92);
             this.rvOrdenesCompra.Name = "rvOrdenesCompra";
             this.rvOrdenesCompra.ServerReport.BearerToken = null;
-            this.rvOrdenesCompra.Size = new System.Drawing.Size(777, 435);
+            this.rvOrdenesCompra.Size = new System.Drawing.Size(777, 404);
             this.rvOrdenesCompra.TabIndex = 5;
             // 
             // dSOrdenesCompra
@@ -129,7 +131,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 48;
-            this.iconPictureBox1.Location = new System.Drawing.Point(747, 7);
+            this.iconPictureBox1.Location = new System.Drawing.Point(748, 3);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox1.TabIndex = 8;
@@ -145,7 +147,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 48;
-            this.iconPictureBox2.Location = new System.Drawing.Point(806, 7);
+            this.iconPictureBox2.Location = new System.Drawing.Point(806, 3);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox2.TabIndex = 7;
@@ -161,7 +163,7 @@
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(12, 7);
+            this.iconButton1.Location = new System.Drawing.Point(12, 3);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(48, 48);
             this.iconButton1.TabIndex = 10;
@@ -170,20 +172,32 @@
             this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
             this.iconButton1.MouseHover += new System.EventHandler(this.iconButton1_MouseHover);
             // 
+            // panelSuperior
+            // 
+            this.panelSuperior.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelSuperior.AutoSize = true;
+            this.panelSuperior.Controls.Add(this.iconPictureBox2);
+            this.panelSuperior.Controls.Add(this.iconButton1);
+            this.panelSuperior.Controls.Add(this.iconPictureBox1);
+            this.panelSuperior.Location = new System.Drawing.Point(0, -1);
+            this.panelSuperior.Name = "panelSuperior";
+            this.panelSuperior.Size = new System.Drawing.Size(867, 56);
+            this.panelSuperior.TabIndex = 11;
+            this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
+            // 
             // FrmConsulta1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(866, 567);
-            this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.iconPictureBox1);
-            this.Controls.Add(this.iconPictureBox2);
-            this.Controls.Add(this.rvOrdenesCompra);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnObtener);
             this.Controls.Add(this.txtAnio);
+            this.Controls.Add(this.rvOrdenesCompra);
+            this.Controls.Add(this.btnObtener);
             this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.panelSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(724, 528);
             this.Name = "FrmConsulta1";
@@ -193,6 +207,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dTOrdenesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            this.panelSuperior.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +224,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Panel panelSuperior;
     }
 }

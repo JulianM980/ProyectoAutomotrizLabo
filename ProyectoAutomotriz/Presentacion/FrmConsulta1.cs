@@ -29,6 +29,7 @@ namespace ProyectoAutomotriz.Presentacion
         private void FrmConsulta1_Load(object sender, EventArgs e)
         {
             //this.rvOrdenesCompra.RefreshReport();
+
         }
 
         private void btnObtener_Click(object sender, EventArgs e)
@@ -88,6 +89,11 @@ namespace ProyectoAutomotriz.Presentacion
         {
             iconButton1.IconColor = Color.FromArgb(255, 28, 28, 28);
 
+        }
+
+        private void panelSuperior_Paint(object sender, PaintEventArgs e)
+        {
+            panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
         }
     }
 }
