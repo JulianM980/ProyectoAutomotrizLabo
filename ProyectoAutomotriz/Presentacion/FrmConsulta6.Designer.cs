@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvConsulta6 = new System.Windows.Forms.DataGridView();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,22 +50,27 @@
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.titlePrincipal = new System.Windows.Forms.Label();
+            this.panelSuperior = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvConsulta6
             // 
             this.dgvConsulta6.AllowUserToAddRows = false;
             this.dgvConsulta6.AllowUserToDeleteRows = false;
+            this.dgvConsulta6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsulta6.BackgroundColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dgvConsulta6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgvConsulta6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvConsulta6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cantidad,
@@ -122,23 +127,31 @@
             // Volver
             // 
             this.Volver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Volver.Location = new System.Drawing.Point(607, 454);
+            this.Volver.AutoSize = true;
+            this.Volver.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Volver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Volver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Volver.Location = new System.Drawing.Point(571, 448);
             this.Volver.Name = "Volver";
-            this.Volver.Size = new System.Drawing.Size(75, 23);
+            this.Volver.Size = new System.Drawing.Size(120, 29);
             this.Volver.TabIndex = 5;
             this.Volver.Text = "Volver";
-            this.Volver.UseVisualStyleBackColor = true;
+            this.Volver.UseVisualStyleBackColor = false;
             this.Volver.Click += new System.EventHandler(this.Volver_Click);
             // 
             // filtros
             // 
-            this.filtros.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.filtros.Location = new System.Drawing.Point(17, 454);
+            this.filtros.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.filtros.AutoSize = true;
+            this.filtros.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.filtros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.filtros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filtros.Location = new System.Drawing.Point(17, 448);
             this.filtros.Name = "filtros";
-            this.filtros.Size = new System.Drawing.Size(141, 23);
+            this.filtros.Size = new System.Drawing.Size(120, 29);
             this.filtros.TabIndex = 6;
             this.filtros.Text = "Aplicar Filtros";
-            this.filtros.UseVisualStyleBackColor = true;
+            this.filtros.UseVisualStyleBackColor = false;
             this.filtros.Click += new System.EventHandler(this.filtros_Click);
             // 
             // AutoPartes1
@@ -178,47 +191,63 @@
             // Consultar
             // 
             this.Consultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Consultar.Location = new System.Drawing.Point(164, 454);
+            this.Consultar.AutoSize = true;
+            this.Consultar.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Consultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Consultar.Location = new System.Drawing.Point(164, 448);
             this.Consultar.Name = "Consultar";
-            this.Consultar.Size = new System.Drawing.Size(141, 23);
+            this.Consultar.Size = new System.Drawing.Size(120, 29);
             this.Consultar.TabIndex = 11;
             this.Consultar.Text = "Consultar";
-            this.Consultar.UseVisualStyleBackColor = true;
+            this.Consultar.UseVisualStyleBackColor = false;
             this.Consultar.Click += new System.EventHandler(this.Consultar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(190, 82);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.label1.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(160, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.Size = new System.Drawing.Size(85, 19);
             this.label1.TabIndex = 13;
             this.label1.Text = "AutoPartes";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(190, 138);
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(160, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.Size = new System.Drawing.Size(85, 19);
             this.label2.TabIndex = 14;
             this.label2.Text = "AutoPartes";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(473, 82);
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(392, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.Size = new System.Drawing.Size(97, 19);
             this.label3.TabIndex = 15;
             this.label3.Text = "Fecha Desde";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(470, 139);
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.label4.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(392, 133);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 13);
+            this.label4.Size = new System.Drawing.Size(93, 19);
             this.label4.TabIndex = 16;
             this.label4.Text = "Fecha Hasta";
             // 
@@ -231,7 +260,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 48;
-            this.iconPictureBox1.Location = new System.Drawing.Point(607, 12);
+            this.iconPictureBox1.Location = new System.Drawing.Point(608, 9);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox1.TabIndex = 10;
@@ -247,7 +276,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 48;
-            this.iconPictureBox2.Location = new System.Drawing.Point(666, 12);
+            this.iconPictureBox2.Location = new System.Drawing.Point(665, 9);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox2.TabIndex = 9;
@@ -263,7 +292,7 @@
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(12, 12);
+            this.iconButton1.Location = new System.Drawing.Point(13, 9);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(48, 48);
             this.iconButton1.TabIndex = 17;
@@ -275,12 +304,28 @@
             // titlePrincipal
             // 
             this.titlePrincipal.AutoSize = true;
-            this.titlePrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titlePrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.titlePrincipal.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
+            this.titlePrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.titlePrincipal.Location = new System.Drawing.Point(39, 414);
             this.titlePrincipal.Name = "titlePrincipal";
-            this.titlePrincipal.Size = new System.Drawing.Size(36, 18);
+            this.titlePrincipal.Size = new System.Drawing.Size(40, 19);
             this.titlePrincipal.TabIndex = 18;
             this.titlePrincipal.Text = "Info:";
+            // 
+            // panelSuperior
+            // 
+            this.panelSuperior.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelSuperior.AutoSize = true;
+            this.panelSuperior.Controls.Add(this.iconButton1);
+            this.panelSuperior.Controls.Add(this.iconPictureBox2);
+            this.panelSuperior.Controls.Add(this.iconPictureBox1);
+            this.panelSuperior.Location = new System.Drawing.Point(-1, -1);
+            this.panelSuperior.Name = "panelSuperior";
+            this.panelSuperior.Size = new System.Drawing.Size(727, 60);
+            this.panelSuperior.TabIndex = 19;
+            this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // FrmConsulta6
             // 
@@ -288,9 +333,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 528);
             this.Controls.Add(this.titlePrincipal);
-            this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.iconPictureBox1);
-            this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -303,6 +345,7 @@
             this.Controls.Add(this.filtros);
             this.Controls.Add(this.Volver);
             this.Controls.Add(this.dgvConsulta6);
+            this.Controls.Add(this.panelSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(724, 528);
             this.Name = "FrmConsulta6";
@@ -311,6 +354,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            this.panelSuperior.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,5 +382,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Label titlePrincipal;
+        private System.Windows.Forms.Panel panelSuperior;
     }
 }

@@ -175,5 +175,10 @@ namespace ProyectoAutomotriz.Presentacion
         {
             iconButton1.IconColor = Color.FromArgb(255, 28, 28, 28);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
+        }
     }
 }
