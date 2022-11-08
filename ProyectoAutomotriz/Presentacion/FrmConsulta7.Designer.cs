@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSalir = new System.Windows.Forms.Button();
             this.dgvConsulta7 = new System.Windows.Forms.DataGridView();
             this.colFacturaNro = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,25 +54,30 @@
             // btnSalir
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalir.Location = new System.Drawing.Point(623, 475);
+            this.btnSalir.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Location = new System.Drawing.Point(1466, 1047);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(121, 23);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // dgvConsulta7
             // 
             this.dgvConsulta7.AllowUserToAddRows = false;
             this.dgvConsulta7.AllowUserToDeleteRows = false;
+            this.dgvConsulta7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsulta7.BackgroundColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dgvConsulta7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgvConsulta7.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvConsulta7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colFacturaNro,
@@ -82,9 +87,10 @@
             this.colImporteTotal,
             this.colPromGralAnual});
             this.dgvConsulta7.Location = new System.Drawing.Point(22, 125);
+            this.dgvConsulta7.Margin = new System.Windows.Forms.Padding(100);
             this.dgvConsulta7.Name = "dgvConsulta7";
             this.dgvConsulta7.ReadOnly = true;
-            this.dgvConsulta7.Size = new System.Drawing.Size(674, 325);
+            this.dgvConsulta7.Size = new System.Drawing.Size(1565, 883);
             this.dgvConsulta7.TabIndex = 2;
             // 
             // colFacturaNro
@@ -137,12 +143,15 @@
             // 
             // btnConsulta
             // 
+            this.btnConsulta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConsulta.AutoSize = true;
             this.btnConsulta.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulta.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnConsulta.Location = new System.Drawing.Point(564, 64);
+            this.btnConsulta.Location = new System.Drawing.Point(538, 59);
             this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Size = new System.Drawing.Size(118, 27);
+            this.btnConsulta.Size = new System.Drawing.Size(129, 27);
             this.btnConsulta.TabIndex = 4;
             this.btnConsulta.Text = "Consultar";
             this.btnConsulta.UseVisualStyleBackColor = false;
@@ -150,6 +159,9 @@
             // 
             // lblAnio
             // 
+            this.lblAnio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAnio.AutoSize = true;
             this.lblAnio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.lblAnio.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -165,22 +177,29 @@
             // 
             // txtAnio
             // 
+            this.txtAnio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAnio.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.txtAnio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAnio.Location = new System.Drawing.Point(143, 64);
             this.txtAnio.Name = "txtAnio";
-            this.txtAnio.Size = new System.Drawing.Size(169, 20);
+            this.txtAnio.Size = new System.Drawing.Size(366, 20);
             this.txtAnio.TabIndex = 6;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLimpiar.Location = new System.Drawing.Point(542, 475);
+            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimpiar.AutoSize = true;
+            this.btnLimpiar.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Location = new System.Drawing.Point(673, 59);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.Size = new System.Drawing.Size(129, 27);
             this.btnLimpiar.TabIndex = 7;
             this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // pictureBox1
@@ -203,7 +222,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 48;
-            this.iconPictureBox1.Location = new System.Drawing.Point(610, 7);
+            this.iconPictureBox1.Location = new System.Drawing.Point(1499, 7);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox1.TabIndex = 10;
@@ -219,7 +238,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 48;
-            this.iconPictureBox2.Location = new System.Drawing.Point(669, 7);
+            this.iconPictureBox2.Location = new System.Drawing.Point(1558, 7);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox2.TabIndex = 9;
@@ -246,10 +265,9 @@
             // 
             // FrmConsulta7
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(724, 528);
+            this.ClientSize = new System.Drawing.Size(1613, 1100);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.iconPictureBox2);
@@ -262,6 +280,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(724, 528);
             this.Name = "FrmConsulta7";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Consulta 7";
             this.Load += new System.EventHandler(this.FrmConsulta7_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta7)).EndInit();
