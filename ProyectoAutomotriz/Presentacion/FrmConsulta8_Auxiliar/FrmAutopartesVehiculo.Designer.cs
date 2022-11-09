@@ -55,10 +55,10 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(42, 36);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(89, 19);
+            this.lblTitulo.Size = new System.Drawing.Size(98, 20);
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "Autopartes";
             // 
@@ -88,7 +88,7 @@
             // 
             // colPrecio
             // 
-            this.colPrecio.HeaderText = "Preio Unitario";
+            this.colPrecio.HeaderText = "Precio Unitario";
             this.colPrecio.Name = "colPrecio";
             this.colPrecio.ReadOnly = true;
             // 

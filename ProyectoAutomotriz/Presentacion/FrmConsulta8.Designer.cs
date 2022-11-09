@@ -33,18 +33,18 @@
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtPorcentaje = new System.Windows.Forms.TextBox();
             this.dgvVehiculos = new System.Windows.Forms.DataGridView();
-            this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAutopartes = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panelSuperior = new System.Windows.Forms.Panel();
+            this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAutopartes = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVehiculos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -118,52 +118,6 @@
             this.dgvVehiculos.Size = new System.Drawing.Size(714, 379);
             this.dgvVehiculos.TabIndex = 4;
             this.dgvVehiculos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVehiculos_CellContentClick);
-            // 
-            // colId
-            // 
-            this.colId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colId.HeaderText = "id";
-            this.colId.Name = "colId";
-            this.colId.ReadOnly = true;
-            this.colId.Visible = false;
-            // 
-            // colNombre
-            // 
-            this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colNombre.HeaderText = "Vehiculo";
-            this.colNombre.Name = "colNombre";
-            this.colNombre.ReadOnly = true;
-            // 
-            // colMarca
-            // 
-            this.colMarca.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colMarca.HeaderText = "Marca";
-            this.colMarca.Name = "colMarca";
-            this.colMarca.ReadOnly = true;
-            // 
-            // colPrecio
-            // 
-            this.colPrecio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colPrecio.HeaderText = "Precio Actual";
-            this.colPrecio.Name = "colPrecio";
-            this.colPrecio.ReadOnly = true;
-            // 
-            // colAumento
-            // 
-            this.colAumento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colAumento.HeaderText = "Precio con Aumento";
-            this.colAumento.Name = "colAumento";
-            this.colAumento.ReadOnly = true;
-            // 
-            // colAutopartes
-            // 
-            this.colAutopartes.HeaderText = "Acciones";
-            this.colAutopartes.Name = "colAutopartes";
-            this.colAutopartes.ReadOnly = true;
-            this.colAutopartes.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colAutopartes.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.colAutopartes.Text = "Ver autopartes";
-            this.colAutopartes.UseColumnTextForButtonValue = true;
             // 
             // label1
             // 
@@ -256,6 +210,52 @@
             this.panelSuperior.Size = new System.Drawing.Size(738, 57);
             this.panelSuperior.TabIndex = 12;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // colId
+            // 
+            this.colId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colId.HeaderText = "id";
+            this.colId.Name = "colId";
+            this.colId.ReadOnly = true;
+            this.colId.Visible = false;
+            // 
+            // colNombre
+            // 
+            this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colNombre.HeaderText = "Vehículo";
+            this.colNombre.Name = "colNombre";
+            this.colNombre.ReadOnly = true;
+            // 
+            // colMarca
+            // 
+            this.colMarca.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colMarca.HeaderText = "Marca";
+            this.colMarca.Name = "colMarca";
+            this.colMarca.ReadOnly = true;
+            // 
+            // colPrecio
+            // 
+            this.colPrecio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colPrecio.HeaderText = "Precio Actual";
+            this.colPrecio.Name = "colPrecio";
+            this.colPrecio.ReadOnly = true;
+            // 
+            // colAumento
+            // 
+            this.colAumento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colAumento.HeaderText = "Precio con Aumento";
+            this.colAumento.Name = "colAumento";
+            this.colAumento.ReadOnly = true;
+            // 
+            // colAutopartes
+            // 
+            this.colAutopartes.HeaderText = "Acciones";
+            this.colAutopartes.Name = "colAutopartes";
+            this.colAutopartes.ReadOnly = true;
+            this.colAutopartes.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colAutopartes.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.colAutopartes.Text = "Ver autopartes";
+            this.colAutopartes.UseColumnTextForButtonValue = true;
             // 
             // FrmConsulta8
             // 

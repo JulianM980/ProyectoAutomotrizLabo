@@ -166,7 +166,7 @@ namespace ProyectoAutomotriz.Presentacion
         {
             string msg = "Ingresando el porcentaje de Comisión y el objetivo que tienen que superar " +
                 "los vendedores,podra calcular si la cantidad supera al objetivo.En tal caso cobrara " +
-                "el total de la Comisión y si no cobrara la mitad esta muestra el total de\r\nventas, el nombre completo la cantidad total por cobrar por Comisión y si cobrara\r\nla mitad de la Comisión o la totalidad del último mes";
+                "el total de la Comisión y si no cobrara la mitad esta muestra el total de ventas, el nombre completo la cantidad total por cobrar por Comisión y si cobrara la mitad de la Comisión o la totalidad del último mes";
             MessageBox.Show(msg, "Uso de herramienta", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -178,6 +178,51 @@ namespace ProyectoAutomotriz.Presentacion
         private void panelSuperior_Paint(object sender, PaintEventArgs e)
         {
             panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
+        }
+
+        private void Volver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Fecha1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPorcentaje_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtObjetivo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Fecha2_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

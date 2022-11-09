@@ -162,6 +162,7 @@ CONSTRAINT FK_USUARIOS_VENDEDORES FOREIGN KEY (idVendedor)
 REFERENCES VENDEDORES(idVendedor))
 
 Insert into USUARIOS(idVendedor,usuario,pass) values(1,'EzequielMedina','EzeMedina3014')
+Insert into USUARIOS(idVendedor,usuario,pass) values(2,'Usuario','1234')
 Select * from USUARIOS
 
 Create Procedure Sp_Login

@@ -166,7 +166,7 @@
             this.Consulta3.Name = "Consulta3";
             this.Consulta3.Size = new System.Drawing.Size(200, 50);
             this.Consulta3.TabIndex = 3;
-            this.Consulta3.Text = "Consulta3";
+            this.Consulta3.Text = "Control de stock";
             this.Consulta3.UseVisualStyleBackColor = true;
             this.Consulta3.Click += new System.EventHandler(this.Consulta3_Click);
             // 
@@ -182,7 +182,7 @@
             this.Consulta2.Name = "Consulta2";
             this.Consulta2.Size = new System.Drawing.Size(200, 50);
             this.Consulta2.TabIndex = 2;
-            this.Consulta2.Text = "Consulta2";
+            this.Consulta2.Text = "Grandes Clientes";
             this.Consulta2.UseVisualStyleBackColor = true;
             this.Consulta2.Click += new System.EventHandler(this.Consulta2_Click);
             // 

@@ -55,7 +55,7 @@
             this.btnSalir.Location = new System.Drawing.Point(703, 519);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(120, 23);
-            this.btnSalir.TabIndex = 6;
+            this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Volver";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -81,7 +81,7 @@
             this.txtAnio.Location = new System.Drawing.Point(298, 64);
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(122, 20);
-            this.txtAnio.TabIndex = 3;
+            this.txtAnio.TabIndex = 0;
             // 
             // btnObtener
             // 
@@ -95,7 +95,7 @@
             this.btnObtener.Location = new System.Drawing.Point(426, 61);
             this.btnObtener.Name = "btnObtener";
             this.btnObtener.Size = new System.Drawing.Size(98, 25);
-            this.btnObtener.TabIndex = 4;
+            this.btnObtener.TabIndex = 1;
             this.btnObtener.Text = "Obtener Reporte";
             this.btnObtener.UseVisualStyleBackColor = false;
             this.btnObtener.Click += new System.EventHandler(this.btnObtener_Click);
@@ -166,7 +166,7 @@
             this.iconButton1.Location = new System.Drawing.Point(12, 3);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(48, 48);
-            this.iconButton1.TabIndex = 10;
+            this.iconButton1.TabIndex = 0;
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
@@ -183,7 +183,7 @@
             this.panelSuperior.Location = new System.Drawing.Point(0, -1);
             this.panelSuperior.Name = "panelSuperior";
             this.panelSuperior.Size = new System.Drawing.Size(867, 56);
-            this.panelSuperior.TabIndex = 11;
+            this.panelSuperior.TabIndex = 3;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
             // 
             // FrmConsulta1

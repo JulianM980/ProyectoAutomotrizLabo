@@ -43,45 +43,45 @@
             // 
             this.btnIniciar.AutoSize = true;
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btnIniciar.Location = new System.Drawing.Point(303, 279);
+            this.btnIniciar.Location = new System.Drawing.Point(364, 279);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(139, 35);
-            this.btnIniciar.TabIndex = 0;
-            this.btnIniciar.Text = "Iniciar Sesion";
+            this.btnIniciar.TabIndex = 2;
+            this.btnIniciar.Text = "Iniciar Sesión";
             this.btnIniciar.UseVisualStyleBackColor = true;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // Contraseña
             // 
             this.Contraseña.AutoSize = true;
-            this.Contraseña.Font = new System.Drawing.Font("Nirmala UI Semilight", 15F, System.Drawing.FontStyle.Bold);
-            this.Contraseña.Location = new System.Drawing.Point(168, 203);
+            this.Contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.Contraseña.Location = new System.Drawing.Point(229, 209);
             this.Contraseña.Name = "Contraseña";
-            this.Contraseña.Size = new System.Drawing.Size(118, 28);
+            this.Contraseña.Size = new System.Drawing.Size(114, 25);
             this.Contraseña.TabIndex = 1;
             this.Contraseña.Text = "Contraseña";
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(301, 211);
+            this.txtContraseña.Location = new System.Drawing.Point(362, 211);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(143, 20);
-            this.txtContraseña.TabIndex = 2;
+            this.txtContraseña.TabIndex = 1;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(301, 168);
+            this.txtUsuario.Location = new System.Drawing.Point(362, 168);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(143, 20);
-            this.txtUsuario.TabIndex = 4;
+            this.txtUsuario.TabIndex = 0;
             // 
             // Usuario
             // 
             this.Usuario.AutoSize = true;
-            this.Usuario.Font = new System.Drawing.Font("Nirmala UI Semilight", 15F, System.Drawing.FontStyle.Bold);
-            this.Usuario.Location = new System.Drawing.Point(203, 160);
+            this.Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.Usuario.Location = new System.Drawing.Point(261, 166);
             this.Usuario.Name = "Usuario";
-            this.Usuario.Size = new System.Drawing.Size(83, 28);
+            this.Usuario.Size = new System.Drawing.Size(79, 25);
             this.Usuario.TabIndex = 3;
             this.Usuario.Text = "Usuario";
             // 
@@ -90,7 +90,7 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(253, 244);
+            this.lblError.Location = new System.Drawing.Point(314, 244);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(44, 19);
             this.lblError.TabIndex = 5;
@@ -99,7 +99,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(212, 1);
+            this.pictureBox2.Location = new System.Drawing.Point(273, 1);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(320, 161);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -120,7 +120,7 @@
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.pictureBox2);
             this.Name = "FrmLogin";
-            this.Text = "Login";
+            this.Text = "Iniciar Sesión";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

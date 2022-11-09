@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSalir = new System.Windows.Forms.Button();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.titlePrincipal = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,10 +41,6 @@
             this.Fecha1 = new System.Windows.Forms.DateTimePicker();
             this.Volver = new System.Windows.Forms.Button();
             this.dgvConsulta5 = new System.Windows.Forms.DataGridView();
-            this.Total_de_ventas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre_Vendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Comision = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad_De_Comision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPorcentaje = new System.Windows.Forms.TextBox();
@@ -56,6 +51,11 @@
             this.labelPorcentaje = new System.Windows.Forms.Label();
             this.labelObjetivo = new System.Windows.Forms.Label();
             this.panelSuperior = new System.Windows.Forms.Panel();
+            this.Total_de_ventas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre_Vendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Comision = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad_De_Comision = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.titlePrincipal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta5)).BeginInit();
@@ -126,27 +126,18 @@
             this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
             this.iconButton1.MouseHover += new System.EventHandler(this.iconButton1_MouseHover);
             // 
-            // titlePrincipal
-            // 
-            this.titlePrincipal.AutoSize = true;
-            this.titlePrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titlePrincipal.Location = new System.Drawing.Point(37, 457);
-            this.titlePrincipal.Name = "titlePrincipal";
-            this.titlePrincipal.Size = new System.Drawing.Size(36, 18);
-            this.titlePrincipal.TabIndex = 30;
-            this.titlePrincipal.Text = "Info:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label4.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(672, 162);
+            this.label4.Location = new System.Drawing.Point(590, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 19);
             this.label4.TabIndex = 29;
             this.label4.Text = "Fecha Hasta";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -154,11 +145,12 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(670, 89);
+            this.label3.Location = new System.Drawing.Point(373, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 19);
             this.label3.TabIndex = 28;
             this.label3.Text = "Fecha Desde";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -166,20 +158,21 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label1.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(396, 89);
+            this.label1.Location = new System.Drawing.Point(43, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 19);
             this.label1.TabIndex = 27;
             this.label1.Text = "Porcentaje";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Consultar
             // 
-            this.Consultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Consultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Consultar.AutoSize = true;
             this.Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Consultar.Location = new System.Drawing.Point(40, 489);
+            this.Consultar.Location = new System.Drawing.Point(823, 114);
             this.Consultar.Name = "Consultar";
-            this.Consultar.Size = new System.Drawing.Size(141, 27);
+            this.Consultar.Size = new System.Drawing.Size(120, 29);
             this.Consultar.TabIndex = 26;
             this.Consultar.Text = "Consultar";
             this.Consultar.UseVisualStyleBackColor = true;
@@ -188,30 +181,33 @@
             // Fecha2
             // 
             this.Fecha2.Enabled = false;
-            this.Fecha2.Location = new System.Drawing.Point(618, 181);
+            this.Fecha2.Location = new System.Drawing.Point(590, 123);
             this.Fecha2.Name = "Fecha2";
             this.Fecha2.Size = new System.Drawing.Size(200, 20);
             this.Fecha2.TabIndex = 25;
+            this.Fecha2.ValueChanged += new System.EventHandler(this.Fecha2_ValueChanged);
             // 
             // Fecha1
             // 
             this.Fecha1.Enabled = false;
-            this.Fecha1.Location = new System.Drawing.Point(618, 108);
+            this.Fecha1.Location = new System.Drawing.Point(373, 123);
             this.Fecha1.Name = "Fecha1";
             this.Fecha1.Size = new System.Drawing.Size(200, 20);
             this.Fecha1.TabIndex = 24;
+            this.Fecha1.ValueChanged += new System.EventHandler(this.Fecha1_ValueChanged);
             // 
             // Volver
             // 
             this.Volver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Volver.AutoSize = true;
             this.Volver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Volver.Location = new System.Drawing.Point(1059, 489);
+            this.Volver.Location = new System.Drawing.Point(1058, 489);
             this.Volver.Name = "Volver";
-            this.Volver.Size = new System.Drawing.Size(75, 27);
+            this.Volver.Size = new System.Drawing.Size(120, 29);
             this.Volver.TabIndex = 21;
             this.Volver.Text = "Volver";
             this.Volver.UseVisualStyleBackColor = true;
+            this.Volver.Click += new System.EventHandler(this.Volver_Click);
             // 
             // dgvConsulta5
             // 
@@ -220,55 +216,26 @@
             this.dgvConsulta5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvConsulta5.BackgroundColor = System.Drawing.Color.White;
             this.dgvConsulta5.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvConsulta5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvConsulta5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvConsulta5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Total_de_ventas,
             this.Nombre_Vendedor,
             this.Comision,
             this.Cantidad_De_Comision});
-            this.dgvConsulta5.Location = new System.Drawing.Point(180, 236);
+            this.dgvConsulta5.Location = new System.Drawing.Point(40, 185);
             this.dgvConsulta5.Name = "dgvConsulta5";
             this.dgvConsulta5.ReadOnly = true;
-            this.dgvConsulta5.Size = new System.Drawing.Size(861, 204);
+            this.dgvConsulta5.Size = new System.Drawing.Size(1118, 270);
             this.dgvConsulta5.TabIndex = 20;
-            // 
-            // Total_de_ventas
-            // 
-            this.Total_de_ventas.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Total_de_ventas.HeaderText = "Total de Ventas";
-            this.Total_de_ventas.Name = "Total_de_ventas";
-            this.Total_de_ventas.ReadOnly = true;
-            // 
-            // Nombre_Vendedor
-            // 
-            this.Nombre_Vendedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nombre_Vendedor.HeaderText = "Nombre Vendedor";
-            this.Nombre_Vendedor.Name = "Nombre_Vendedor";
-            this.Nombre_Vendedor.ReadOnly = true;
-            // 
-            // Comision
-            // 
-            this.Comision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Comision.HeaderText = "Comision";
-            this.Comision.Name = "Comision";
-            this.Comision.ReadOnly = true;
-            // 
-            // Cantidad_De_Comision
-            // 
-            this.Cantidad_De_Comision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Cantidad_De_Comision.HeaderText = "Cantidad de comision";
-            this.Cantidad_De_Comision.Name = "Cantidad_De_Comision";
-            this.Cantidad_De_Comision.ReadOnly = true;
             // 
             // pictureBox1
             // 
@@ -288,25 +255,28 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(402, 162);
+            this.label2.Location = new System.Drawing.Point(207, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 19);
             this.label2.TabIndex = 31;
             this.label2.Text = "Objetivo";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtPorcentaje
             // 
-            this.txtPorcentaje.Location = new System.Drawing.Point(367, 108);
+            this.txtPorcentaje.Location = new System.Drawing.Point(43, 123);
             this.txtPorcentaje.Name = "txtPorcentaje";
             this.txtPorcentaje.Size = new System.Drawing.Size(138, 20);
             this.txtPorcentaje.TabIndex = 32;
+            this.txtPorcentaje.TextChanged += new System.EventHandler(this.txtPorcentaje_TextChanged);
             // 
             // txtObjetivo
             // 
-            this.txtObjetivo.Location = new System.Drawing.Point(367, 178);
+            this.txtObjetivo.Location = new System.Drawing.Point(207, 123);
             this.txtObjetivo.Name = "txtObjetivo";
             this.txtObjetivo.Size = new System.Drawing.Size(138, 20);
             this.txtObjetivo.TabIndex = 33;
+            this.txtObjetivo.TextChanged += new System.EventHandler(this.txtObjetivo_TextChanged);
             // 
             // iconButton3
             // 
@@ -333,7 +303,7 @@
             this.iconPictureBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 48;
-            this.iconPictureBox3.Location = new System.Drawing.Point(617, 3);
+            this.iconPictureBox3.Location = new System.Drawing.Point(1065, 3);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox3.TabIndex = 36;
@@ -349,7 +319,7 @@
             this.iconPictureBox4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox4.IconSize = 48;
-            this.iconPictureBox4.Location = new System.Drawing.Point(676, 3);
+            this.iconPictureBox4.Location = new System.Drawing.Point(1124, 3);
             this.iconPictureBox4.Name = "iconPictureBox4";
             this.iconPictureBox4.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox4.TabIndex = 35;
@@ -386,9 +356,47 @@
             this.panelSuperior.Controls.Add(this.iconPictureBox3);
             this.panelSuperior.Location = new System.Drawing.Point(0, 0);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(727, 60);
+            this.panelSuperior.Size = new System.Drawing.Size(1178, 60);
             this.panelSuperior.TabIndex = 40;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
+            // 
+            // Total_de_ventas
+            // 
+            this.Total_de_ventas.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Total_de_ventas.HeaderText = "Total de Ventas";
+            this.Total_de_ventas.Name = "Total_de_ventas";
+            this.Total_de_ventas.ReadOnly = true;
+            // 
+            // Nombre_Vendedor
+            // 
+            this.Nombre_Vendedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nombre_Vendedor.HeaderText = "Nombre Vendedor";
+            this.Nombre_Vendedor.Name = "Nombre_Vendedor";
+            this.Nombre_Vendedor.ReadOnly = true;
+            // 
+            // Comision
+            // 
+            this.Comision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Comision.HeaderText = "Comisión";
+            this.Comision.Name = "Comision";
+            this.Comision.ReadOnly = true;
+            // 
+            // Cantidad_De_Comision
+            // 
+            this.Cantidad_De_Comision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Cantidad_De_Comision.HeaderText = "Cantidad de Comisión";
+            this.Cantidad_De_Comision.Name = "Cantidad_De_Comision";
+            this.Cantidad_De_Comision.ReadOnly = true;
+            // 
+            // titlePrincipal
+            // 
+            this.titlePrincipal.AutoSize = true;
+            this.titlePrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titlePrincipal.Location = new System.Drawing.Point(40, 146);
+            this.titlePrincipal.Name = "titlePrincipal";
+            this.titlePrincipal.Size = new System.Drawing.Size(36, 18);
+            this.titlePrincipal.TabIndex = 30;
+            this.titlePrincipal.Text = "Info:";
             // 
             // FrmConsulta5
             // 
@@ -437,7 +445,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.Label titlePrincipal;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -455,10 +462,11 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
         private System.Windows.Forms.Label labelPorcentaje;
         private System.Windows.Forms.Label labelObjetivo;
+        private System.Windows.Forms.Panel panelSuperior;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total_de_ventas;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_Vendedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Comision;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad_De_Comision;
-        private System.Windows.Forms.Panel panelSuperior;
+        private System.Windows.Forms.Label titlePrincipal;
     }
 }

@@ -298,7 +298,7 @@
             // Descripcion
             // 
             this.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.HeaderText = "Descripción";
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.ReadOnly = true;
             // 
@@ -312,7 +312,7 @@
             // Precio_unitario
             // 
             this.Precio_unitario.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Precio_unitario.HeaderText = "Precio unitario";
+            this.Precio_unitario.HeaderText = "Precio Unitario";
             this.Precio_unitario.Name = "Precio_unitario";
             this.Precio_unitario.ReadOnly = true;
             // 

@@ -99,14 +99,12 @@
             // 
             // btnConsulta
             // 
-            this.btnConsulta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnConsulta.AutoSize = true;
             this.btnConsulta.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulta.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnConsulta.Location = new System.Drawing.Point(320, 77);
+            this.btnConsulta.Location = new System.Drawing.Point(320, 79);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(120, 29);
             this.btnConsulta.TabIndex = 4;
@@ -116,9 +114,6 @@
             // 
             // lblAnio
             // 
-            this.lblAnio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAnio.AutoSize = true;
             this.lblAnio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.lblAnio.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -134,8 +129,6 @@
             // 
             // txtAnio
             // 
-            this.txtAnio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAnio.BackColor = System.Drawing.SystemColors.Window;
             this.txtAnio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAnio.Location = new System.Drawing.Point(143, 83);
@@ -178,7 +171,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 48;
-            this.iconPictureBox1.Location = new System.Drawing.Point(1509, 6);
+            this.iconPictureBox1.Location = new System.Drawing.Point(1066, 6);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox1.TabIndex = 10;
@@ -194,7 +187,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 48;
-            this.iconPictureBox2.Location = new System.Drawing.Point(1563, 6);
+            this.iconPictureBox2.Location = new System.Drawing.Point(1120, 6);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox2.TabIndex = 9;
@@ -230,14 +223,14 @@
             this.panelSuperior.Controls.Add(this.iconButton1);
             this.panelSuperior.Location = new System.Drawing.Point(0, -1);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(1614, 57);
+            this.panelSuperior.Size = new System.Drawing.Size(1171, 57);
             this.panelSuperior.TabIndex = 12;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
             // 
             // colFacturaNro
             // 
             this.colFacturaNro.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colFacturaNro.HeaderText = "Factura Nro";
+            this.colFacturaNro.HeaderText = "Nro. Factura";
             this.colFacturaNro.Name = "colFacturaNro";
             this.colFacturaNro.ReadOnly = true;
             // 
@@ -265,14 +258,14 @@
             // colImporteTotal
             // 
             this.colImporteTotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colImporteTotal.HeaderText = "Importe total";
+            this.colImporteTotal.HeaderText = "Importe Total";
             this.colImporteTotal.Name = "colImporteTotal";
             this.colImporteTotal.ReadOnly = true;
             // 
             // colPromGralAnual
             // 
             this.colPromGralAnual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colPromGralAnual.HeaderText = "Promedio general";
+            this.colPromGralAnual.HeaderText = "Promedio General";
             this.colPromGralAnual.Name = "colPromGralAnual";
             this.colPromGralAnual.ReadOnly = true;
             // 

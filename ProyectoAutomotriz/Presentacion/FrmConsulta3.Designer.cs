@@ -54,9 +54,9 @@
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalir.AutoSize = true;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSalir.Location = new System.Drawing.Point(625, 491);
+            this.btnSalir.Location = new System.Drawing.Point(592, 487);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 27);
+            this.btnSalir.Size = new System.Drawing.Size(120, 29);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Volver";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -101,7 +101,7 @@
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnConsultar.Location = new System.Drawing.Point(475, 119);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(78, 27);
+            this.btnConsultar.Size = new System.Drawing.Size(120, 29);
             this.btnConsultar.TabIndex = 11;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
@@ -186,10 +186,12 @@
             this.Id.HeaderText = "Id";
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
+            this.Id.Visible = false;
             // 
             // Autoparte
             // 
             this.Autoparte.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Autoparte.FillWeight = 177.6648F;
             this.Autoparte.HeaderText = "Autoparte";
             this.Autoparte.Name = "Autoparte";
             this.Autoparte.ReadOnly = true;
@@ -197,6 +199,7 @@
             // Marca
             // 
             this.Marca.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Marca.FillWeight = 80.58369F;
             this.Marca.HeaderText = "Marca";
             this.Marca.Name = "Marca";
             this.Marca.ReadOnly = true;
@@ -204,6 +207,7 @@
             // Stock
             // 
             this.Stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Stock.FillWeight = 80.58369F;
             this.Stock.HeaderText = "Stock";
             this.Stock.Name = "Stock";
             this.Stock.ReadOnly = true;
@@ -211,13 +215,15 @@
             // StockMinimo
             // 
             this.StockMinimo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.StockMinimo.HeaderText = "Stock Minimo";
+            this.StockMinimo.FillWeight = 80.58369F;
+            this.StockMinimo.HeaderText = "Stock Mínimo";
             this.StockMinimo.Name = "StockMinimo";
             this.StockMinimo.ReadOnly = true;
             // 
             // CantFabricar
             // 
             this.CantFabricar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CantFabricar.FillWeight = 80.58369F;
             this.CantFabricar.HeaderText = "Fabricar";
             this.CantFabricar.Name = "CantFabricar";
             this.CantFabricar.ReadOnly = true;
