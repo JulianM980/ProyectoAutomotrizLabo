@@ -295,3 +295,4 @@ D:\Mis documentos\GitHub\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\Pro
 D:\Mis documentos\GitHub\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.csproj.CopyComplete
 D:\Mis documentos\GitHub\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.exe
 D:\Mis documentos\GitHub\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.pdb
+D:\Mis documentos\GitHub\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.Presentacion.FrmLogin.resources

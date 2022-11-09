@@ -150,3 +150,25 @@ create proc [dbo].[cboAutoPartes]
 as
 	select idAutoparte, nombreComercial from AutoPartes
 
+
+-------LOGIN
+create table USUARIOS(
+idUsuario int identity,
+usuario varchar(100),
+pass varchar(100),
+idVendedor int
+CONSTRAINT PK_USUARIOS PRIMARY KEY (idUsuario)
+CONSTRAINT FK_USUARIOS_VENDEDORES FOREIGN KEY (idVendedor)
+REFERENCES VENDEDORES(idVendedor))
+
+Insert into USUARIOS(idVendedor,usuario,pass) values(1,'EzequielMedina','EzeMedina3014')
+Select * from USUARIOS
+
+Create Procedure Sp_Login
+@usuario varchar(50)='',
+@pass varchar(50)='',
+@cant int output
+as
+Select top 1 @cant = Count(*)
+From USUARIOS
+Where usuario=@usuario AND pass=@pass

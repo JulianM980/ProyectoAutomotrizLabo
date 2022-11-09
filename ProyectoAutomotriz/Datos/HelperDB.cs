@@ -53,5 +53,42 @@ namespace ProyectoAutomotriz.Datos
             cnn.Close();
             return table;
         }
+        public bool Login(string usuario, string pass, string sp)
+        {
+            bool aux = true;
+            try
+            {
+                cnn.Open();
+
+                SqlCommand cmd = new SqlCommand(sp, cnn);
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@usuario", usuario);
+                cmd.Parameters.AddWithValue("@pass", pass);
+                SqlParameter param = new SqlParameter("@cant", SqlDbType.Int);
+                param.Direction = ParameterDirection.Output;
+                cmd.Parameters.Add(param);
+                cmd.ExecuteNonQuery();
+
+                int cantidad = Convert.ToInt32(param.Value);
+                if (cantidad != 1) aux = false;
+                //if (dr.Read() && dr.HasRows) { 
+
+                //    if (dr.GetInt32(0) != 1) aux = false;
+                //}
+                //dr.Close();
+
+            }
+            catch (Exception e)
+            {
+                aux = false;
+            }
+            finally
+            {
+                cnn.Close();
+            }
+
+            return aux;
+        }
     }
 }
