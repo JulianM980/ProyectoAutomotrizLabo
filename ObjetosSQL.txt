@@ -120,3 +120,9 @@ BEGIN
 	SET @resultado = @precio * (1+(@porcenataje /100))
 	return @resultado
 END
+
+--PROCEDURE PARA CARGAR COMBO CONSULTA 6
+create proc [dbo].[cboAutoPartes]
+as
+	select idAutoparte, nombreComercial from AutoPartes
+
