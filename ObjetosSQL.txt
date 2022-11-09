@@ -12,15 +12,10 @@ JOIN FACTURAS F ON F.idCliente = C.idCliente
 JOIN DETALLES_FACTURAS DF ON DF.idFactura = F.idFactura
 JOIN PRODUCTOS P ON P.idProducto = DF.idProducto
 JOIN MARCAS M ON P.idMarca = M.idMarca
-WHERE TC.nombre = 'Empresa'  
-AND ( email IS NOT NULL OR nroTel IS NOT NULL) 
-AND m.nombre like @marca+'%'
+WHERE ( email IS NOT NULL OR nroTel IS NOT NULL) AND m.nombre like @marca+'%'
 AND fecha BETWEEN @fecha and getdate()
-GROUP BY c.idCliente, dp.apellido+', '+dp.nombre , TC.nombre , 
-m.nombre , email, nroTel, df.preUnitario*cantidad
-HAVING df.preUnitario*cantidad > 
-(SELECT avg(preUnitario*cantidad) FROM DETALLES_FACTURAS )
-
+GROUP BY c.idCliente, dp.apellido+', '+dp.nombre , TC.nombre , m.nombre , email, nroTel, df.preUnitario*cantidad
+HAVING df.preUnitario*cantidad > (SELECT avg(preUnitario*cantidad) FROM DETALLES_FACTURAS )
 
 --Consulta 3
 CREATE PROCEDURE SP_AUTOPARTES_FALTANTES
@@ -60,6 +55,35 @@ ELSE
 RETURN @resultado
 END
 
+--Consulta 4
+
+create proc sp_Pg_TipoCliente
+@TipoCliente int,
+@año1 int null,
+@año2 int null
+as
+begin
+if @año1 is null and @año2 is null
+select f.idFactura, Concat(dp.nombre,' ',apellido) Nombre, sum(df.preUnitario*cantidad)
+'Importe', fecha,count(cantidad) 'Cantidad'
+from FACTURAS f
+join DETALLES_FACTURAS df on df.idFactura = f.idFactura
+join CLIENTES c on f.idCliente = c.idCliente
+join DATOS_PERSONALES Dp on dp.idDatos = c.idDatosPersonales
+join PRODUCTOS p on p.idProducto = df.idProducto
+Where idTipoCliente = 3
+group by f.idFactura,dp.nombre, apellido, fecha
+else
+select f.idFactura, Concat(dp.nombre,' ',apellido) Nombre, sum(df.preUnitario*cantidad)
+'Importe', fecha,count(cantidad) 'Cantidad'
+from FACTURAS f
+join DETALLES_FACTURAS df on df.idFactura = f.idFactura
+join CLIENTES c on f.idCliente = c.idCliente
+join DATOS_PERSONALES Dp on dp.idDatos = c.idDatosPersonales
+join PRODUCTOS p on p.idProducto = df.idProducto
+Where idTipoCliente = 3 and year(fecha) between @año1 and @año2
+group by f.idFactura,dp.nombre, apellido, fecha
+end
 
 --Consulta 7
 create proc SP_VENDEDORES_DEBAJO_PROMEDIO

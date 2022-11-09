@@ -31,19 +31,18 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvConsulta3 = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Autoparte = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StockMinimo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CantFabricar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.cboMarca = new System.Windows.Forms.ComboBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panelSuperior = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Autoparte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StockMinimo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CantFabricar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -53,9 +52,11 @@
             // btnSalir
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalir.Location = new System.Drawing.Point(615, 493);
+            this.btnSalir.AutoSize = true;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSalir.Location = new System.Drawing.Point(625, 491);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(75, 27);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Volver";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -64,9 +65,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(174, 122);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.label1.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(179, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(56, 19);
             this.label1.TabIndex = 13;
             this.label1.Text = "Marca ";
             // 
@@ -74,7 +78,8 @@
             // 
             this.dgvConsulta3.AllowUserToAddRows = false;
             this.dgvConsulta3.AllowUserToDeleteRows = false;
-            this.dgvConsulta3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvConsulta3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsulta3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -84,53 +89,19 @@
             this.Stock,
             this.StockMinimo,
             this.CantFabricar});
-            this.dgvConsulta3.Location = new System.Drawing.Point(36, 166);
+            this.dgvConsulta3.Location = new System.Drawing.Point(26, 166);
             this.dgvConsulta3.Name = "dgvConsulta3";
             this.dgvConsulta3.ReadOnly = true;
             this.dgvConsulta3.Size = new System.Drawing.Size(654, 284);
             this.dgvConsulta3.TabIndex = 12;
             // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            // 
-            // Autoparte
-            // 
-            this.Autoparte.HeaderText = "Autoparte";
-            this.Autoparte.Name = "Autoparte";
-            this.Autoparte.ReadOnly = true;
-            // 
-            // Marca
-            // 
-            this.Marca.HeaderText = "Marca";
-            this.Marca.Name = "Marca";
-            this.Marca.ReadOnly = true;
-            // 
-            // Stock
-            // 
-            this.Stock.HeaderText = "Stock";
-            this.Stock.Name = "Stock";
-            this.Stock.ReadOnly = true;
-            // 
-            // StockMinimo
-            // 
-            this.StockMinimo.HeaderText = "Stock Minimo";
-            this.StockMinimo.Name = "StockMinimo";
-            this.StockMinimo.ReadOnly = true;
-            // 
-            // CantFabricar
-            // 
-            this.CantFabricar.HeaderText = "Fabricar";
-            this.CantFabricar.Name = "CantFabricar";
-            this.CantFabricar.ReadOnly = true;
-            // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(441, 119);
+            this.btnConsultar.AutoSize = true;
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnConsultar.Location = new System.Drawing.Point(475, 119);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(75, 23);
+            this.btnConsultar.Size = new System.Drawing.Size(78, 27);
             this.btnConsultar.TabIndex = 11;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
@@ -139,7 +110,7 @@
             // cboMarca
             // 
             this.cboMarca.FormattingEnabled = true;
-            this.cboMarca.Location = new System.Drawing.Point(220, 119);
+            this.cboMarca.Location = new System.Drawing.Point(253, 122);
             this.cboMarca.Name = "cboMarca";
             this.cboMarca.Size = new System.Drawing.Size(200, 21);
             this.cboMarca.TabIndex = 10;
@@ -200,7 +171,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelSuperior.AutoSize = true;
             this.panelSuperior.BackColor = System.Drawing.Color.Silver;
-            this.panelSuperior.Controls.Add(this.label2);
             this.panelSuperior.Controls.Add(this.iconButton1);
             this.panelSuperior.Controls.Add(this.iconPictureBox1);
             this.panelSuperior.Controls.Add(this.iconPictureBox2);
@@ -210,23 +180,53 @@
             this.panelSuperior.TabIndex = 47;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
             // 
-            // label2
+            // Id
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Eras Bold ITC", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(76, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(513, 51);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "CONSULTA DE STOCK";
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // Autoparte
+            // 
+            this.Autoparte.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Autoparte.HeaderText = "Autoparte";
+            this.Autoparte.Name = "Autoparte";
+            this.Autoparte.ReadOnly = true;
+            // 
+            // Marca
+            // 
+            this.Marca.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Marca.HeaderText = "Marca";
+            this.Marca.Name = "Marca";
+            this.Marca.ReadOnly = true;
+            // 
+            // Stock
+            // 
+            this.Stock.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Stock.HeaderText = "Stock";
+            this.Stock.Name = "Stock";
+            this.Stock.ReadOnly = true;
+            // 
+            // StockMinimo
+            // 
+            this.StockMinimo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.StockMinimo.HeaderText = "Stock Minimo";
+            this.StockMinimo.Name = "StockMinimo";
+            this.StockMinimo.ReadOnly = true;
+            // 
+            // CantFabricar
+            // 
+            this.CantFabricar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CantFabricar.HeaderText = "Fabricar";
+            this.CantFabricar.Name = "CantFabricar";
+            this.CantFabricar.ReadOnly = true;
             // 
             // FrmConsulta3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(724, 528);
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.label1);
@@ -234,6 +234,7 @@
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.cboMarca);
             this.Controls.Add(this.btnSalir);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(724, 528);
             this.Name = "FrmConsulta3";
@@ -242,7 +243,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.panelSuperior.ResumeLayout(false);
-            this.panelSuperior.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,18 +253,17 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvConsulta3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Autoparte;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StockMinimo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CantFabricar;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.ComboBox cboMarca;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Panel panelSuperior;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Autoparte;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StockMinimo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CantFabricar;
     }
 }

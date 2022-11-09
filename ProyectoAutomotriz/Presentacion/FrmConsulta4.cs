@@ -47,8 +47,7 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void iconPictureBox2_Click(object sender, EventArgs e)
         {
-            DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (msg == DialogResult.Yes) Application.OpenForms[0].Dispose();
+            this.Dispose();
         }
 
         private void FrmConsulta4_Load(object sender, EventArgs e)
@@ -119,6 +118,11 @@ namespace ProyectoAutomotriz.Presentacion
         private void iconButton1_MouseLeave(object sender, EventArgs e)
         {
             iconButton1.IconColor = Color.FromArgb(255, 28, 28, 28);
+        }
+
+        private void panelSuperior_Paint_1(object sender, PaintEventArgs e)
+        {
+            panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
         }
     }
 }

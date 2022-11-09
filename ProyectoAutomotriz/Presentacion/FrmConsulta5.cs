@@ -159,8 +159,7 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void iconPictureBox4_Click(object sender, EventArgs e)
         {
-            DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (msg == DialogResult.Yes) Application.OpenForms[0].Dispose();
+            this.Dispose();
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
@@ -169,6 +168,16 @@ namespace ProyectoAutomotriz.Presentacion
                 "los vendedores,podra calcular si la cantidad supera al objetivo.En tal caso cobrara " +
                 "el total de la Comisión y si no cobrara la mitad esta muestra el total de\r\nventas, el nombre completo la cantidad total por cobrar por Comisión y si cobrara\r\nla mitad de la Comisión o la totalidad del último mes";
             MessageBox.Show(msg, "Uso de herramienta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelSuperior_Paint(object sender, PaintEventArgs e)
+        {
+            panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
         }
     }
 }

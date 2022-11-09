@@ -57,18 +57,19 @@
             this.btnSalir.AutoSize = true;
             this.btnSalir.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Location = new System.Drawing.Point(608, 530);
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSalir.Location = new System.Drawing.Point(608, 520);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(120, 25);
+            this.btnSalir.Size = new System.Drawing.Size(120, 29);
             this.btnSalir.TabIndex = 0;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = "Volver";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // cbMarcas
             // 
             this.cbMarcas.FormattingEnabled = true;
-            this.cbMarcas.Location = new System.Drawing.Point(47, 94);
+            this.cbMarcas.Location = new System.Drawing.Point(43, 94);
             this.cbMarcas.Name = "cbMarcas";
             this.cbMarcas.Size = new System.Drawing.Size(184, 21);
             this.cbMarcas.TabIndex = 1;
@@ -78,9 +79,10 @@
             this.btnCalcular.AutoSize = true;
             this.btnCalcular.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalcular.Location = new System.Drawing.Point(449, 91);
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnCalcular.Location = new System.Drawing.Point(449, 90);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(120, 25);
+            this.btnCalcular.Size = new System.Drawing.Size(120, 29);
             this.btnCalcular.TabIndex = 2;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = false;
@@ -90,7 +92,7 @@
             // 
             this.txtPorcentaje.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtPorcentaje.Location = new System.Drawing.Point(254, 94);
+            this.txtPorcentaje.Location = new System.Drawing.Point(250, 94);
             this.txtPorcentaje.Name = "txtPorcentaje";
             this.txtPorcentaje.Size = new System.Drawing.Size(179, 20);
             this.txtPorcentaje.TabIndex = 3;
@@ -119,6 +121,7 @@
             // 
             // colId
             // 
+            this.colId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.colId.HeaderText = "id";
             this.colId.Name = "colId";
             this.colId.ReadOnly = true;
@@ -126,18 +129,21 @@
             // 
             // colNombre
             // 
+            this.colNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.colNombre.HeaderText = "Vehiculo";
             this.colNombre.Name = "colNombre";
             this.colNombre.ReadOnly = true;
             // 
             // colMarca
             // 
+            this.colMarca.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.colMarca.HeaderText = "Marca";
             this.colMarca.Name = "colMarca";
             this.colMarca.ReadOnly = true;
             // 
             // colPrecio
             // 
+            this.colPrecio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.colPrecio.HeaderText = "Precio Actual";
             this.colPrecio.Name = "colPrecio";
             this.colPrecio.ReadOnly = true;
@@ -287,15 +293,15 @@
         private System.Windows.Forms.DataGridView dgvVehiculos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Panel panelSuperior;
         private System.Windows.Forms.DataGridViewTextBoxColumn colId;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMarca;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrecio;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAumento;
         private System.Windows.Forms.DataGridViewButtonColumn colAutopartes;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.Panel panelSuperior;
     }
 }

@@ -30,11 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvConsulta6 = new System.Windows.Forms.DataGridView();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Total_Vendido_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio_unitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stock_actual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Volver = new System.Windows.Forms.Button();
             this.filtros = new System.Windows.Forms.Button();
             this.AutoPartes1 = new System.Windows.Forms.ComboBox();
@@ -51,6 +46,11 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.titlePrincipal = new System.Windows.Forms.Label();
             this.panelSuperior = new System.Windows.Forms.Panel();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total_Vendido_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio_unitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stock_actual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -84,46 +84,6 @@
             this.dgvConsulta6.ReadOnly = true;
             this.dgvConsulta6.Size = new System.Drawing.Size(861, 218);
             this.dgvConsulta6.TabIndex = 3;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            this.Cantidad.Width = 86;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            this.Descripcion.Width = 104;
-            // 
-            // Total_Vendido_Producto
-            // 
-            this.Total_Vendido_Producto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Total_Vendido_Producto.HeaderText = "Total Vendido Producto";
-            this.Total_Vendido_Producto.Name = "Total_Vendido_Producto";
-            this.Total_Vendido_Producto.ReadOnly = true;
-            this.Total_Vendido_Producto.Width = 174;
-            // 
-            // Precio_unitario
-            // 
-            this.Precio_unitario.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Precio_unitario.HeaderText = "Precio unitario";
-            this.Precio_unitario.Name = "Precio_unitario";
-            this.Precio_unitario.ReadOnly = true;
-            this.Precio_unitario.Width = 117;
-            // 
-            // Stock_actual
-            // 
-            this.Stock_actual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Stock_actual.HeaderText = "Stock Actual";
-            this.Stock_actual.Name = "Stock_actual";
-            this.Stock_actual.ReadOnly = true;
-            this.Stock_actual.Width = 106;
             // 
             // Volver
             // 
@@ -328,6 +288,41 @@
             this.panelSuperior.TabIndex = 19;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // Cantidad
+            // 
+            this.Cantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
+            // Total_Vendido_Producto
+            // 
+            this.Total_Vendido_Producto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Total_Vendido_Producto.HeaderText = "Total Vendido Producto";
+            this.Total_Vendido_Producto.Name = "Total_Vendido_Producto";
+            this.Total_Vendido_Producto.ReadOnly = true;
+            // 
+            // Precio_unitario
+            // 
+            this.Precio_unitario.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Precio_unitario.HeaderText = "Precio unitario";
+            this.Precio_unitario.Name = "Precio_unitario";
+            this.Precio_unitario.ReadOnly = true;
+            // 
+            // Stock_actual
+            // 
+            this.Stock_actual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Stock_actual.HeaderText = "Stock Actual";
+            this.Stock_actual.Name = "Stock_actual";
+            this.Stock_actual.ReadOnly = true;
+            // 
             // FrmConsulta6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -369,11 +364,6 @@
         private System.Windows.Forms.ComboBox AutoPartes2;
         private System.Windows.Forms.DateTimePicker Fecha1;
         private System.Windows.Forms.DateTimePicker Fecha2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Total_Vendido_Producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Precio_unitario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Stock_actual;
         private System.Windows.Forms.Button Consultar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -384,5 +374,10 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.Label titlePrincipal;
         private System.Windows.Forms.Panel panelSuperior;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Total_Vendido_Producto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio_unitario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Stock_actual;
     }
 }

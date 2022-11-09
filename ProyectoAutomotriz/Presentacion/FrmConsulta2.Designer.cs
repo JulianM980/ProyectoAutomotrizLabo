@@ -45,19 +45,23 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panelSuperior = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSalir
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalir.Location = new System.Drawing.Point(683, 478);
+            this.btnSalir.AutoSize = true;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSalir.Location = new System.Drawing.Point(683, 474);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(75, 27);
             this.btnSalir.TabIndex = 1;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = "Volver";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
@@ -65,6 +69,9 @@
             // 
             this.dgvConsulta2.AllowUserToAddRows = false;
             this.dgvConsulta2.AllowUserToDeleteRows = false;
+            this.dgvConsulta2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsulta2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdCliente,
@@ -74,59 +81,69 @@
             this.Email,
             this.Telefono,
             this.ImportePagado});
-            this.dgvConsulta2.Location = new System.Drawing.Point(12, 108);
+            this.dgvConsulta2.Location = new System.Drawing.Point(14, 164);
             this.dgvConsulta2.Name = "dgvConsulta2";
             this.dgvConsulta2.ReadOnly = true;
-            this.dgvConsulta2.Size = new System.Drawing.Size(744, 325);
+            this.dgvConsulta2.Size = new System.Drawing.Size(744, 196);
             this.dgvConsulta2.TabIndex = 9;
             // 
             // IdCliente
             // 
+            this.IdCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.IdCliente.HeaderText = "ID";
             this.IdCliente.Name = "IdCliente";
             this.IdCliente.ReadOnly = true;
+            this.IdCliente.Visible = false;
             // 
             // Cliente
             // 
+            this.Cliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Cliente.HeaderText = "Cliente";
             this.Cliente.Name = "Cliente";
             this.Cliente.ReadOnly = true;
             // 
             // TipoCliente
             // 
+            this.TipoCliente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TipoCliente.HeaderText = "Tipo Cliente";
             this.TipoCliente.Name = "TipoCliente";
             this.TipoCliente.ReadOnly = true;
             // 
             // Marca
             // 
+            this.Marca.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Marca.HeaderText = "Marca";
             this.Marca.Name = "Marca";
             this.Marca.ReadOnly = true;
             // 
             // Email
             // 
+            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Email.HeaderText = "Email";
             this.Email.Name = "Email";
             this.Email.ReadOnly = true;
             // 
             // Telefono
             // 
+            this.Telefono.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Telefono.HeaderText = "Telefono";
             this.Telefono.Name = "Telefono";
             this.Telefono.ReadOnly = true;
             // 
             // ImportePagado
             // 
+            this.ImportePagado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ImportePagado.HeaderText = "Importe Pagado";
             this.ImportePagado.Name = "ImportePagado";
             this.ImportePagado.ReadOnly = true;
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(422, 70);
+            this.btnConsultar.AutoSize = true;
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnConsultar.Location = new System.Drawing.Point(497, 131);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(75, 23);
+            this.btnConsultar.Size = new System.Drawing.Size(78, 27);
             this.btnConsultar.TabIndex = 8;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
@@ -135,14 +152,14 @@
             // cboMarca
             // 
             this.cboMarca.FormattingEnabled = true;
-            this.cboMarca.Location = new System.Drawing.Point(201, 70);
+            this.cboMarca.Location = new System.Drawing.Point(276, 134);
             this.cboMarca.Name = "cboMarca";
             this.cboMarca.Size = new System.Drawing.Size(200, 21);
             this.cboMarca.TabIndex = 7;
             // 
             // dtpDesde
             // 
-            this.dtpDesde.Location = new System.Drawing.Point(201, 43);
+            this.dtpDesde.Location = new System.Drawing.Point(276, 107);
             this.dtpDesde.Name = "dtpDesde";
             this.dtpDesde.Size = new System.Drawing.Size(200, 20);
             this.dtpDesde.TabIndex = 6;
@@ -150,18 +167,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(127, 49);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.label1.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(179, 108);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.Size = new System.Drawing.Size(91, 19);
             this.label1.TabIndex = 10;
             this.label1.Text = "Fecha inicio";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(154, 78);
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(179, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(51, 19);
             this.label2.TabIndex = 11;
             this.label2.Text = "Marca";
             // 
@@ -174,7 +197,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 48;
-            this.iconPictureBox1.Location = new System.Drawing.Point(673, 6);
+            this.iconPictureBox1.Location = new System.Drawing.Point(670, 12);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox1.TabIndex = 13;
@@ -190,7 +213,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 48;
-            this.iconPictureBox2.Location = new System.Drawing.Point(732, 6);
+            this.iconPictureBox2.Location = new System.Drawing.Point(729, 12);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox2.TabIndex = 12;
@@ -215,14 +238,28 @@
             this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
             this.iconButton1.MouseHover += new System.EventHandler(this.iconButton1_MouseHover);
             // 
+            // panelSuperior
+            // 
+            this.panelSuperior.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelSuperior.AutoSize = true;
+            this.panelSuperior.BackColor = System.Drawing.Color.Silver;
+            this.panelSuperior.Controls.Add(this.iconButton1);
+            this.panelSuperior.Controls.Add(this.iconPictureBox1);
+            this.panelSuperior.Controls.Add(this.iconPictureBox2);
+            this.panelSuperior.Location = new System.Drawing.Point(0, 0);
+            this.panelSuperior.Name = "panelSuperior";
+            this.panelSuperior.Size = new System.Drawing.Size(802, 76);
+            this.panelSuperior.TabIndex = 48;
+            this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
+            // 
             // FrmConsulta2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(789, 528);
-            this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.iconPictureBox1);
-            this.Controls.Add(this.iconPictureBox2);
+            this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvConsulta2);
@@ -238,6 +275,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            this.panelSuperior.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,13 +285,6 @@
 
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.DataGridView dgvConsulta2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TipoCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ImportePagado;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.ComboBox cboMarca;
         private System.Windows.Forms.DateTimePicker dtpDesde;
@@ -262,5 +293,13 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Panel panelSuperior;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ImportePagado;
     }
 }

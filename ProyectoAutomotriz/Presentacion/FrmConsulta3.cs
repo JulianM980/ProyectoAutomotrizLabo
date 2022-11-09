@@ -56,24 +56,6 @@ namespace ProyectoAutomotriz.Presentacion
             }
         }
 
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-            foreach (Form frm in Application.OpenForms)
-            {
-                if (frm.GetType() == typeof(FrmIndex))
-                {
-                    frm.WindowState = FormWindowState.Minimized;
-                    break;
-                }
-            }
-        }
-
-        private void iconPictureBox2_Click(object sender, EventArgs e)
-        {
-            DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (msg == DialogResult.Yes) Application.OpenForms[0].Dispose();
-        }
-
         private void iconButton1_Click(object sender, EventArgs e)
         {
             string msg = "Muestra aquellas autopartes que tienen que completar stock y la cantidad de autopartes a fabricar, " +
@@ -110,8 +92,7 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void iconPictureBox2_Click_1(object sender, EventArgs e)
         {
-            DialogResult msg = MessageBox.Show("¿Desea salir de la aplicacion?", "Saliendo formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (msg == DialogResult.Yes) this.Dispose();
+            this.Dispose();
         }
     }
 }
