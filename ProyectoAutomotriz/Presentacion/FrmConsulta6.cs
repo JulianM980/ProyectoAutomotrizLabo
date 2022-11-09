@@ -26,7 +26,7 @@ namespace ProyectoAutomotriz.Presentacion
                                                 "join inventarios i on i.idAutoParte = ap.idAutoParte ";
 
         private const string groupByAutoParte = " GROUP BY p.descripcion, p.idProducto,p.preUnitario,i.stockActual order by cantidad desc";
-        private const string labelOriginal = "muestra la cantidad, la descripción, total vendido, el precio unitario y su stock actual";
+        private const string labelOriginal = "muestra la cantidad, la descripción, total vendido, el precio unitario y su stock actual ";
         public FrmConsulta6()
         {
 
@@ -103,13 +103,9 @@ namespace ProyectoAutomotriz.Presentacion
                 isAutoParte = true;
                 where = " where ap.idAutoparte = " + valueAutoParte2;
             }
-
-            if (isAutoParte) {
-                
-                where += " and ";
-            }
+            where += isAutoParte ? " and " : " where ";
             label += "entre el" + fechaComparar1 + " y " + fechaComparar2;
-            where += " f.fecha  between Parse(' " + fechaComparar1 + "' as Datetime   USING 'es-es') and Parse('" + fechaComparar1 + "' as Datetime  USING 'es-es')";
+            where += " f.fecha  between Parse(' " + fechaComparar1 + "' as Datetime   USING 'es-es') and Parse('" + fechaComparar2 + "' as Datetime  USING 'es-es')";
 
             titlePrincipal.Text = label;
             string consulta = consultaSelectAutoParte + where + groupByAutoParte;
@@ -144,19 +140,25 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void filtros_Click(object sender, EventArgs e)
         {
+            bool bandera = false;
             if (filtros.Text == "Aplicar Filtros")
             {
-                AutoPartes1.Enabled = true;
-                AutoPartes2.Enabled = true;
-                Fecha1.Enabled = true;
-                Fecha2.Enabled = true;
+                bandera = true;
                 filtros.Text = "Desactivar Filtros";
             }
             else if (filtros.Text == "Desactivar Filtros")
             {
+                bandera = false;              
                 filtros.Text = "Aplicar Filtros";
+                AutoPartes1.SelectedIndex = -1;
+                AutoPartes2.SelectedIndex = -1;
                 DataGridInitial();
             }
+
+            AutoPartes1.Enabled = bandera;
+            AutoPartes2.Enabled = bandera;
+            Fecha1.Enabled = bandera;
+            Fecha2.Enabled = bandera;
         }
 
         private void iconButton1_Click(object sender, EventArgs e)

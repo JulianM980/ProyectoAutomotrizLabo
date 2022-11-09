@@ -70,6 +70,7 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvConsulta6.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvConsulta6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -78,10 +79,10 @@
             this.Total_Vendido_Producto,
             this.Precio_unitario,
             this.Stock_actual});
-            this.dgvConsulta6.Location = new System.Drawing.Point(17, 194);
+            this.dgvConsulta6.Location = new System.Drawing.Point(180, 236);
             this.dgvConsulta6.Name = "dgvConsulta6";
             this.dgvConsulta6.ReadOnly = true;
-            this.dgvConsulta6.Size = new System.Drawing.Size(674, 213);
+            this.dgvConsulta6.Size = new System.Drawing.Size(861, 218);
             this.dgvConsulta6.TabIndex = 3;
             // 
             // Cantidad
@@ -158,7 +159,7 @@
             // 
             this.AutoPartes1.Enabled = false;
             this.AutoPartes1.FormattingEnabled = true;
-            this.AutoPartes1.Location = new System.Drawing.Point(164, 97);
+            this.AutoPartes1.Location = new System.Drawing.Point(377, 120);
             this.AutoPartes1.Name = "AutoPartes1";
             this.AutoPartes1.Size = new System.Drawing.Size(121, 21);
             this.AutoPartes1.TabIndex = 7;
@@ -167,7 +168,7 @@
             // 
             this.AutoPartes2.Enabled = false;
             this.AutoPartes2.FormattingEnabled = true;
-            this.AutoPartes2.Location = new System.Drawing.Point(164, 154);
+            this.AutoPartes2.Location = new System.Drawing.Point(377, 177);
             this.AutoPartes2.Name = "AutoPartes2";
             this.AutoPartes2.Size = new System.Drawing.Size(121, 21);
             this.AutoPartes2.TabIndex = 8;
@@ -175,7 +176,7 @@
             // Fecha1
             // 
             this.Fecha1.Enabled = false;
-            this.Fecha1.Location = new System.Drawing.Point(396, 98);
+            this.Fecha1.Location = new System.Drawing.Point(609, 121);
             this.Fecha1.Name = "Fecha1";
             this.Fecha1.Size = new System.Drawing.Size(200, 20);
             this.Fecha1.TabIndex = 9;
@@ -183,7 +184,7 @@
             // Fecha2
             // 
             this.Fecha2.Enabled = false;
-            this.Fecha2.Location = new System.Drawing.Point(396, 155);
+            this.Fecha2.Location = new System.Drawing.Point(609, 178);
             this.Fecha2.Name = "Fecha2";
             this.Fecha2.Size = new System.Drawing.Size(200, 20);
             this.Fecha2.TabIndex = 10;
@@ -331,7 +332,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 528);
+            this.ClientSize = new System.Drawing.Size(1146, 528);
             this.Controls.Add(this.titlePrincipal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
