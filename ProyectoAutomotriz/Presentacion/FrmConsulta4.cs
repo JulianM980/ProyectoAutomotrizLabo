@@ -67,12 +67,12 @@ namespace ProyectoAutomotriz.Presentacion
             string Año2 = TxtAño2.Text;
             if (Año1 == string.Empty && Año2 != string.Empty)
             {
-                MessageBox.Show("Debe ingresar un año en la segunda casilla para hacer una busqueda correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Debe ingresar un año en la primer casilla para hacer una busqueda correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             if (Año1 != string.Empty && Año2 == string.Empty)
             {
-                MessageBox.Show("Debe ingresar un año en la primera casilla para hacer una busqueda correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Debe ingresar un año en la segunda casilla para hacer una busqueda correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             if (Año1 == string.Empty && Año2 == string.Empty)
@@ -106,7 +106,8 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            string msg = "";
+            string msg = "Mostraremos los datos de los clientes que correspondan a un tipo de cliente particular, se puede filtrar entre dos años, o si escoge no poner años" +
+                "se mostrara un historial completo de los clientes de cierto tipo";
             MessageBox.Show(msg, "Uso de herramienta", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
