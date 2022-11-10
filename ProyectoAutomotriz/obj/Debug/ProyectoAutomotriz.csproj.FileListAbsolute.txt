@@ -297,3 +297,4 @@ D:\Mis documentos\GitHub\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\Pro
 D:\Mis documentos\GitHub\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.pdb
 D:\Mis documentos\GitHub\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.Presentacion.FrmLogin.resources
 C:\Users\Usuario\Desktop\TUP\TP_LABO\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.Presentacion.FrmLogin.resources
+C:\Users\usuario\source\repos\ProyectoAutomotrizLabo\ProyectoAutomotriz\obj\Debug\ProyectoAutomotriz.Presentacion.FrmLogin.resources

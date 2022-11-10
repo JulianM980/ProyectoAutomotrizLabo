@@ -26,6 +26,7 @@ namespace ProyectoAutomotriz.Presentacion
             Usuario.Parent = pictureBox1;
             Contraseña.Parent = pictureBox1;
             lblError.Parent = pictureBox1;
+            iconPictureBox2.Parent = pictureBox1;
         }
 
         private void btnIniciar_Click_1(object sender, EventArgs e)
@@ -91,6 +92,11 @@ namespace ProyectoAutomotriz.Presentacion
         private void Contraseña_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
