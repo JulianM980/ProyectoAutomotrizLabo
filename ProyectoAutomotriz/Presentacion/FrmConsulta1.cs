@@ -94,6 +94,11 @@ namespace ProyectoAutomotriz.Presentacion
         {
             panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
         }
+
+        private void txtAnio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

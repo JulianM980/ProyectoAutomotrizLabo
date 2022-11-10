@@ -1,5 +1,6 @@
 ﻿using ProyectoAutomotriz.Datos;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -84,7 +85,16 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void Consultar_Click(object sender, EventArgs e)
         {
-
+            if (!double.TryParse(txtObjetivo.Text, out _))
+            {
+                MessageBox.Show("No puede ingresar letras como objetivo. Intente de nuevo");
+                return;
+            }
+            if (!double.TryParse(txtPorcentaje.Text, out _))
+            {
+                MessageBox.Show("No puede ingresar letras como Porcentaje. Intente de nuevo");
+                return;
+            }
             string porcentaje = txtPorcentaje.Text;
             double porcentajeMitad = 0;
             string Objetivo = txtObjetivo.Text;

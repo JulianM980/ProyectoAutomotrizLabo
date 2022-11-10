@@ -159,6 +159,18 @@
     <Compile Include="Presentacion\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\FrmQueHacemos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmQueHacemos.Designer.cs">
+      <DependentUpon>FrmQueHacemos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\FrmQuienesSomos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmQuienesSomos.Designer.cs">
+      <DependentUpon>FrmQuienesSomos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -207,6 +219,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmQueHacemos.resx">
+      <DependentUpon>FrmQueHacemos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmQuienesSomos.resx">
+      <DependentUpon>FrmQuienesSomos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

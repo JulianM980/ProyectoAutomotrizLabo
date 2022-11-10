@@ -136,7 +136,7 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void txtPorcentaje_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void cbMarcas_SelectedIndexChanged(object sender, EventArgs e)

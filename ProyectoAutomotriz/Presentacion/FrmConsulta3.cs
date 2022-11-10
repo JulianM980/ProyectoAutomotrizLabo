@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace ProyectoAutomotriz.Presentacion
@@ -33,10 +34,19 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
+            if (cboMarca.SelectedIndex == -1 && !checkBox1.Checked) { 
+            MessageBox.Show("Debe seleccionar una marcar.");
+            return; }
 
             string sp = "SP_AUTOPARTES_FALTANTES";
             List<Parametro> lst = new List<Parametro>();
-            lst.Add(new Parametro("@marca", cboMarca.Text.ToString()));
+            if (checkBox1.Checked)
+            {
+                cboMarca.Text = "Todos";
+                lst.Add(new Parametro("@marca", cboMarca.Text.ToString()));
+            }
+            else
+            { lst.Add(new Parametro("@marca", cboMarca.Text.ToString())); }
             dgvConsulta3.Rows.Clear();
             DataTable DT = HelperDB.ObtenerInstancia().ConsultarSp(sp, lst);
 
@@ -106,6 +116,12 @@ namespace ProyectoAutomotriz.Presentacion
         private void button1_Click(object sender, EventArgs e)
         {
             cboMarca.SelectedIndex = -1;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked) cboMarca.Enabled = false;
+            if(!checkBox1.Checked) cboMarca.Enabled=true;
         }
     }
 }

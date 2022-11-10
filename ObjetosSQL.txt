@@ -21,7 +21,7 @@ HAVING df.preUnitario*cantidad > (SELECT avg(preUnitario*cantidad) FROM DETALLES
 CREATE PROCEDURE [dbo].[SP_AUTOPARTES_FALTANTES]
 @Marca varchar(100)
 AS
-IF (@Marca is null) 	
+IF (@Marca like "Todos") 	
 	SELECT i.idAutoParte 'Codigo autoparte', 
 	A.nombreComercial Autoparte, m.nombre Marca, 
 	stockActual Stock, stockMinimo 'Stock Minimo',

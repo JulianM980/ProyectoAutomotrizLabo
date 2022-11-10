@@ -192,5 +192,16 @@ namespace ProyectoAutomotriz
                 this.Dispose();
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmQuienesSomos());
+            EsconderSubMenu();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmQueHacemos());
+        }
     }
 }

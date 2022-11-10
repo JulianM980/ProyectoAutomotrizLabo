@@ -43,7 +43,7 @@
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panelSuperior = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -71,7 +71,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label1.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(33, 86);
+            this.label1.Location = new System.Drawing.Point(33, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 19);
             this.label1.TabIndex = 13;
@@ -153,7 +153,7 @@
             this.btnConsultar.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnConsultar.Location = new System.Drawing.Point(373, 80);
+            this.btnConsultar.Location = new System.Drawing.Point(479, 80);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(120, 29);
             this.btnConsultar.TabIndex = 11;
@@ -166,7 +166,7 @@
             this.cboMarca.FormattingEnabled = true;
             this.cboMarca.Items.AddRange(new object[] {
             "Todos"});
-            this.cboMarca.Location = new System.Drawing.Point(107, 85);
+            this.cboMarca.Location = new System.Drawing.Point(107, 84);
             this.cboMarca.Name = "cboMarca";
             this.cboMarca.Size = new System.Drawing.Size(200, 21);
             this.cboMarca.TabIndex = 10;
@@ -237,19 +237,19 @@
             this.panelSuperior.TabIndex = 47;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
             // 
-            // button1
+            // checkBox1
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(514, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 29);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Limpiar filtro";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.checkBox1.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBox1.Location = new System.Drawing.Point(330, 83);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(139, 23);
+            this.checkBox1.TabIndex = 48;
+            this.checkBox1.Text = "Consultar todos";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // FrmConsulta3
             // 
@@ -258,7 +258,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(724, 528);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvConsulta3);
@@ -297,6 +297,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
         private System.Windows.Forms.DataGridViewTextBoxColumn StockMinimo;
         private System.Windows.Forms.DataGridViewTextBoxColumn CantFabricar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

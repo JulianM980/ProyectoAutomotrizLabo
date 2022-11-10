@@ -30,7 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmIndex));
             this.MenuLateral = new System.Windows.Forms.Panel();
+            this.panelSalir = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.panelAyuda = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panelAcciones = new System.Windows.Forms.Panel();
@@ -50,11 +54,8 @@
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panelSalir = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.MenuLateral.SuspendLayout();
+            this.panelSalir.SuspendLayout();
             this.panelAyuda.SuspendLayout();
             this.panelAcciones.SuspendLayout();
             this.PanelLogo.SuspendLayout();
@@ -63,7 +64,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelSalir.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuLateral
@@ -83,6 +83,49 @@
             this.MenuLateral.Size = new System.Drawing.Size(220, 567);
             this.MenuLateral.TabIndex = 0;
             // 
+            // panelSalir
+            // 
+            this.panelSalir.Controls.Add(this.button6);
+            this.panelSalir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSalir.Location = new System.Drawing.Point(0, 864);
+            this.panelSalir.Name = "panelSalir";
+            this.panelSalir.Size = new System.Drawing.Size(203, 104);
+            this.panelSalir.TabIndex = 18;
+            // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button6.Location = new System.Drawing.Point(0, 0);
+            this.button6.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(203, 50);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "      Cerrar sesion";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button7.Location = new System.Drawing.Point(0, 814);
+            this.button7.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(203, 50);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "  Salir";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // panelAyuda
             // 
             this.panelAyuda.Controls.Add(this.button5);
@@ -93,6 +136,23 @@
             this.panelAyuda.Size = new System.Drawing.Size(203, 150);
             this.panelAyuda.TabIndex = 16;
             this.panelAyuda.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAyuda_Paint);
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button5.Location = new System.Drawing.Point(0, 50);
+            this.button5.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(203, 50);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "      ¿Que hacemos?";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
@@ -109,6 +169,7 @@
             this.button3.Text = "      ¿Quienes Somos?";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -385,65 +446,6 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button5.Location = new System.Drawing.Point(0, 50);
-            this.button5.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(203, 50);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "      ¿Que hacemos?";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // panelSalir
-            // 
-            this.panelSalir.Controls.Add(this.button6);
-            this.panelSalir.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSalir.Location = new System.Drawing.Point(0, 864);
-            this.panelSalir.Name = "panelSalir";
-            this.panelSalir.Size = new System.Drawing.Size(203, 104);
-            this.panelSalir.TabIndex = 18;
-            // 
-            // button6
-            // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(203, 50);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "      Cerrar sesion";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button7.Location = new System.Drawing.Point(0, 814);
-            this.button7.Margin = new System.Windows.Forms.Padding(50, 25, 50, 25);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(203, 50);
-            this.button7.TabIndex = 17;
-            this.button7.Text = "  Salir";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
             // FrmIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -457,6 +459,7 @@
             this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.FrmIndex_Load);
             this.MenuLateral.ResumeLayout(false);
+            this.panelSalir.ResumeLayout(false);
             this.panelAyuda.ResumeLayout(false);
             this.panelAcciones.ResumeLayout(false);
             this.PanelLogo.ResumeLayout(false);
@@ -466,7 +469,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelSalir.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

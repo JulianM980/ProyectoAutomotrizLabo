@@ -20,6 +20,7 @@ namespace ProyectoAutomotriz.Presentacion
         public FrmConsulta4()
         {
             InitializeComponent();
+            
             DataTable dt = HelperDB.ObtenerInstancia().ConsultarSp("Sp_Tipo_cliente");
 
             CmbTC.DataSource = dt;
@@ -52,12 +53,11 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void FrmConsulta4_Load(object sender, EventArgs e)
         {
-
+           // CmbTC.SelectedIndex = -1;
         }
 
         private void BtnMostrar_Click(object sender, EventArgs e)
         {
-
 
             string sp = "sp_Pg_TipoCliente";
             List<Parametro> lst = new List<Parametro>();
@@ -65,6 +65,7 @@ namespace ProyectoAutomotriz.Presentacion
 
             string Año1 = TxtAño1.Text;
             string Año2 = TxtAño2.Text;
+
             if (Año1 == string.Empty && Año2 != string.Empty)
             {
                 MessageBox.Show("Debe ingresar un año en la primer casilla para hacer una busqueda correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -73,6 +74,26 @@ namespace ProyectoAutomotriz.Presentacion
             if (Año1 != string.Empty && Año2 == string.Empty)
             {
                 MessageBox.Show("Debe ingresar un año en la segunda casilla para hacer una busqueda correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (!double.TryParse(TxtAño1.Text, out _))
+            {
+                MessageBox.Show("Se deben ingresar un año valido. Intente de nuevo");
+                return;
+            }
+            if (!double.TryParse(TxtAño1.Text, out _))
+            {
+                MessageBox.Show("Se deben ingresar un año valido. Intente de nuevo");
+                return;
+            }
+            if (TxtAño1.Text.Length > 1 && TxtAño1.Text.Length < 4)  
+            {
+                MessageBox.Show("Debe ingresar un año de 4 digitos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (TxtAño2.Text.Length > 0 && TxtAño2.Text.Length < 4)
+            {
+                MessageBox.Show("Debe ingresar un año de 4 digitos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             if (Año1 == string.Empty && Año2 == string.Empty)
@@ -85,11 +106,7 @@ namespace ProyectoAutomotriz.Presentacion
                 lst.Add(new Parametro("@año1", Año1));
                 lst.Add(new Parametro("@año2", Año2));
             }
-            if (TxtAño1.Text.Length > 1 && TxtAño1.Text.Length < 4 || TxtAño2.Text.Length > 0 && TxtAño2.Text.Length < 4)
-            {
-                MessageBox.Show("Debe ingresar un año de 4 digitos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
+            
             DgvTipoCliente.Rows.Clear();
             DataTable DT = HelperDB.ObtenerInstancia().ConsultarSp(sp, lst);
 

@@ -83,6 +83,7 @@
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(122, 20);
             this.txtAnio.TabIndex = 0;
+            this.txtAnio.TextChanged += new System.EventHandler(this.txtAnio_TextChanged);
             // 
             // btnObtener
             // 
