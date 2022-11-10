@@ -81,7 +81,7 @@
             this.btnCalcular.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnCalcular.Location = new System.Drawing.Point(363, 107);
+            this.btnCalcular.Location = new System.Drawing.Point(356, 111);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(120, 29);
             this.btnCalcular.TabIndex = 2;

@@ -56,13 +56,15 @@
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalir.AutoSize = true;
+            this.btnSalir.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnSalir.Location = new System.Drawing.Point(592, 487);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(120, 29);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Volver";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // iconPictureBox1
@@ -100,13 +102,15 @@
             // BtnMostrar
             // 
             this.BtnMostrar.AutoSize = true;
+            this.BtnMostrar.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BtnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.BtnMostrar.Location = new System.Drawing.Point(564, 119);
             this.BtnMostrar.Name = "BtnMostrar";
             this.BtnMostrar.Size = new System.Drawing.Size(120, 29);
             this.BtnMostrar.TabIndex = 11;
             this.BtnMostrar.Text = "Consultar";
-            this.BtnMostrar.UseVisualStyleBackColor = true;
+            this.BtnMostrar.UseVisualStyleBackColor = false;
             this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
             // 
             // DgvTipoCliente

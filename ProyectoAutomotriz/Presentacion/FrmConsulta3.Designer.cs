@@ -54,13 +54,15 @@
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalir.AutoSize = true;
+            this.btnSalir.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSalir.Location = new System.Drawing.Point(592, 487);
+            this.btnSalir.Location = new System.Drawing.Point(590, 487);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(120, 29);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Volver";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label1
@@ -148,13 +150,15 @@
             // btnConsultar
             // 
             this.btnConsultar.AutoSize = true;
+            this.btnConsultar.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnConsultar.Location = new System.Drawing.Point(379, 82);
+            this.btnConsultar.Location = new System.Drawing.Point(373, 80);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(120, 29);
             this.btnConsultar.TabIndex = 11;
             this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // cboMarca
@@ -236,13 +240,15 @@
             // button1
             // 
             this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(520, 82);
+            this.button1.Location = new System.Drawing.Point(514, 80);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 29);
             this.button1.TabIndex = 48;
             this.button1.Text = "Limpiar filtro";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmConsulta3
@@ -250,6 +256,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(724, 528);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelSuperior);

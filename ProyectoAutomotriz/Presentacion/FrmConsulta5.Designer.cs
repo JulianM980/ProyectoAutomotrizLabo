@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSalir = new System.Windows.Forms.Button();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
@@ -169,13 +169,15 @@
             // 
             this.Consultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Consultar.AutoSize = true;
+            this.Consultar.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Consultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Consultar.Location = new System.Drawing.Point(593, 87);
             this.Consultar.Name = "Consultar";
             this.Consultar.Size = new System.Drawing.Size(120, 29);
             this.Consultar.TabIndex = 26;
             this.Consultar.Text = "Consultar";
-            this.Consultar.UseVisualStyleBackColor = true;
+            this.Consultar.UseVisualStyleBackColor = false;
             this.Consultar.Click += new System.EventHandler(this.Consultar_Click);
             // 
             // Fecha2
@@ -200,13 +202,15 @@
             // 
             this.Volver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Volver.AutoSize = true;
+            this.Volver.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Volver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Volver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Volver.Location = new System.Drawing.Point(592, 489);
             this.Volver.Name = "Volver";
             this.Volver.Size = new System.Drawing.Size(120, 29);
             this.Volver.TabIndex = 21;
             this.Volver.Text = "Volver";
-            this.Volver.UseVisualStyleBackColor = true;
+            this.Volver.UseVisualStyleBackColor = false;
             this.Volver.Click += new System.EventHandler(this.Volver_Click);
             // 
             // dgvConsulta5
@@ -217,14 +221,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsulta5.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvConsulta5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvConsulta5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvConsulta5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Total_de_ventas,
