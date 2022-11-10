@@ -101,7 +101,7 @@
             this.Consulta7.Name = "Consulta7";
             this.Consulta7.Size = new System.Drawing.Size(200, 50);
             this.Consulta7.TabIndex = 7;
-            this.Consulta7.Text = "Consulta7";
+            this.Consulta7.Text = "Ventas por debajo del promedio";
             this.Consulta7.UseVisualStyleBackColor = true;
             this.Consulta7.Click += new System.EventHandler(this.Consulta7_Click);
             // 
@@ -117,7 +117,7 @@
             this.Consulta6.Name = "Consulta6";
             this.Consulta6.Size = new System.Drawing.Size(200, 50);
             this.Consulta6.TabIndex = 6;
-            this.Consulta6.Text = "Consulta6";
+            this.Consulta6.Text = "Listado de autopartes";
             this.Consulta6.UseVisualStyleBackColor = true;
             this.Consulta6.Click += new System.EventHandler(this.Consulta6_Click);
             // 
@@ -133,7 +133,7 @@
             this.Consulta5.Name = "Consulta5";
             this.Consulta5.Size = new System.Drawing.Size(200, 50);
             this.Consulta5.TabIndex = 5;
-            this.Consulta5.Text = "Consulta5";
+            this.Consulta5.Text = "Calculo de comisiones";
             this.Consulta5.UseVisualStyleBackColor = true;
             this.Consulta5.Click += new System.EventHandler(this.Consulta5_Click);
             // 
@@ -149,7 +149,7 @@
             this.Consulta4.Name = "Consulta4";
             this.Consulta4.Size = new System.Drawing.Size(200, 50);
             this.Consulta4.TabIndex = 4;
-            this.Consulta4.Text = "Consulta4";
+            this.Consulta4.Text = "Clientes filtrados";
             this.Consulta4.UseVisualStyleBackColor = true;
             this.Consulta4.Click += new System.EventHandler(this.Consulta4_Click);
             // 
