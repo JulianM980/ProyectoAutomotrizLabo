@@ -33,11 +33,6 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            if (cboMarca.SelectedIndex == -1)
-            {
-                MessageBox.Show("Debe ingresar una marca", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
 
             string sp = "SP_AUTOPARTES_FALTANTES";
             List<Parametro> lst = new List<Parametro>();
@@ -89,10 +84,28 @@ namespace ProyectoAutomotriz.Presentacion
                 }
             }
         }
-
         private void iconPictureBox2_Click_1(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void FrmConsulta3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cboMarca.SelectedIndex = -1;
         }
     }
 }

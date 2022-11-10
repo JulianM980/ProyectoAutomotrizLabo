@@ -73,7 +73,7 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            string msg = "Con esta herramienta podra recuperar todas las ordenes de compra filtradas" +
+            string msg = "Con esta herramienta podra recuperar todas las ordenes de compra filtradas " +
                 "por año, e indicando si ya fueron entregadas o en caso contrario, los dias que falta para ello";
             MessageBox.Show(msg,"Uso de herramienta",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }

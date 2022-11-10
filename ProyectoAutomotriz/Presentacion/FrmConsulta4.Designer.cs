@@ -57,9 +57,9 @@
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalir.AutoSize = true;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSalir.Location = new System.Drawing.Point(622, 478);
+            this.btnSalir.Location = new System.Drawing.Point(592, 487);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 27);
+            this.btnSalir.Size = new System.Drawing.Size(120, 29);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Volver";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -101,11 +101,11 @@
             // 
             this.BtnMostrar.AutoSize = true;
             this.BtnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BtnMostrar.Location = new System.Drawing.Point(525, 122);
+            this.BtnMostrar.Location = new System.Drawing.Point(564, 119);
             this.BtnMostrar.Name = "BtnMostrar";
-            this.BtnMostrar.Size = new System.Drawing.Size(75, 27);
+            this.BtnMostrar.Size = new System.Drawing.Size(120, 29);
             this.BtnMostrar.TabIndex = 11;
-            this.BtnMostrar.Text = "Mostrar";
+            this.BtnMostrar.Text = "Consultar";
             this.BtnMostrar.UseVisualStyleBackColor = true;
             this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
             // 
@@ -123,10 +123,10 @@
             this.Importe,
             this.Fecha,
             this.Cantidad});
-            this.DgvTipoCliente.Location = new System.Drawing.Point(114, 172);
+            this.DgvTipoCliente.Location = new System.Drawing.Point(35, 152);
             this.DgvTipoCliente.Name = "DgvTipoCliente";
             this.DgvTipoCliente.ReadOnly = true;
-            this.DgvTipoCliente.Size = new System.Drawing.Size(444, 235);
+            this.DgvTipoCliente.Size = new System.Drawing.Size(649, 320);
             this.DgvTipoCliente.TabIndex = 12;
             // 
             // IdFactura
@@ -168,24 +168,26 @@
             // CmbTC
             // 
             this.CmbTC.FormattingEnabled = true;
-            this.CmbTC.Location = new System.Drawing.Point(115, 125);
+            this.CmbTC.Location = new System.Drawing.Point(148, 97);
             this.CmbTC.Name = "CmbTC";
             this.CmbTC.Size = new System.Drawing.Size(145, 21);
             this.CmbTC.TabIndex = 13;
             // 
             // TxtAño1
             // 
-            this.TxtAño1.Location = new System.Drawing.Point(286, 126);
+            this.TxtAño1.Location = new System.Drawing.Point(148, 123);
             this.TxtAño1.Name = "TxtAño1";
-            this.TxtAño1.Size = new System.Drawing.Size(100, 20);
+            this.TxtAño1.Size = new System.Drawing.Size(145, 20);
             this.TxtAño1.TabIndex = 14;
+            this.TxtAño1.TextChanged += new System.EventHandler(this.TxtAño1_TextChanged);
             // 
             // TxtAño2
             // 
-            this.TxtAño2.Location = new System.Drawing.Point(409, 126);
+            this.TxtAño2.Location = new System.Drawing.Point(409, 123);
             this.TxtAño2.Name = "TxtAño2";
-            this.TxtAño2.Size = new System.Drawing.Size(100, 20);
+            this.TxtAño2.Size = new System.Drawing.Size(145, 20);
             this.TxtAño2.TabIndex = 15;
+            this.TxtAño2.TextChanged += new System.EventHandler(this.TxtAño2_TextChanged);
             // 
             // label1
             // 
@@ -193,11 +195,12 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label1.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(132, 103);
+            this.label1.Location = new System.Drawing.Point(29, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 19);
+            this.label1.Size = new System.Drawing.Size(115, 19);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Tipo de cliente";
+            this.label1.Text = "Tipo de cliente:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -205,11 +208,12 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(409, 103);
+            this.label2.Location = new System.Drawing.Point(306, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 19);
+            this.label2.Size = new System.Drawing.Size(97, 19);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Segundo año";
+            this.label2.Text = "Fecha Hasta:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -217,11 +221,12 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(293, 103);
+            this.label3.Location = new System.Drawing.Point(29, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 19);
+            this.label3.Size = new System.Drawing.Size(101, 19);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Primer año";
+            this.label3.Text = "Fecha Desde:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // iconButton1
             // 
@@ -252,7 +257,7 @@
             this.panelSuperior.Controls.Add(this.iconPictureBox1);
             this.panelSuperior.Location = new System.Drawing.Point(0, 0);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(802, 76);
+            this.panelSuperior.Size = new System.Drawing.Size(802, 66);
             this.panelSuperior.TabIndex = 48;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint_1);
             // 

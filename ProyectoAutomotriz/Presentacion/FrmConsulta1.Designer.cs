@@ -52,9 +52,10 @@
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalir.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Location = new System.Drawing.Point(703, 519);
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSalir.Location = new System.Drawing.Point(561, 480);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(120, 23);
+            this.btnSalir.Size = new System.Drawing.Size(120, 29);
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Volver";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -68,35 +69,33 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(255, 65);
+            this.label2.Location = new System.Drawing.Point(35, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 19);
+            this.label2.Size = new System.Drawing.Size(41, 19);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Año";
+            this.label2.Text = "Año:";
             // 
             // txtAnio
             // 
             this.txtAnio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtAnio.Location = new System.Drawing.Point(298, 64);
+            this.txtAnio.Location = new System.Drawing.Point(78, 83);
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(122, 20);
             this.txtAnio.TabIndex = 0;
             // 
             // btnObtener
             // 
-            this.btnObtener.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnObtener.AutoSize = true;
+            this.btnObtener.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnObtener.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnObtener.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.btnObtener.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnObtener.Location = new System.Drawing.Point(426, 61);
+            this.btnObtener.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnObtener.Location = new System.Drawing.Point(237, 79);
             this.btnObtener.Name = "btnObtener";
-            this.btnObtener.Size = new System.Drawing.Size(98, 25);
+            this.btnObtener.Size = new System.Drawing.Size(120, 29);
             this.btnObtener.TabIndex = 1;
-            this.btnObtener.Text = "Obtener Reporte";
+            this.btnObtener.Text = "Consultar";
             this.btnObtener.UseVisualStyleBackColor = false;
             this.btnObtener.Click += new System.EventHandler(this.btnObtener_Click);
             // 
@@ -106,10 +105,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rvOrdenesCompra.LocalReport.ReportEmbeddedResource = "ProyectoAutomotriz.Reportes.RepOrdenesCompra.rdlc";
-            this.rvOrdenesCompra.Location = new System.Drawing.Point(46, 92);
+            this.rvOrdenesCompra.Location = new System.Drawing.Point(39, 130);
             this.rvOrdenesCompra.Name = "rvOrdenesCompra";
             this.rvOrdenesCompra.ServerReport.BearerToken = null;
-            this.rvOrdenesCompra.Size = new System.Drawing.Size(777, 404);
+            this.rvOrdenesCompra.Size = new System.Drawing.Size(651, 320);
             this.rvOrdenesCompra.TabIndex = 5;
             // 
             // dSOrdenesCompra
@@ -131,7 +130,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 48;
-            this.iconPictureBox1.Location = new System.Drawing.Point(748, 3);
+            this.iconPictureBox1.Location = new System.Drawing.Point(604, 3);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox1.TabIndex = 8;
@@ -147,7 +146,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 48;
-            this.iconPictureBox2.Location = new System.Drawing.Point(806, 3);
+            this.iconPictureBox2.Location = new System.Drawing.Point(662, 3);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox2.TabIndex = 7;
@@ -182,7 +181,7 @@
             this.panelSuperior.Controls.Add(this.iconPictureBox1);
             this.panelSuperior.Location = new System.Drawing.Point(0, -1);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(867, 56);
+            this.panelSuperior.Size = new System.Drawing.Size(723, 66);
             this.panelSuperior.TabIndex = 3;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
             // 
@@ -191,7 +190,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(866, 567);
+            this.ClientSize = new System.Drawing.Size(724, 528);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtAnio);
             this.Controls.Add(this.rvOrdenesCompra);

@@ -181,5 +181,10 @@ namespace ProyectoAutomotriz.Presentacion
         {
             panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
         }
+
+        private void Fecha2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

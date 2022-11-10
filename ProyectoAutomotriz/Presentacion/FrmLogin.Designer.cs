@@ -59,7 +59,7 @@
             this.lblError.BackColor = System.Drawing.Color.Transparent;
             this.lblError.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(230, 343);
+            this.lblError.Location = new System.Drawing.Point(231, 348);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(241, 19);
             this.lblError.TabIndex = 13;
@@ -70,7 +70,7 @@
             // 
             this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(257, 180);
+            this.txtUsuario.Location = new System.Drawing.Point(257, 193);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(189, 26);
             this.txtUsuario.TabIndex = 8;
@@ -82,7 +82,7 @@
             this.Usuario.BackColor = System.Drawing.Color.Transparent;
             this.Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.Usuario.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Usuario.Location = new System.Drawing.Point(158, 174);
+            this.Usuario.Location = new System.Drawing.Point(312, 165);
             this.Usuario.Name = "Usuario";
             this.Usuario.Size = new System.Drawing.Size(79, 25);
             this.Usuario.TabIndex = 12;
@@ -93,7 +93,7 @@
             // 
             this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.Location = new System.Drawing.Point(257, 225);
+            this.txtContraseña.Location = new System.Drawing.Point(257, 250);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(189, 26);
             this.txtContraseña.TabIndex = 9;
@@ -105,7 +105,7 @@
             this.Contraseña.BackColor = System.Drawing.Color.Transparent;
             this.Contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.Contraseña.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Contraseña.Location = new System.Drawing.Point(123, 220);
+            this.Contraseña.Location = new System.Drawing.Point(294, 222);
             this.Contraseña.Name = "Contraseña";
             this.Contraseña.Size = new System.Drawing.Size(114, 25);
             this.Contraseña.TabIndex = 10;
@@ -116,7 +116,7 @@
             // 
             this.btnIniciar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btnIniciar.Location = new System.Drawing.Point(257, 274);
+            this.btnIniciar.Location = new System.Drawing.Point(257, 282);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Padding = new System.Windows.Forms.Padding(8);
             this.btnIniciar.Size = new System.Drawing.Size(189, 52);

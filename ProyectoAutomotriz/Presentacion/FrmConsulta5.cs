@@ -123,7 +123,7 @@ namespace ProyectoAutomotriz.Presentacion
                 string Sql = string.Format(Consulta5, porcentaje, fechaComparar1, fechaComparar2, Objetivo, porcentajeMitad);
            
                 DataTable table = HelperDB.ObtenerInstancia().ConsultarSelect(Sql);
-                titlePrincipal.Text = "Empleados de que recibiran comision segun por objetivo de " + Objetivo + "$ vendidos desde " + fechaComparar1 + " hasta " + fechaComparar2;
+                titlePrincipal.Text = "Empleados de que recibiran comisión segun por objetivo de $" + Objetivo + " vendidos desde " + fechaComparar1 + " hasta " + fechaComparar2;
                 FormatearDatagrid(table);
             }
         }
@@ -221,6 +221,11 @@ namespace ProyectoAutomotriz.Presentacion
         }
 
         private void Fecha2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void titlePrincipal_Click(object sender, EventArgs e)
         {
 
         }

@@ -30,6 +30,11 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvConsulta6 = new System.Windows.Forms.DataGridView();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total_Vendido_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio_unitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Stock_actual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Volver = new System.Windows.Forms.Button();
             this.filtros = new System.Windows.Forms.Button();
             this.AutoPartes1 = new System.Windows.Forms.ComboBox();
@@ -46,11 +51,6 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.titlePrincipal = new System.Windows.Forms.Label();
             this.panelSuperior = new System.Windows.Forms.Panel();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Total_Vendido_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio_unitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stock_actual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -79,11 +79,46 @@
             this.Total_Vendido_Producto,
             this.Precio_unitario,
             this.Stock_actual});
-            this.dgvConsulta6.Location = new System.Drawing.Point(180, 236);
+            this.dgvConsulta6.Location = new System.Drawing.Point(37, 227);
             this.dgvConsulta6.Name = "dgvConsulta6";
             this.dgvConsulta6.ReadOnly = true;
-            this.dgvConsulta6.Size = new System.Drawing.Size(861, 218);
+            this.dgvConsulta6.Size = new System.Drawing.Size(651, 240);
             this.dgvConsulta6.TabIndex = 3;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Descripcion.HeaderText = "Descripción";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
+            // Total_Vendido_Producto
+            // 
+            this.Total_Vendido_Producto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Total_Vendido_Producto.HeaderText = "Total Vendido Producto";
+            this.Total_Vendido_Producto.Name = "Total_Vendido_Producto";
+            this.Total_Vendido_Producto.ReadOnly = true;
+            // 
+            // Precio_unitario
+            // 
+            this.Precio_unitario.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Precio_unitario.HeaderText = "Precio Unitario";
+            this.Precio_unitario.Name = "Precio_unitario";
+            this.Precio_unitario.ReadOnly = true;
+            // 
+            // Stock_actual
+            // 
+            this.Stock_actual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Stock_actual.HeaderText = "Stock Actual";
+            this.Stock_actual.Name = "Stock_actual";
+            this.Stock_actual.ReadOnly = true;
             // 
             // Volver
             // 
@@ -92,7 +127,7 @@
             this.Volver.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.Volver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Volver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Volver.Location = new System.Drawing.Point(571, 448);
+            this.Volver.Location = new System.Drawing.Point(592, 487);
             this.Volver.Name = "Volver";
             this.Volver.Size = new System.Drawing.Size(120, 29);
             this.Volver.TabIndex = 5;
@@ -102,12 +137,12 @@
             // 
             // filtros
             // 
-            this.filtros.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.filtros.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.filtros.AutoSize = true;
             this.filtros.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.filtros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.filtros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filtros.Location = new System.Drawing.Point(17, 448);
+            this.filtros.Location = new System.Drawing.Point(568, 85);
             this.filtros.Name = "filtros";
             this.filtros.Size = new System.Drawing.Size(120, 29);
             this.filtros.TabIndex = 6;
@@ -117,46 +152,51 @@
             // 
             // AutoPartes1
             // 
+            this.AutoPartes1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.AutoPartes1.Enabled = false;
             this.AutoPartes1.FormattingEnabled = true;
-            this.AutoPartes1.Location = new System.Drawing.Point(377, 120);
+            this.AutoPartes1.Location = new System.Drawing.Point(124, 89);
             this.AutoPartes1.Name = "AutoPartes1";
             this.AutoPartes1.Size = new System.Drawing.Size(121, 21);
             this.AutoPartes1.TabIndex = 7;
             // 
             // AutoPartes2
             // 
+            this.AutoPartes2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.AutoPartes2.Enabled = false;
             this.AutoPartes2.FormattingEnabled = true;
-            this.AutoPartes2.Location = new System.Drawing.Point(377, 177);
+            this.AutoPartes2.Location = new System.Drawing.Point(124, 148);
             this.AutoPartes2.Name = "AutoPartes2";
             this.AutoPartes2.Size = new System.Drawing.Size(121, 21);
             this.AutoPartes2.TabIndex = 8;
             // 
             // Fecha1
             // 
+            this.Fecha1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Fecha1.Enabled = false;
-            this.Fecha1.Location = new System.Drawing.Point(609, 121);
+            this.Fecha1.Location = new System.Drawing.Point(354, 89);
             this.Fecha1.Name = "Fecha1";
             this.Fecha1.Size = new System.Drawing.Size(200, 20);
             this.Fecha1.TabIndex = 9;
             // 
             // Fecha2
             // 
+            this.Fecha2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Fecha2.Enabled = false;
-            this.Fecha2.Location = new System.Drawing.Point(609, 178);
+            this.Fecha2.Location = new System.Drawing.Point(354, 148);
             this.Fecha2.Name = "Fecha2";
             this.Fecha2.Size = new System.Drawing.Size(200, 20);
             this.Fecha2.TabIndex = 10;
+            this.Fecha2.ValueChanged += new System.EventHandler(this.Fecha2_ValueChanged);
             // 
             // Consultar
             // 
-            this.Consultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Consultar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Consultar.AutoSize = true;
             this.Consultar.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.Consultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Consultar.Location = new System.Drawing.Point(164, 448);
+            this.Consultar.Location = new System.Drawing.Point(568, 144);
             this.Consultar.Name = "Consultar";
             this.Consultar.Size = new System.Drawing.Size(120, 29);
             this.Consultar.TabIndex = 11;
@@ -166,11 +206,12 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label1.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(160, 75);
+            this.label1.Location = new System.Drawing.Point(33, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 19);
             this.label1.TabIndex = 13;
@@ -178,11 +219,12 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(160, 131);
+            this.label2.Location = new System.Drawing.Point(33, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 19);
             this.label2.TabIndex = 14;
@@ -190,11 +232,12 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(392, 75);
+            this.label3.Location = new System.Drawing.Point(251, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 19);
             this.label3.TabIndex = 15;
@@ -202,11 +245,12 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label4.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(392, 133);
+            this.label4.Location = new System.Drawing.Point(251, 149);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 19);
             this.label4.TabIndex = 16;
@@ -268,7 +312,7 @@
             this.titlePrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.titlePrincipal.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.titlePrincipal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.titlePrincipal.Location = new System.Drawing.Point(39, 414);
+            this.titlePrincipal.Location = new System.Drawing.Point(33, 196);
             this.titlePrincipal.Name = "titlePrincipal";
             this.titlePrincipal.Size = new System.Drawing.Size(40, 19);
             this.titlePrincipal.TabIndex = 18;
@@ -284,50 +328,15 @@
             this.panelSuperior.Controls.Add(this.iconPictureBox1);
             this.panelSuperior.Location = new System.Drawing.Point(-1, -1);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(727, 60);
+            this.panelSuperior.Size = new System.Drawing.Size(727, 66);
             this.panelSuperior.TabIndex = 19;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Descripcion.HeaderText = "Descripción";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            // 
-            // Total_Vendido_Producto
-            // 
-            this.Total_Vendido_Producto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Total_Vendido_Producto.HeaderText = "Total Vendido Producto";
-            this.Total_Vendido_Producto.Name = "Total_Vendido_Producto";
-            this.Total_Vendido_Producto.ReadOnly = true;
-            // 
-            // Precio_unitario
-            // 
-            this.Precio_unitario.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Precio_unitario.HeaderText = "Precio Unitario";
-            this.Precio_unitario.Name = "Precio_unitario";
-            this.Precio_unitario.ReadOnly = true;
-            // 
-            // Stock_actual
-            // 
-            this.Stock_actual.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Stock_actual.HeaderText = "Stock Actual";
-            this.Stock_actual.Name = "Stock_actual";
-            this.Stock_actual.ReadOnly = true;
             // 
             // FrmConsulta6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1146, 528);
+            this.ClientSize = new System.Drawing.Size(724, 528);
             this.Controls.Add(this.titlePrincipal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

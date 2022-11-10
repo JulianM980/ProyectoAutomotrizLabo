@@ -125,5 +125,30 @@ namespace ProyectoAutomotriz.Presentacion
         {
             panelSuperior.BackColor = Color.FromArgb(51, 102, 153);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtAño1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtAño2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

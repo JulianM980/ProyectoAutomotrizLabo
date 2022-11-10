@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSalir = new System.Windows.Forms.Button();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
@@ -41,6 +41,10 @@
             this.Fecha1 = new System.Windows.Forms.DateTimePicker();
             this.Volver = new System.Windows.Forms.Button();
             this.dgvConsulta5 = new System.Windows.Forms.DataGridView();
+            this.Total_de_ventas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre_Vendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Comision = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad_De_Comision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPorcentaje = new System.Windows.Forms.TextBox();
@@ -51,10 +55,6 @@
             this.labelPorcentaje = new System.Windows.Forms.Label();
             this.labelObjetivo = new System.Windows.Forms.Label();
             this.panelSuperior = new System.Windows.Forms.Panel();
-            this.Total_de_ventas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre_Vendedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Comision = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad_De_Comision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titlePrincipal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -68,7 +68,7 @@
             // btnSalir
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalir.Location = new System.Drawing.Point(1083, 477);
+            this.btnSalir.Location = new System.Drawing.Point(617, 477);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 1;
@@ -85,7 +85,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 48;
-            this.iconPictureBox1.Location = new System.Drawing.Point(1072, 8);
+            this.iconPictureBox1.Location = new System.Drawing.Point(606, 8);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox1.TabIndex = 10;
@@ -101,7 +101,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 48;
-            this.iconPictureBox2.Location = new System.Drawing.Point(1131, 8);
+            this.iconPictureBox2.Location = new System.Drawing.Point(665, 8);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox2.TabIndex = 9;
@@ -132,7 +132,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label4.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(590, 101);
+            this.label4.Location = new System.Drawing.Point(270, 124);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 19);
             this.label4.TabIndex = 29;
@@ -145,7 +145,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label3.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(373, 101);
+            this.label3.Location = new System.Drawing.Point(270, 92);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 19);
             this.label3.TabIndex = 28;
@@ -158,7 +158,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label1.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(43, 101);
+            this.label1.Location = new System.Drawing.Point(30, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 19);
             this.label1.TabIndex = 27;
@@ -170,7 +170,7 @@
             this.Consultar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Consultar.AutoSize = true;
             this.Consultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Consultar.Location = new System.Drawing.Point(823, 114);
+            this.Consultar.Location = new System.Drawing.Point(593, 87);
             this.Consultar.Name = "Consultar";
             this.Consultar.Size = new System.Drawing.Size(120, 29);
             this.Consultar.TabIndex = 26;
@@ -181,7 +181,7 @@
             // Fecha2
             // 
             this.Fecha2.Enabled = false;
-            this.Fecha2.Location = new System.Drawing.Point(590, 123);
+            this.Fecha2.Location = new System.Drawing.Point(387, 123);
             this.Fecha2.Name = "Fecha2";
             this.Fecha2.Size = new System.Drawing.Size(200, 20);
             this.Fecha2.TabIndex = 25;
@@ -190,7 +190,7 @@
             // Fecha1
             // 
             this.Fecha1.Enabled = false;
-            this.Fecha1.Location = new System.Drawing.Point(373, 123);
+            this.Fecha1.Location = new System.Drawing.Point(387, 91);
             this.Fecha1.Name = "Fecha1";
             this.Fecha1.Size = new System.Drawing.Size(200, 20);
             this.Fecha1.TabIndex = 24;
@@ -201,7 +201,7 @@
             this.Volver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Volver.AutoSize = true;
             this.Volver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Volver.Location = new System.Drawing.Point(1058, 489);
+            this.Volver.Location = new System.Drawing.Point(592, 489);
             this.Volver.Name = "Volver";
             this.Volver.Size = new System.Drawing.Size(120, 29);
             this.Volver.TabIndex = 21;
@@ -217,25 +217,53 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvConsulta5.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvConsulta5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvConsulta5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvConsulta5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsulta5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Total_de_ventas,
             this.Nombre_Vendedor,
             this.Comision,
             this.Cantidad_De_Comision});
-            this.dgvConsulta5.Location = new System.Drawing.Point(40, 185);
+            this.dgvConsulta5.Location = new System.Drawing.Point(40, 167);
             this.dgvConsulta5.Name = "dgvConsulta5";
             this.dgvConsulta5.ReadOnly = true;
-            this.dgvConsulta5.Size = new System.Drawing.Size(1118, 270);
+            this.dgvConsulta5.Size = new System.Drawing.Size(652, 309);
             this.dgvConsulta5.TabIndex = 20;
+            // 
+            // Total_de_ventas
+            // 
+            this.Total_de_ventas.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Total_de_ventas.HeaderText = "Total de Ventas";
+            this.Total_de_ventas.Name = "Total_de_ventas";
+            this.Total_de_ventas.ReadOnly = true;
+            // 
+            // Nombre_Vendedor
+            // 
+            this.Nombre_Vendedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nombre_Vendedor.HeaderText = "Nombre Vendedor";
+            this.Nombre_Vendedor.Name = "Nombre_Vendedor";
+            this.Nombre_Vendedor.ReadOnly = true;
+            // 
+            // Comision
+            // 
+            this.Comision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Comision.HeaderText = "Comisión";
+            this.Comision.Name = "Comision";
+            this.Comision.ReadOnly = true;
+            // 
+            // Cantidad_De_Comision
+            // 
+            this.Cantidad_De_Comision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Cantidad_De_Comision.HeaderText = "Cantidad de Comisión";
+            this.Cantidad_De_Comision.Name = "Cantidad_De_Comision";
+            this.Cantidad_De_Comision.ReadOnly = true;
             // 
             // pictureBox1
             // 
@@ -243,7 +271,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1190, 528);
+            this.pictureBox1.Size = new System.Drawing.Size(724, 528);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
@@ -255,7 +283,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.label2.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(207, 101);
+            this.label2.Location = new System.Drawing.Point(30, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 19);
             this.label2.TabIndex = 31;
@@ -264,7 +292,7 @@
             // 
             // txtPorcentaje
             // 
-            this.txtPorcentaje.Location = new System.Drawing.Point(43, 123);
+            this.txtPorcentaje.Location = new System.Drawing.Point(117, 91);
             this.txtPorcentaje.Name = "txtPorcentaje";
             this.txtPorcentaje.Size = new System.Drawing.Size(138, 20);
             this.txtPorcentaje.TabIndex = 32;
@@ -272,7 +300,7 @@
             // 
             // txtObjetivo
             // 
-            this.txtObjetivo.Location = new System.Drawing.Point(207, 123);
+            this.txtObjetivo.Location = new System.Drawing.Point(117, 123);
             this.txtObjetivo.Name = "txtObjetivo";
             this.txtObjetivo.Size = new System.Drawing.Size(138, 20);
             this.txtObjetivo.TabIndex = 33;
@@ -303,7 +331,7 @@
             this.iconPictureBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 48;
-            this.iconPictureBox3.Location = new System.Drawing.Point(1065, 3);
+            this.iconPictureBox3.Location = new System.Drawing.Point(611, 3);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox3.TabIndex = 36;
@@ -319,7 +347,7 @@
             this.iconPictureBox4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox4.IconSize = 48;
-            this.iconPictureBox4.Location = new System.Drawing.Point(1124, 3);
+            this.iconPictureBox4.Location = new System.Drawing.Point(670, 3);
             this.iconPictureBox4.Name = "iconPictureBox4";
             this.iconPictureBox4.Size = new System.Drawing.Size(48, 48);
             this.iconPictureBox4.TabIndex = 35;
@@ -356,37 +384,9 @@
             this.panelSuperior.Controls.Add(this.iconPictureBox3);
             this.panelSuperior.Location = new System.Drawing.Point(0, 0);
             this.panelSuperior.Name = "panelSuperior";
-            this.panelSuperior.Size = new System.Drawing.Size(1178, 60);
+            this.panelSuperior.Size = new System.Drawing.Size(724, 66);
             this.panelSuperior.TabIndex = 40;
             this.panelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSuperior_Paint);
-            // 
-            // Total_de_ventas
-            // 
-            this.Total_de_ventas.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Total_de_ventas.HeaderText = "Total de Ventas";
-            this.Total_de_ventas.Name = "Total_de_ventas";
-            this.Total_de_ventas.ReadOnly = true;
-            // 
-            // Nombre_Vendedor
-            // 
-            this.Nombre_Vendedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nombre_Vendedor.HeaderText = "Nombre Vendedor";
-            this.Nombre_Vendedor.Name = "Nombre_Vendedor";
-            this.Nombre_Vendedor.ReadOnly = true;
-            // 
-            // Comision
-            // 
-            this.Comision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Comision.HeaderText = "Comisión";
-            this.Comision.Name = "Comision";
-            this.Comision.ReadOnly = true;
-            // 
-            // Cantidad_De_Comision
-            // 
-            this.Cantidad_De_Comision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Cantidad_De_Comision.HeaderText = "Cantidad de Comisión";
-            this.Cantidad_De_Comision.Name = "Cantidad_De_Comision";
-            this.Cantidad_De_Comision.ReadOnly = true;
             // 
             // titlePrincipal
             // 
@@ -397,12 +397,13 @@
             this.titlePrincipal.Size = new System.Drawing.Size(36, 18);
             this.titlePrincipal.TabIndex = 30;
             this.titlePrincipal.Text = "Info:";
+            this.titlePrincipal.Click += new System.EventHandler(this.titlePrincipal_Click);
             // 
             // FrmConsulta5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1190, 528);
+            this.ClientSize = new System.Drawing.Size(724, 528);
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.labelObjetivo);
             this.Controls.Add(this.labelPorcentaje);
