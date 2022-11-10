@@ -33,7 +33,37 @@ namespace ProyectoAutomotriz
             nuevoFormulario.BringToFront();
             nuevoFormulario.Show();
         }
-       
+        private void Paneles()
+        {
+            panelAcciones.Visible = false;
+            panelAyuda.Visible = false;
+            panelSalir.Visible = false;
+        }
+        private void EsconderSubMenu()
+        {
+            if (panelAcciones.Visible == true) panelAcciones.Visible = false;
+            if (panelAyuda.Visible == true) panelAyuda.Visible = false;
+            if (panelSalir.Visible == true) panelSalir.Visible = false;
+        }
+        private void MostrarSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                EsconderSubMenu();
+                subMenu.Visible = true;
+            }
+            else subMenu.Visible = false;
+        }
+        private void BotonSeleccionado(Button btn) {
+            btn.BackColor = Color.FromArgb(240, 240, 240);
+            btn.ForeColor = Color.FromArgb(28, 28, 28);
+        }
+        private void BotonDesleccionado(Button btn)
+        {
+            btn.BackColor = Color.FromArgb(28, 28, 28);
+            btn.ForeColor = Color.FromArgb(240, 240, 240);
+
+        }
         #endregion
         #region EVENTOS
         private void FrmIndex_Load(object sender, EventArgs e)
@@ -43,52 +73,11 @@ namespace ProyectoAutomotriz
             this.lblTituloPrincipal.Parent = pictureBox1;
             this.iconPictureBox1.Parent = pictureBox1;
             this.iconPictureBox2.Parent = pictureBox1;
+            Paneles();
             
         }
-        private void Consulta1_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsulta1());
-        }
-        private void Consulta2_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsulta2());
-
-        }
-        private void Consulta3_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsulta3());
-
-        }
-
-        private void Consulta4_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsulta4());
-
-        }
-
-        private void Consulta5_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsulta5());
-
-        }
-
-        private void Consulta6_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsulta6());
-
-        }
-
-        private void Consulta7_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsulta7());
-
-        }
-
-        private void Consulta8_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmConsulta8());
-
-        }
+       
+       
        
         #endregion
 
@@ -108,6 +97,100 @@ namespace ProyectoAutomotriz
         {
             if (this.WindowState == FormWindowState.Maximized) this.WindowState = FormWindowState.Minimized;
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenu(panelAcciones);
+            BotonSeleccionado(button1);
+            BotonDesleccionado(button2);
+            BotonDesleccionado(button7);
+
+        }
+
+        private void Consulta1_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsulta1());
+            EsconderSubMenu();
+        }
+
+        private void Consulta2_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsulta2());
+            EsconderSubMenu();
+
+        }
+
+        private void Consulta3_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsulta3());
+            EsconderSubMenu();
+
+        }
+
+        private void Consulta4_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsulta4());
+            EsconderSubMenu();
+
+        }
+
+        private void Consulta5_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsulta5());
+            EsconderSubMenu();
+
+        }
+
+        private void Consulta6_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsulta6());
+            EsconderSubMenu();
+
+        }
+
+        private void Consulta7_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsulta7());
+            EsconderSubMenu();
+
+        }
+
+        private void Consulta8_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsulta8());
+            EsconderSubMenu();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenu(panelAyuda);
+            BotonDesleccionado(button1);
+            BotonSeleccionado(button2);
+            BotonDesleccionado(button7);
+        }
+
+        private void panelAyuda_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            MostrarSubMenu(panelSalir);
+            BotonDesleccionado(button1);
+            BotonDesleccionado(button2);
+            BotonSeleccionado(button7);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("Esta seguro que desea cerrar sesion","Cerrando sesion",MessageBoxButtons.YesNo);
+            if (msg == DialogResult.Yes) { 
+                new FrmLogin().Show();
+                this.Dispose();
+            }
         }
     }
 }

@@ -84,7 +84,7 @@ namespace ProyectoAutomotriz.Presentacion
 
         private void Consultar_Click(object sender, EventArgs e)
         {
-            
+
             string porcentaje = txtPorcentaje.Text;
             double porcentajeMitad = 0;
             string Objetivo = txtObjetivo.Text;
@@ -96,19 +96,24 @@ namespace ProyectoAutomotriz.Presentacion
             {
                 banderaPorcentaje = false;
                 labelPorcentaje.Text = "Debe ingresar un porcentaje";
-                
+
             }
-            else {
+            else
+            {
                 banderaPorcentaje = true;
                 labelPorcentaje.Text = "";
                 porcentajeMitad = Double.Parse(txtPorcentaje.Text) / 2;
+                string deci = porcentajeMitad.ToString().Split(',')[1];
+                string uni = porcentajeMitad.ToString().Split(',')[0];
+
+                porcentajeMitad = Double.Parse(uni + deci);
             }
 
             if (Objetivo == "")
             {
                 banderaObjetivo = false;
                 labelObjetivo.Text = "Debe ingresar un Objetivo";
-                
+
             }
             else
             {
@@ -118,10 +123,11 @@ namespace ProyectoAutomotriz.Presentacion
 
 
 
-            if (banderaPorcentaje && banderaObjetivo) { 
+            if (banderaPorcentaje && banderaObjetivo)
+            {
 
                 string Sql = string.Format(Consulta5, porcentaje, fechaComparar1, fechaComparar2, Objetivo, porcentajeMitad);
-           
+
                 DataTable table = HelperDB.ObtenerInstancia().ConsultarSelect(Sql);
                 titlePrincipal.Text = "Empleados de que recibiran comisión segun por objetivo de $" + Objetivo + " vendidos desde " + fechaComparar1 + " hasta " + fechaComparar2;
                 FormatearDatagrid(table);

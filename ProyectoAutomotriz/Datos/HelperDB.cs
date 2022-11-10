@@ -14,7 +14,7 @@ namespace ProyectoAutomotriz.Datos
         private SqlConnection cnn;
         private  HelperDB()
         {
-            cnn = new SqlConnection(Properties.Resources.CadenaJulian);
+            cnn = new SqlConnection(Properties.Resources.CadenaAxel);
         }
         public static HelperDB ObtenerInstancia() { 
             if(instancia == null) instancia = new HelperDB();
