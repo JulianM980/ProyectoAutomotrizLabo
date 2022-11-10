@@ -103,8 +103,8 @@ namespace ProyectoAutomotriz.Presentacion
         {
             string msg = "Debido a la inflacion sufrimos constantes cambios en los precios de los " +
                 "materiales utilizados para la construccion de autopartes.Por lo tanto con esta herramienta" +
-                "podra visualizar  todos los vehiculos que contengan autopartes de una marca determinada" +
-                " y visualizar cuanto seria el nuevo precio final del automovil";
+                " podra visualizar  todos los vehiculos que contengan autopartes de una marca determinada" +
+                " y observa cuanto seria el nuevo precio final del automovil";
             MessageBox.Show(msg,"Uso de herramienta",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
         }

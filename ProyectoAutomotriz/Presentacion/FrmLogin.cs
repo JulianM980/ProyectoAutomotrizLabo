@@ -22,6 +22,10 @@ namespace ProyectoAutomotriz.Presentacion
         private void FrmLogin_Load(object sender, EventArgs e)
         {
             lblError.Visible = false;
+            pictureBox2.Parent = pictureBox1;
+            Usuario.Parent = pictureBox1;
+            Contraseña.Parent = pictureBox1;
+            lblError.Parent = pictureBox1;
         }
 
         private void btnIniciar_Click_1(object sender, EventArgs e)
@@ -57,6 +61,36 @@ namespace ProyectoAutomotriz.Presentacion
             string sp = "Sp_Login";
             var result = HelperDB.ObtenerInstancia().Login(user, pass, sp);
             return result;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblError_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Usuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Contraseña_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

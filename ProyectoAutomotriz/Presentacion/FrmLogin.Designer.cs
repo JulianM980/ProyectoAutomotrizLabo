@@ -47,10 +47,11 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(677, 450);
+            this.pictureBox1.Size = new System.Drawing.Size(677, 415);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblError
             // 
@@ -58,57 +59,67 @@
             this.lblError.BackColor = System.Drawing.Color.Transparent;
             this.lblError.Font = new System.Drawing.Font("Nirmala UI Semilight", 10F, System.Drawing.FontStyle.Bold);
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(258, 343);
+            this.lblError.Location = new System.Drawing.Point(230, 343);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(241, 19);
             this.lblError.TabIndex = 13;
             this.lblError.Text = "error";
+            this.lblError.Click += new System.EventHandler(this.lblError_Click);
             // 
             // txtUsuario
             // 
             this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUsuario.Location = new System.Drawing.Point(307, 213);
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(257, 180);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(143, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(189, 26);
             this.txtUsuario.TabIndex = 8;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // Usuario
             // 
             this.Usuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Usuario.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Usuario.BackColor = System.Drawing.Color.Transparent;
             this.Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.Usuario.Location = new System.Drawing.Point(185, 211);
+            this.Usuario.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Usuario.Location = new System.Drawing.Point(158, 174);
             this.Usuario.Name = "Usuario";
             this.Usuario.Size = new System.Drawing.Size(79, 25);
             this.Usuario.TabIndex = 12;
             this.Usuario.Text = "Usuario";
+            this.Usuario.Click += new System.EventHandler(this.Usuario_Click);
             // 
             // txtContraseña
             // 
             this.txtContraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtContraseña.Location = new System.Drawing.Point(307, 259);
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(257, 225);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(143, 20);
+            this.txtContraseña.Size = new System.Drawing.Size(189, 26);
             this.txtContraseña.TabIndex = 9;
+            this.txtContraseña.UseSystemPasswordChar = true;
             // 
             // Contraseña
             // 
             this.Contraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Contraseña.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Contraseña.BackColor = System.Drawing.Color.Transparent;
             this.Contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.Contraseña.Location = new System.Drawing.Point(150, 257);
+            this.Contraseña.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Contraseña.Location = new System.Drawing.Point(123, 220);
             this.Contraseña.Name = "Contraseña";
             this.Contraseña.Size = new System.Drawing.Size(114, 25);
             this.Contraseña.TabIndex = 10;
             this.Contraseña.Text = "Contraseña";
+            this.Contraseña.Click += new System.EventHandler(this.Contraseña_Click);
             // 
             // btnIniciar
             // 
             this.btnIniciar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btnIniciar.Location = new System.Drawing.Point(284, 292);
+            this.btnIniciar.Location = new System.Drawing.Point(257, 274);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(189, 35);
+            this.btnIniciar.Padding = new System.Windows.Forms.Padding(8);
+            this.btnIniciar.Size = new System.Drawing.Size(189, 52);
             this.btnIniciar.TabIndex = 11;
             this.btnIniciar.Text = "Iniciar Sesión";
             this.btnIniciar.UseVisualStyleBackColor = true;
@@ -117,21 +128,22 @@
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(284, 80);
+            this.pictureBox2.Location = new System.Drawing.Point(257, 43);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(189, 119);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(677, 450);
+            this.ClientSize = new System.Drawing.Size(677, 415);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.Usuario);

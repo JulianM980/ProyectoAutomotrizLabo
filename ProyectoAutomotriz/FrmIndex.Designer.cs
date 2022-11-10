@@ -85,7 +85,7 @@
             this.Consulta8.Name = "Consulta8";
             this.Consulta8.Size = new System.Drawing.Size(200, 50);
             this.Consulta8.TabIndex = 8;
-            this.Consulta8.Text = "Consulta8";
+            this.Consulta8.Text = "Analisis de aumentos";
             this.Consulta8.UseVisualStyleBackColor = true;
             this.Consulta8.Click += new System.EventHandler(this.Consulta8_Click);
             // 

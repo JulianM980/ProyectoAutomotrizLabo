@@ -291,6 +291,8 @@ namespace ProyectoAutomotriz.Reportes {
             
             private global::System.Data.DataColumn columnentrega;
             
+            private global::System.Data.DataColumn columncliente;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DTOrdenesDataTable() {
@@ -374,6 +376,14 @@ namespace ProyectoAutomotriz.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn clienteColumn {
+                get {
+                    return this.columncliente;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -409,7 +419,7 @@ namespace ProyectoAutomotriz.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DTOrdenesRow AddDTOrdenesRow(int codigo, string descripcion, string vendedor, int cantidades, double total, string entrega) {
+            public DTOrdenesRow AddDTOrdenesRow(int codigo, string descripcion, string vendedor, int cantidades, double total, string entrega, string cliente) {
                 DTOrdenesRow rowDTOrdenesRow = ((DTOrdenesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         codigo,
@@ -417,7 +427,8 @@ namespace ProyectoAutomotriz.Reportes {
                         vendedor,
                         cantidades,
                         total,
-                        entrega};
+                        entrega,
+                        cliente};
                 rowDTOrdenesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDTOrdenesRow);
                 return rowDTOrdenesRow;
@@ -446,6 +457,7 @@ namespace ProyectoAutomotriz.Reportes {
                 this.columncantidades = base.Columns["cantidades"];
                 this.columntotal = base.Columns["total"];
                 this.columnentrega = base.Columns["entrega"];
+                this.columncliente = base.Columns["cliente"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -463,6 +475,8 @@ namespace ProyectoAutomotriz.Reportes {
                 base.Columns.Add(this.columntotal);
                 this.columnentrega = new global::System.Data.DataColumn("entrega", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnentrega);
+                this.columncliente = new global::System.Data.DataColumn("cliente", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncliente);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -701,6 +715,22 @@ namespace ProyectoAutomotriz.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string cliente {
+                get {
+                    try {
+                        return ((string)(this[this.tableDTOrdenes.clienteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'cliente\' in table \'DTOrdenes\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDTOrdenes.clienteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IscodigoNull() {
                 return this.IsNull(this.tableDTOrdenes.codigoColumn);
             }
@@ -769,6 +799,18 @@ namespace ProyectoAutomotriz.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetentregaNull() {
                 this[this.tableDTOrdenes.entregaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsclienteNull() {
+                return this.IsNull(this.tableDTOrdenes.clienteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetclienteNull() {
+                this[this.tableDTOrdenes.clienteColumn] = global::System.Convert.DBNull;
             }
         }
         
