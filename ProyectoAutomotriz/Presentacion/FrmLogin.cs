@@ -24,7 +24,7 @@ namespace ProyectoAutomotriz.Presentacion
             lblError.Visible = false;
         }
 
-        private void btnIniciar_Click(object sender, EventArgs e)
+        private void btnIniciar_Click_1(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtUsuario.Text))
             {

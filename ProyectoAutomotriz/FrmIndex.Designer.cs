@@ -41,7 +41,6 @@
             this.PanelLogo = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblTituloPrincipal = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -226,7 +225,6 @@
             // 
             this.panelContenedor.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.panelContenedor.Controls.Add(this.lblDescripcion);
             this.panelContenedor.Controls.Add(this.lblTituloPrincipal);
             this.panelContenedor.Controls.Add(this.iconPictureBox2);
             this.panelContenedor.Controls.Add(this.iconPictureBox1);
@@ -237,18 +235,6 @@
             this.panelContenedor.Size = new System.Drawing.Size(740, 567);
             this.panelContenedor.TabIndex = 1;
             // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(243, 269);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(448, 24);
-            this.lblDescripcion.TabIndex = 8;
-            this.lblDescripcion.Text = "Al que se le ocurra ponga un descripcion aca jjajajaj";
-            // 
             // lblTituloPrincipal
             // 
             this.lblTituloPrincipal.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -256,7 +242,7 @@
             this.lblTituloPrincipal.BackColor = System.Drawing.Color.Transparent;
             this.lblTituloPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTituloPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.lblTituloPrincipal.Location = new System.Drawing.Point(248, 152);
+            this.lblTituloPrincipal.Location = new System.Drawing.Point(230, 229);
             this.lblTituloPrincipal.Name = "lblTituloPrincipal";
             this.lblTituloPrincipal.Size = new System.Drawing.Size(461, 73);
             this.lblTituloPrincipal.TabIndex = 7;
@@ -347,7 +333,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTituloPrincipal;
-        private System.Windows.Forms.Label lblDescripcion;
     }
 }
 
